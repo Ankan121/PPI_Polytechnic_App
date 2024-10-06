@@ -31,6 +31,9 @@ class _HomescreenState extends State<Homescreen> {
           ))
         ],
       ),
+      body: Center(
+        child: Image.asset('assets/homepage/2-ppi logo me.png'),
+      ),
     );
   }
 }
