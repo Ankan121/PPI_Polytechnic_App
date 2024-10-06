@@ -31,7 +31,7 @@ class _SplashscreenState extends State<Splashscreen> {
   Widget build(BuildContext context) {
 
 
-    final TextStyle? largeblack = TextFormate(colors: Colors.black).textLargeFormate(context);
+    final TextStyle? largeblack = TextFormate(colors: Colors.black,).textLargeFormate(context);
 
 
 
@@ -96,9 +96,17 @@ class _SplashscreenState extends State<Splashscreen> {
                       //   width: 4.0,
                       // ),
                     ),
-                    child: Align(
+                    child:
+                     Align(
                         alignment: Alignment(0, -0.5),
                         child: Text('PUBERGAON POLYTECHNIC INSTITUTE',style: largeblack,)),
+                    // Column(
+                    //   // crossAxisAlignment: CrossAxisAlignment.center,
+                    //   // mainAxisAlignment: MainAxisAlignment.center,
+                    //   children: [
+                    //     Text('PUBERGAON POLYTECHNIC INSTITUTE',style: largeblack,),
+                    //   ],
+                    // ),
                   ),
                 ),
               ),
@@ -106,11 +114,12 @@ class _SplashscreenState extends State<Splashscreen> {
                 // left: screenWidth / 2 - (yourWidgetWidth / 2), // স্ক্রিনের একদম মাঝখানে
                 // top: screenHeight / 2 - (yourWidgetHeight / 2), // স্ক্রিনের ভর্তিকাল মাঝখানে
                 top: MediaQuery.of(context).size.height / 2 - 100.r,
-                left: MediaQuery.of(context).size.width / 2 - 100.r,
+                left: MediaQuery.of(context).size.width / 2 - 105.r,
                 child: Container(
-                  height: 250,
-                  width: 250,
+                  height: 270,
+                  width: 270,
                   decoration: BoxDecoration(
+                    color: Colors.white,
                     shape: BoxShape.circle,
                     boxShadow: [
                       BoxShadow(
@@ -125,9 +134,12 @@ class _SplashscreenState extends State<Splashscreen> {
                       width: 4.0, // বর্ডারের প্রস্থ
                     ),
                   ),
-                  child: CircleAvatar(
-                    radius: 56.0, // CircleAvatar এর রেডিয়াস (120/2 - বর্ডার প্রস্থ)
-                    backgroundImage: AssetImage('assets/splashScreen/img.png'), // অ্যাসেট ইমেজ লোড
+                  child: Align(
+                    alignment: Alignment(1, -1),
+                    child: CircleAvatar(
+                      radius: 120.0, // CircleAvatar এর রেডিয়াস (120/2 - বর্ডার প্রস্থ)
+                      backgroundImage: AssetImage('assets/splashScreen/PPI Logo.jpg'), // অ্যাসেট ইমেজ লোড
+                    ),
                   ),
                 ),
               ),
