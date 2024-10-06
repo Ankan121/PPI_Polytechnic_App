@@ -18,8 +18,10 @@ class Splashscreen extends StatefulWidget {
 
 class _SplashscreenState extends State<Splashscreen> {
 
+
+
   void initState(){
-    Timer(const Duration(seconds: 2000000), () {
+    Timer(const Duration(seconds: 2), () {
       Get.off<Homescreen>(const Homescreen());
     });
 
@@ -29,6 +31,8 @@ class _SplashscreenState extends State<Splashscreen> {
 
   @override
   Widget build(BuildContext context) {
+
+
 
 
     final TextStyle? largeblack = TextFormate(colors: Colors.black,).textLargeFormate(context);
@@ -143,8 +147,6 @@ class _SplashscreenState extends State<Splashscreen> {
                   ),
                 ),
               ),
-
-
             ],
           ),
         ],
