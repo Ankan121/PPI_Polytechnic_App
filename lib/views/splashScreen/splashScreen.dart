@@ -55,21 +55,84 @@ class _SplashscreenState extends State<Splashscreen> {
       extendBody: true,
       body: Column(
         children: [
+
           Stack(
+            clipBehavior: Clip.none,
+            //alignment: AlignmentDirectional.bottomCenter,
             children:[
-              Opacity(
-                opacity: 1,
-                child: Container(
-                  height: 400.h,
-                  width: 420.w,
-                  decoration: BoxDecoration(
-                    image: DecorationImage(
-                      image: AssetImage('assets/splashScreen/img.png'),
-                      fit: BoxFit.fill,
-                    ),
+              Container(
+                height: 400.h,
+                width: 420.w,
+                decoration: BoxDecoration(
+                  image: DecorationImage(
+                    image: AssetImage('assets/splashScreen/img.png'),
+                    fit: BoxFit.fill,
                   ),
                 ),
               ),
+              Positioned(
+                // left: screenWidth / 2 - (yourWidgetWidth / 2), // স্ক্রিনের একদম মাঝখানে
+                // top: screenHeight / 2 - (yourWidgetHeight / 2), // স্ক্রিনের ভর্তিকাল মাঝখানে
+                top: MediaQuery.of(context).size.height / 2 - -10.r,
+                left: MediaQuery.of(context).size.width / 2 - 350.r,
+                child: Align(
+                  alignment: Alignment.center, // পুরো স্ক্রিনের মাঝখানে
+                  child: Container(
+                    height: 800,
+                    width: 800,
+                    decoration: BoxDecoration(
+                      color: Colors.white,
+                      shape: BoxShape.circle,
+                      boxShadow: [
+                        BoxShadow(
+                          color: Colors.black.withOpacity(0.2),
+                          spreadRadius: 5.0,
+                          blurRadius: 7.0,
+                          offset: Offset(0, 3),
+                        ),
+                      ],
+                      // border: Border.all(
+                      //   color: Colors.black,
+                      //   width: 4.0,
+                      // ),
+                    ),
+                    child: Align(
+                        alignment: Alignment(0, -0.5),
+                        child: Text('PUBERGAON POLYTECHNIC INSTITUTE',style: largeblack,)),
+                  ),
+                ),
+              ),
+              Positioned(
+                // left: screenWidth / 2 - (yourWidgetWidth / 2), // স্ক্রিনের একদম মাঝখানে
+                // top: screenHeight / 2 - (yourWidgetHeight / 2), // স্ক্রিনের ভর্তিকাল মাঝখানে
+                top: MediaQuery.of(context).size.height / 2 - 100.r,
+                left: MediaQuery.of(context).size.width / 2 - 100.r,
+                child: Container(
+                  height: 250,
+                  width: 250,
+                  decoration: BoxDecoration(
+                    shape: BoxShape.circle,
+                    boxShadow: [
+                      BoxShadow(
+                        color: Colors.black.withOpacity(0.2), // ছায়ার রঙ এবং স্বচ্ছতা
+                        spreadRadius: 5.0, // ছায়ার ছড়ানো
+                        blurRadius: 7.0, // ছায়ার ঝাপসা হওয়া
+                        offset: Offset(0, 3), // ছায়ার অবস্থান (x, y)
+                      ),
+                    ],// গোলাকার শেপ
+                    border: Border.all(
+                      color: Colors.white, // বর্ডার রঙ
+                      width: 4.0, // বর্ডারের প্রস্থ
+                    ),
+                  ),
+                  child: CircleAvatar(
+                    radius: 56.0, // CircleAvatar এর রেডিয়াস (120/2 - বর্ডার প্রস্থ)
+                    backgroundImage: AssetImage('assets/splashScreen/img.png'), // অ্যাসেট ইমেজ লোড
+                  ),
+                ),
+              ),
+
+
             ],
           ),
         ],
