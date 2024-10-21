@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:ppi/constants/color.dart';
+import 'package:ppi/main.dart';
+import 'package:ppi/views/homescreen/home_all_itemgriview.dart';
 
 class Homescreen extends StatefulWidget {
   const Homescreen({super.key});
@@ -31,8 +34,69 @@ class _HomescreenState extends State<Homescreen> {
           ))
         ],
       ),
-      body: Center(
-        child: Image.asset('assets/homepage/2-ppi logo me.png'),
+      drawer: Drawer(),
+      body: Stack(
+        clipBehavior: Clip.none,
+      // Center(
+      //   child: Image.asset('assets/homepage/2-ppi logo me.png'),
+      // ),
+
+        children: [
+          Positioned(
+            top: -280.r,
+            right: -90.r,
+            child: Container(
+              height: 600,
+              width: 600,
+              decoration: BoxDecoration(
+                color: AppColor.homepageappbarcolor,
+                  shape: BoxShape.circle,
+              ),
+            )
+          ),
+
+          // Positioned(
+          //   top: -80,
+          //     child: Image.asset('assets/homepage/2-ppi logo me.png',height: 400,width: 400,)),
+          SingleChildScrollView(
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.center,
+              //mainAxisAlignment: MainAxisAlignment.start,
+              mainAxisAlignment: MainAxisAlignment.start,
+              children: [
+                Transform.translate(
+                    offset: Offset(0, -80),  // X এবং Y এ স্থানান্তর করবে
+                    child: Image.asset('assets/homepage/2-ppi logo me.png',height: 400,width: 400,)),
+
+                // Transform.translate(
+                //   offset: Offset(0, -180),  // X এবং Y এ স্থানান্তর করবে
+                //   child: GridView.builder(
+                //     itemCount: 20,
+                //     physics: NeverScrollableScrollPhysics(),
+                //     shrinkWrap: true,
+                //     gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                //       crossAxisCount: 2, // Number of columns
+                //       crossAxisSpacing: 10, // Spacing between columns
+                //       mainAxisSpacing: 10, // Spacing between rows
+                //     ),            itemBuilder: (BuildContext context, int index) {
+                //       return Padding(
+                //         padding: const EdgeInsets.all(8.0),
+                //         child: Container(
+                //           height: 100,
+                //           width: 100,
+                //           color: Colors.red,
+                //
+                //         ),
+                //       );
+                //     },
+                //   ),
+                // ),
+               HomeAllItemgriview(),
+
+              ],
+            ),
+          ),
+        ],
       ),
     );
   }
