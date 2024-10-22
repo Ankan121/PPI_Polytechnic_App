@@ -44,7 +44,7 @@ class _HomescreenState extends State<Homescreen> {
         children: [
           Positioned(
             top: -280.r,
-            right: -90.r,
+            right: -84.r,
             child: Container(
               height: 600,
               width: 600,
@@ -66,7 +66,7 @@ class _HomescreenState extends State<Homescreen> {
               children: [
                 Transform.translate(
                     offset: Offset(0, -80),  // X এবং Y এ স্থানান্তর করবে
-                    child: Image.asset('assets/homepage/2-ppi logo me.png',height: 400,width: 400,)),
+                    child: Image.asset('assets/homepage/2-ppi logo me.png',height: 360,width: 360,)),
 
                 // Transform.translate(
                 //   offset: Offset(0, -180),  // X এবং Y এ স্থানান্তর করবে

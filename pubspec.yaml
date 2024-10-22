@@ -64,6 +64,8 @@ flutter:
   assets:
     - assets/splashScreen/
     - assets/homepage/
+    - assets/homepage/
+    - assets/homepage/3-admission and fee.png
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/to/resolution-aware-images
 

@@ -1,51 +1,64 @@
 import 'package:get/get.dart';
 
+import '../model/home_gridview.dart';
+
 class HomeContrller extends GetxController{
 
-  List HomeGridview = [
+  List  HomeGridviewlist = [
     {
       'name' : 'Admission\nand  Fee',
-      'img' : '3-admission and fee.png',
+      'img' : 'assets/homepage/3-admission and fee.png',
     },
     {
       'name' : 'Department',
-      'img' : '4-department.png',
+      'img' : 'assets/homepage/4-department.png',
     },
     {
       'name' : 'Notice Board',
-      'img' : '5-noticeboard.png',
+      'img' : 'assets/homepage/5-noticeboard.png',
     },
     {
       'name' : 'Teachers\nInformation',
-      'img' : '6-teachers information.png',
+      'img' : 'assets/homepage/6-teachers information.png',
     },
     {
       'name' : 'Result',
-      'img' : '7-result.jpg',
+      'img' : 'assets/homepage/7-result.jpg',
     },
     {
       'name' : 'Student of the\nAward',
-      'img' : '8-student of the award.png',
+      'img' : 'assets/homepage/8-student of the award.png',
     },
     {
       'name' : 'Skill Development',
-      'img' : '9-skill development.png',
+      'img' : 'assets/homepage/9-skill development.png',
     },
     {
       'name' : 'Entertainment',
-      'img' : '10-entertainment.png',
+      'img' : 'assets/homepage/10-entertainment.png',
     },
     {
       'name' : 'PPI Alumni\nAssociation',
-      'img' : '11-ppi alumni association.png',
+      'img' : 'assets/homepage/11-ppi alumni association.png',
     },
     {
       'name' : 'PPI Career',
-      'img' : '12-ppi career.png',
+      'img' : 'assets/homepage/12-ppi career.png',
     },
     {
       'name' : 'About institute',
-      'img' : '13-about institute.png',
+      'img' : 'assets/homepage/13-about institute.png',
     },
   ];
+
+
+  //======================Home Screen Gridview========================
+  List<Homegridview> homegridviewlistmodelresponse = [];
+
+  //save response from api
+  void sethomegridviewlistmodel(){
+    homegridviewlistmodelresponse = homegridviewFromJson(HomeGridviewlist);
+    update();
+  }
+
 }
