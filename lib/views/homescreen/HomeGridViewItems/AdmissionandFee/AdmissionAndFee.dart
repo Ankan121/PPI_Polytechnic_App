@@ -51,7 +51,13 @@ class _AdmissionandfeeState extends State<Admissionandfee> {
             actions: [
               IconButton(onPressed: (){}, icon: Icon(Icons.settings,color: AppColor.whiteColor,size: 30,))
             ],
-            title: Text('Admission and Fee',style:context.textTheme.titleLarge?.copyWith(color: AppColor.whiteColor,fontWeight: FontWeight.bold,),),
+            title: Text(
+              'Admission and  Fee',  // এখানে প্রাপ্ত নামটি দেখানো হচ্ছে
+              style: context.textTheme.titleLarge?.copyWith(
+                color: AppColor.whiteColor,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
             centerTitle: true,
           ),
           body: SingleChildScrollView(

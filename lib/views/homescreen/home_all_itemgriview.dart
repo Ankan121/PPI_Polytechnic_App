@@ -45,8 +45,10 @@ class _HomeAllItemgriviewState extends State<HomeAllItemgriview> {
             return Padding(
               padding: const EdgeInsets.all(20.0),
               child: InkWell(
-                onTap: (){
-                  Get.toNamed(homcon.HomeGridviewlist[index]['page']);
+                onTap: () {
+                  Get.toNamed(
+                    homcon.HomeGridviewlist[index]['page'],
+                  );
                   print("all done");
                 },
                 child: Card(
