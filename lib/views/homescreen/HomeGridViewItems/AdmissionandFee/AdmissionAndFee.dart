@@ -7,6 +7,7 @@ import 'package:ppi/main.dart';
 
 import '../../../../constants/customtext.dart';
 import '../../../../controller/homeController.dart';
+import 'admissionview.dart';
 
 class Admissionandfee extends StatefulWidget {
   const Admissionandfee({super.key});
@@ -45,7 +46,7 @@ class _AdmissionandfeeState extends State<Admissionandfee> {
                   ),
                   child: Icon(Icons.arrow_back,color: AppColor.whiteColor,size: 25,)), // এই আইকনটি বাম দিকে অ্যারো দেখাবে
               onPressed: () {
-                Navigator.pop(context); // এটি ব্যাক ন্যাভিগেশনের জন্য ব্যবহার করা হয়
+                Get.back(); // এটি ব্যাক ন্যাভিগেশনের জন্য ব্যবহার করা হয়
               },
             ),
             actions: [
@@ -101,7 +102,9 @@ class _AdmissionandfeeState extends State<Admissionandfee> {
 
                               return Padding(
                                 padding: const EdgeInsets.all(20.0),
-                                child: custombuttom(onpresed: (){}, text:  '${homcon.AdmissionandfeeItems[index]['buttonitem']}', textStyle: largeblack,),
+                                child: custombuttom(onpresed: (){
+                                  Get.to(AdmissionRequirement());
+                                }, text:  '${homcon.AdmissionandfeeItems[index]['buttonitem']}', textStyle: largeblack,),
                               );
                             },
                           ),

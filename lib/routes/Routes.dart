@@ -4,6 +4,7 @@ import 'package:ppi/routes/routesName.dart';
 import 'package:ppi/views/splashScreen/splashScreen.dart';
 
 import '../views/homescreen/HomeGridViewItems/AdmissionandFee/AdmissionAndFee.dart';
+import '../views/homescreen/HomeGridViewItems/AdmissionandFee/admissionview.dart';
 import '../views/homescreen/HomeGridViewItems/aboutinstitute.dart';
 import '../views/homescreen/HomeGridViewItems/department.dart';
 import '../views/homescreen/HomeGridViewItems/entertainment.dart';
@@ -45,6 +46,8 @@ class Routes{
         return MaterialPageRoute(builder: (context)=> const PPICareer());
       case RoutesName.AboutInstitute:
         return MaterialPageRoute(builder: (context)=> const AboutInstitute());
+      case RoutesName.AdmissionRequirement:
+        return MaterialPageRoute(builder: (context)=> const AdmissionRequirement());
       default:
         return MaterialPageRoute(builder: (context)=> const Splashscreen());
     }

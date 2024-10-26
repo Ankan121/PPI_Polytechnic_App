@@ -25,4 +25,8 @@ class RoutesName{
   static const PPICareer = 'PPICareer';
   //AboutInstitute
   static const AboutInstitute = 'AboutInstitute';
+
+  //====================Admission And Fee===============
+  //AdmissionRequirement
+  static const AdmissionRequirement = 'AdmissionRequirement';
 }
