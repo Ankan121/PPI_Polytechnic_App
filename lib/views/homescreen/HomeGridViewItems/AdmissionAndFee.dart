@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
 import 'package:ppi/constants/color.dart';
+import 'package:ppi/constants/custombutton.dart';
 import 'package:ppi/main.dart';
 
 import '../../../constants/customtext.dart';
@@ -18,9 +19,9 @@ class _AdmissionandfeeState extends State<Admissionandfee> {
   @override
   Widget build(BuildContext context) {
 
-    final TextStyle? largeblack = TextFormate(colors: Colors.white).textLargeFormate(context);
-    final TextStyle? mediumblack = TextFormate(colors: Colors.black).textMediumFormate(context);
-    final TextStyle? smallblack = TextFormate(colors: Colors.black).textSmallFormate(context);
+    final TextStyle? largewhite = TextFormate(colors: Colors.white).textLargeFormate(context);
+    final TextStyle? mediumwhite= TextFormate(colors: Colors.white).textMediumFormate(context);
+    final TextStyle? smallwhite = TextFormate(colors: Colors.white).textSmallFormate(context);
 
 
     return GetBuilder<HomeContrller>(builder: (HomeContrller homcon) {
@@ -68,7 +69,7 @@ class _AdmissionandfeeState extends State<Admissionandfee> {
                   child: Transform.translate(
                     offset: Offset(0, 0),  // X এবং Y এ স্থানান্তর
                     child: GridView.builder(
-                      itemCount: homcon.HomeGridviewlist.length,
+                      itemCount: homcon.AdmissionandfeeItems.length,
                       physics: NeverScrollableScrollPhysics(),  // GridView scroll হবে না
                       shrinkWrap: true,  // Content wrap করে ফেলা হবে
                       gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
@@ -79,8 +80,8 @@ class _AdmissionandfeeState extends State<Admissionandfee> {
                         childAspectRatio: 3 / 0.8, // প্রতিটি কন্টেইনারের অনুপাত (width : height)
                       ),
                       itemBuilder: (context, index) {
-                        print(homcon.HomeGridviewlist[index]['name']);
-                        print(homcon.HomeGridviewlist[index]['img']);
+                        // print(homcon.AdmissionandfeeItems[index]['name']);
+                        // print(homcon.AdmissionandfeeItems[index]['img']);
                   
                         //print(homcon.homegridviewlistmodelresponse[index]);
                   
@@ -88,40 +89,7 @@ class _AdmissionandfeeState extends State<Admissionandfee> {
                   
                         return Padding(
                           padding: const EdgeInsets.all(20.0),
-                          child: InkWell(
-                            onTap: (){
-                              Get.toNamed(homcon.HomeGridviewlist[index]['page']);
-                              print("all done");
-                            },
-                            child: Card(
-                              color: AppColor.buttoncolor,
-                              elevation: 5,
-                              shape: RoundedRectangleBorder(
-                                borderRadius: BorderRadius.circular(100), // কার্ডের কোণ গোলাকার
-                              ),
-                              child: Container(
-                                padding: EdgeInsets.symmetric(vertical: 10, horizontal: 20),
-                                decoration: BoxDecoration(
-                                  color: AppColor.buttoncolor,
-                                  borderRadius: BorderRadius.circular(40), // রাউন্ড কর্নার
-                                  boxShadow: [
-                                    BoxShadow(
-                                      color: Colors.grey.withOpacity(0.5), // শ্যাডো রঙ
-                                      spreadRadius: 1,
-                                      blurRadius: 10,
-                                      offset: Offset(5, 5), // শ্যাডো অবস্থান
-                                    ),
-                                  ],
-                                ),
-                                child: Center(
-                                  child: Text(
-                                    'Admission Requirement',
-                                    style: largeblack,maxLines: 1,overflow: TextOverflow.ellipsis,textAlign: TextAlign.center
-                                  ),
-                                ),
-                              ),
-                            ),
-                          ),
+                          child: custombuttom(onpresed: (){}, text:  '${homcon.AdmissionandfeeItems[index]['buttonitem']}', textStyle: largewhite,),
                         );
                       },
                     ),
