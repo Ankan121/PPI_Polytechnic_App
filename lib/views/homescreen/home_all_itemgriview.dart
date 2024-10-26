@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:ppi/controller/homeController.dart';
+import 'package:ppi/views/homescreen/HomeGridViewItems/AdmissionAndFee.dart';
 
 import '../../constants/customtext.dart';
 
@@ -43,73 +44,79 @@ class _HomeAllItemgriviewState extends State<HomeAllItemgriview> {
 
             return Padding(
               padding: const EdgeInsets.all(20.0),
-              child: Card(
-                elevation: 5,
-                child: Container(
-                  padding: EdgeInsets.all(15.0),
-                  decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(10),
-                  ), // Container এর background color
-                  child: Center(
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.center,
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
-                        Container(
-                          decoration: BoxDecoration(
-                            shape: BoxShape.circle,
-                            boxShadow: [
-                              BoxShadow(
-                                color: Colors.black.withOpacity(0.2),  // Shadow এর রঙ
-                                spreadRadius: 0.1,  // Shadow এর বিস্তার
-                                blurRadius: 10,   // Blur এর পরিমাণ
-                                offset: Offset(0, 5),  // Shadow এর অবস্থান (X,Y)
-                              ),
-                            ],
-                          ),
-                          child: Container(
-                            width: 80,  // প্রস্থ নির্ধারণ
-                            height: 80,  // উচ্চতা নির্ধারণ
+              child: InkWell(
+                onTap: (){
+                  Get.toNamed(homcon.HomeGridviewlist[index]['page']);
+                  print("all done");
+                },
+                child: Card(
+                  elevation: 5,
+                  child: Container(
+                    padding: EdgeInsets.all(15.0),
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(10),
+                    ), // Container এর background color
+                    child: Center(
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.center,
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          Container(
                             decoration: BoxDecoration(
-                              shape: BoxShape.circle,  // সার্কুলার আকার
-                              border: Border.all(  // বর্ডার যুক্ত করা হচ্ছে
-                                color: Colors.white,  // বর্ডারের রঙ
-                                width: 8.0,  // বর্ডারের প্রস্থ
-                              ),
-                              // boxShadow: [
-                              //   BoxShadow(
-                              //     color: Colors.black.withOpacity(0.0),  // শ্যাডোর রঙ এবং স্বচ্ছতা
-                              //     spreadRadius: 4,  // শ্যাডো কতটা ছড়াবে
-                              //     blurRadius: 10,   // শ্যাডো কতটা ব্লার হবে
-                              //     offset: Offset(0, 4),  // শ্যাডোর অবস্থান (X,Y)
-                              //   ),
-                              //],
+                              shape: BoxShape.circle,
+                              boxShadow: [
+                                BoxShadow(
+                                  color: Colors.black.withOpacity(0.2),  // Shadow এর রঙ
+                                  spreadRadius: 0.1,  // Shadow এর বিস্তার
+                                  blurRadius: 10,   // Blur এর পরিমাণ
+                                  offset: Offset(0, 5),  // Shadow এর অবস্থান (X,Y)
+                                ),
+                              ],
                             ),
-                            child: CircleAvatar(
-                              radius: 40,
-                              backgroundColor: Colors.white,
-                              child: ClipOval(
-                                child: Image.asset(
-                                  '${homcon.HomeGridviewlist[index]['img']}',
-                                  fit: BoxFit.fill,
+                            child: Container(
+                              width: 80,  // প্রস্থ নির্ধারণ
+                              height: 80,  // উচ্চতা নির্ধারণ
+                              decoration: BoxDecoration(
+                                shape: BoxShape.circle,  // সার্কুলার আকার
+                                border: Border.all(  // বর্ডার যুক্ত করা হচ্ছে
+                                  color: Colors.white,  // বর্ডারের রঙ
+                                  width: 8.0,  // বর্ডারের প্রস্থ
+                                ),
+                                // boxShadow: [
+                                //   BoxShadow(
+                                //     color: Colors.black.withOpacity(0.0),  // শ্যাডোর রঙ এবং স্বচ্ছতা
+                                //     spreadRadius: 4,  // শ্যাডো কতটা ছড়াবে
+                                //     blurRadius: 10,   // শ্যাডো কতটা ব্লার হবে
+                                //     offset: Offset(0, 4),  // শ্যাডোর অবস্থান (X,Y)
+                                //   ),
+                                //],
+                              ),
+                              child: CircleAvatar(
+                                radius: 40,
+                                backgroundColor: Colors.white,
+                                child: ClipOval(
+                                  child: Image.asset(
+                                    '${homcon.HomeGridviewlist[index]['img']}',
+                                    fit: BoxFit.fill,
+                                  ),
                                 ),
                               ),
                             ),
+
+
+                            // CircleAvatar(
+                            //   radius: 30,
+                            //   backgroundColor: Colors.white,
+                            //   child: ClipOval(
+                            //       child: Image.asset('${homcon.HomeGridviewlist[index]['img']}',fit: BoxFit.fill,)
+                            //   ),
+                            // ),
                           ),
 
-
-                          // CircleAvatar(
-                          //   radius: 30,
-                          //   backgroundColor: Colors.white,
-                          //   child: ClipOval(
-                          //       child: Image.asset('${homcon.HomeGridviewlist[index]['img']}',fit: BoxFit.fill,)
-                          //   ),
-                          // ),
-                        ),
-
-                        Spacer(),
-                        Text('${homcon.HomeGridviewlist[index]['name']}',style: smallblack,maxLines: 2,overflow: TextOverflow.ellipsis,textAlign: TextAlign.center),
-                      ],
+                          Spacer(),
+                          Text('${homcon.HomeGridviewlist[index]['name']}',style: smallblack,maxLines: 2,overflow: TextOverflow.ellipsis,textAlign: TextAlign.center),
+                        ],
+                      ),
                     ),
                   ),
                 ),
