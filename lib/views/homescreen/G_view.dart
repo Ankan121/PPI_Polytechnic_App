@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:ppi/controller/homeController.dart';
-import 'package:ppi/views/homescreen/HomeGridViewItems/AdmissionAndFee.dart';
+import 'package:ppi/views/homescreen/HomeGridViewItems/AdmissionandFee/AdmissionAndFee.dart';
 
 import '../../constants/customtext.dart';
 

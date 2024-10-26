@@ -170,3 +170,102 @@ class _AdmissionandfeeState extends State<Admissionandfee> {
 }
 
 
+
+
+import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:ppi/controller/homeController.dart';
+
+import 'color.dart';
+import 'customtext.dart';
+
+class custombuttom extends StatelessWidget {
+  final VoidCallback onpresed;
+  final String? text;
+  final TextStyle? textStyle;
+  const custombuttom({super.key, required this.onpresed, required this.text, required this.textStyle});
+
+  @override
+  Widget build(BuildContext context) {
+    return GetBuilder<HomeContrller>(builder: ( homcon) {
+
+
+      final TextStyle? largeblack = TextFormate(colors: Colors.white).textLargeFormate(context);
+      final TextStyle? mediumblack = TextFormate(colors: Colors.black).textMediumFormate(context);
+      final TextStyle? smallblack = TextFormate(colors: Colors.black).textSmallFormate(context);
+
+
+
+      return InkWell(
+        onTap: onpresed,
+        child: Card(
+          color: AppColor.buttoncolor,
+          elevation: 5,
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(100), // কার্ডের কোণ গোলাকার
+          ),
+          child:
+          Container(
+            padding: EdgeInsets.symmetric(vertical: 10, horizontal: 20),
+            decoration: BoxDecoration(
+              borderRadius: BorderRadius.circular(40),
+              color: AppColor.buttoncolor,
+            ),
+            child: Center(
+              child: Text(text!,style: textStyle,maxLines: 1,overflow: TextOverflow.ellipsis,textAlign: TextAlign.center
+              ),
+            ),
+          ),
+        ),
+      );
+    },);
+  }
+}
+
+
+
+
+////////================nishat code
+Container(
+width: 350,
+height: 80,
+decoration: BoxDecoration(
+color: Colors.grey.withOpacity(0.5),
+borderRadius: BorderRadius.circular(80),
+),
+),
+
+Positioned.fill(
+child: Container(
+decoration: BoxDecoration(
+borderRadius: BorderRadius.circular(800),
+boxShadow: [
+BoxShadow(
+color: Color(0xffF1C572).withOpacity(1),
+offset: Offset(0, 5),
+blurRadius: 1,
+spreadRadius: 2,
+),
+BoxShadow(
+color: Color(0xffF1C572).withOpacity(1),
+// color: Colors.white.withOpacity(0.7),
+offset: Offset(0, 5),
+blurRadius: 10,
+spreadRadius: 0,
+),
+],
+),
+),
+),
+
+Positioned.fill(
+child: Center(
+child: Text(
+'Hello, World!',
+style: TextStyle(
+fontSize: 18,
+color: Colors.black.withOpacity(0.7),
+),
+),
+),
+),

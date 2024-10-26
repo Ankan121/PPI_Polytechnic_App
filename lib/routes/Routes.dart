@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:ppi/routes/routesName.dart';
 import 'package:ppi/views/splashScreen/splashScreen.dart';
 
-import '../views/homescreen/HomeGridViewItems/AdmissionAndFee.dart';
+import '../views/homescreen/HomeGridViewItems/AdmissionandFee/AdmissionAndFee.dart';
 import '../views/homescreen/HomeGridViewItems/aboutinstitute.dart';
 import '../views/homescreen/HomeGridViewItems/department.dart';
 import '../views/homescreen/HomeGridViewItems/entertainment.dart';
