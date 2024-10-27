@@ -86,46 +86,53 @@ class _OnlineApplyState extends State<OnlineApply> {
                         Padding(
                           padding: const EdgeInsets.all(10.0),
                           child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
-                              Container(
-                                width: 170, // কনটেইনারের প্রস্থ (ছায়ার জন্য প্রয়োজন)
-                                height: 170, // কনটেইনারের উচ্চতা (ছায়ার জন্য প্রয়োজন)
-                                decoration: BoxDecoration(
-                                  color: AppColor.homepageappbarcolor,
-                                  shape: BoxShape.circle, // গোলাকার আকার
-                                  image: DecorationImage(
-                                    image: AssetImage('assets/homepage/2-ppi logo me.png'), // ছবি লোড
-                                    fit: BoxFit.cover, // ছবির ফিটিং
-                                  ),
-                                  boxShadow: [
-                                    BoxShadow(
-                                      color: Colors.black.withOpacity(0.5), // ছায়ার রং
-                                      spreadRadius: 0, // ছায়ার বিস্তার
-                                      blurRadius: 5, // ছায়ার ঝাপসা প্রভাব
-                                      offset: Offset(0, 0), // ছায়ার অবস্থান
+                              Center(
+                                child: Container(
+                                  width: 170, // কনটেইনারের প্রস্থ (ছায়ার জন্য প্রয়োজন)
+                                  height: 170, // কনটেইনারের উচ্চতা (ছায়ার জন্য প্রয়োজন)
+                                  decoration: BoxDecoration(
+                                    color: AppColor.homepageappbarcolor,
+                                    shape: BoxShape.circle, // গোলাকার আকার
+                                    image: DecorationImage(
+                                      image: AssetImage('assets/homepage/2-ppi logo me.png'), // ছবি লোড
+                                      fit: BoxFit.cover, // ছবির ফিটিং
                                     ),
-                                  ],
+                                    boxShadow: [
+                                      BoxShadow(
+                                        color: Colors.black.withOpacity(0.5), // ছায়ার রং
+                                        spreadRadius: 0, // ছায়ার বিস্তার
+                                        blurRadius: 5, // ছায়ার ঝাপসা প্রভাব
+                                        offset: Offset(0, 0), // ছায়ার অবস্থান
+                                      ),
+                                    ],
+                                  ),
                                 ),
                               ),
                               SizedBox(height: 10.h,),
-                              Text('Pubergaon Polytechnic institute',style: largeblack,textAlign: TextAlign.left,),
+                              Center(child: Text('Pubergaon Polytechnic institute',style: largeblack,textAlign: TextAlign.center,)),
                               SizedBox(height: 10.h,),
-                              Container(
-                                height: 50,
-                                width: 300.w,
-                                decoration: BoxDecoration(
-                                  color: AppColor.homepageappbarcolor,
-                                  borderRadius: BorderRadius.circular(50),
-                                  boxShadow: [
-                                    BoxShadow(
-                                      color: Colors.grey.withOpacity(0.5),
-                                      spreadRadius: 2,
-                                      blurRadius: 7,
-                                      offset: Offset(0, 7), // changes position of shadow
-                                    ),
-                                  ],
+                              Text('Department',style: largeblack,textAlign: TextAlign.left,),
+                              SizedBox(height: 10.h,),
+                              Center(
+                                child: Container(
+                                  height: 50,
+                                  width: 300.w,
+                                  decoration: BoxDecoration(
+                                    color: AppColor.homepageappbarcolor,
+                                    borderRadius: BorderRadius.circular(50),
+                                    boxShadow: [
+                                      BoxShadow(
+                                        color: Colors.grey.withOpacity(0.5),
+                                        spreadRadius: 2,
+                                        blurRadius: 7,
+                                        offset: Offset(0, 7), // changes position of shadow
+                                      ),
+                                    ],
+                                  ),
+                                  child: Center(child: Text('Special offers up to 90% off',style: largeblack,)),
                                 ),
-                                child: Center(child: Text('Special offers up to 90% off',style: largeblack,)),
                               )
                             ],
                           ),
