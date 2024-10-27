@@ -7,7 +7,7 @@ import 'package:ppi/main.dart';
 
 import '../../../../constants/customtext.dart';
 import '../../../../controller/homeController.dart';
-import 'admissionview.dart';
+import 'admissionview/admissionrequirement.dart';
 
 class Admissionandfee extends StatefulWidget {
   const Admissionandfee({super.key});
@@ -103,7 +103,9 @@ class _AdmissionandfeeState extends State<Admissionandfee> {
                               return Padding(
                                 padding: const EdgeInsets.all(20.0),
                                 child: custombuttom(onpresed: (){
-                                  Get.to(AdmissionRequirement());
+                                  Get.toNamed(
+                                    homcon.AdmissionandfeeItems[index]['page'],
+                                  );
                                 }, text:  '${homcon.AdmissionandfeeItems[index]['buttonitem']}', textStyle: largeblack,),
                               );
                             },

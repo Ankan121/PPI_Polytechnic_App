@@ -4,7 +4,11 @@ import 'package:ppi/routes/routesName.dart';
 import 'package:ppi/views/splashScreen/splashScreen.dart';
 
 import '../views/homescreen/HomeGridViewItems/AdmissionandFee/AdmissionAndFee.dart';
-import '../views/homescreen/HomeGridViewItems/AdmissionandFee/admissionview.dart';
+import '../views/homescreen/HomeGridViewItems/AdmissionandFee/admissionview/admissionfee.dart';
+import '../views/homescreen/HomeGridViewItems/AdmissionandFee/admissionview/admissionrequirement.dart';
+import '../views/homescreen/HomeGridViewItems/AdmissionandFee/admissionview/kanchanfa.dart';
+import '../views/homescreen/HomeGridViewItems/AdmissionandFee/admissionview/onlineapply.dart';
+import '../views/homescreen/HomeGridViewItems/AdmissionandFee/admissionview/wavier.dart';
 import '../views/homescreen/HomeGridViewItems/aboutinstitute.dart';
 import '../views/homescreen/HomeGridViewItems/department.dart';
 import '../views/homescreen/HomeGridViewItems/entertainment.dart';
@@ -47,7 +51,15 @@ class Routes{
       case RoutesName.AboutInstitute:
         return MaterialPageRoute(builder: (context)=> const AboutInstitute());
       case RoutesName.AdmissionRequirement:
-        return MaterialPageRoute(builder: (context)=> const AdmissionRequirement());
+        return MaterialPageRoute(builder: (context)=>  AdmissionRequirement());
+      case RoutesName.AdmissionFee:
+        return MaterialPageRoute(builder: (context)=>  AdmissionFee());
+      case RoutesName.OnlineApply:
+        return MaterialPageRoute(builder: (context)=>  OnlineApply());
+      case RoutesName.Wavier:
+        return MaterialPageRoute(builder: (context)=>  Wavier());
+      case RoutesName.KanchanFA:
+        return MaterialPageRoute(builder: (context)=>  KanchanFA());
       default:
         return MaterialPageRoute(builder: (context)=> const Splashscreen());
     }

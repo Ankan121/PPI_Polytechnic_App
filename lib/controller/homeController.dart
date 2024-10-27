@@ -67,18 +67,23 @@ class HomeContrller extends GetxController{
   List AdmissionandfeeItems = [
     {
       'buttonitem' : 'Admission Requirement',
+      'page' : 'AdmissionRequirement',
     },
     {
       'buttonitem' : 'Admission Fee',
+      'page' : 'AdmissionFee',
     },
     {
       'buttonitem' : 'Wavier',
+      'page' : 'Wavier',
     },
     {
       'buttonitem' : 'Kanchan Foundation Association',
+      'page' : 'KanchanFA',
     },
     {
       'buttonitem' : 'Online Apply',
+      'page' : 'OnlineApply',
     },
   ];
 

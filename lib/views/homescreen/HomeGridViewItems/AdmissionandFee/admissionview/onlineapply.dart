@@ -5,18 +5,21 @@ import 'package:ppi/constants/color.dart';
 import 'package:ppi/constants/custombutton.dart';
 import 'package:ppi/main.dart';
 
-import '../../../../constants/customtext.dart';
-import '../../../../controller/homeController.dart';
+import '../../../../../constants/customtext.dart';
+import '../../../../../controller/homeController.dart';
 
-class AdmissionRequirement extends StatefulWidget {
-  const AdmissionRequirement({super.key});
+class OnlineApply extends StatefulWidget {
+  OnlineApply({super.key,});
+
 
 
   @override
-  State<AdmissionRequirement> createState() => _AdmissionRequirementState();
+  State<OnlineApply> createState() => _OnlineApplyState();
 }
 
-class _AdmissionRequirementState extends State<AdmissionRequirement> {
+class _OnlineApplyState extends State<OnlineApply> {
+
+
   @override
   Widget build(BuildContext context) {
 
@@ -77,8 +80,11 @@ class _AdmissionRequirementState extends State<AdmissionRequirement> {
                 child:  SingleChildScrollView(
                   child: Column(
                     children: [
-                      SizedBox(height: 30.h,),
-                      Text('data'),
+                      SizedBox(height: 15.h,),
+                      Padding(
+                        padding: const EdgeInsets.all(30.0),
+                        child: Text('aa',style: largeblack, textAlign: TextAlign.justify,),
+                      ),
                     ],
                   ),
                 ),

@@ -29,4 +29,12 @@ class RoutesName{
   //====================Admission And Fee===============
   //AdmissionRequirement
   static const AdmissionRequirement = 'AdmissionRequirement';
+  //Admission Fee
+  static const AdmissionFee = 'AdmissionFee';
+  //Kanchan FoundationAssociation
+  static const KanchanFA = 'KanchanFA';
+  //OnlineApply
+  static const OnlineApply = 'OnlineApply';
+  //Wavier
+  static const Wavier = 'Wavier';
 }
