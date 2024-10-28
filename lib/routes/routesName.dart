@@ -37,4 +37,6 @@ class RoutesName{
   static const OnlineApply = 'OnlineApply';
   //Wavier
   static const Wavier = 'Wavier';
+  //Departmentallview
+  static const Departmentallview = 'Departmentallview';
 }

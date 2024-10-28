@@ -11,6 +11,7 @@ import '../views/homescreen/HomeGridViewItems/AdmissionandFee/admissionview/onli
 import '../views/homescreen/HomeGridViewItems/AdmissionandFee/admissionview/wavier.dart';
 import '../views/homescreen/HomeGridViewItems/aboutinstitute.dart';
 import '../views/homescreen/HomeGridViewItems/department/department.dart';
+import '../views/homescreen/HomeGridViewItems/department/departmentallview.dart';
 import '../views/homescreen/HomeGridViewItems/entertainment.dart';
 import '../views/homescreen/HomeGridViewItems/noticeboard.dart';
 import '../views/homescreen/HomeGridViewItems/ppialumniassociation.dart';
@@ -60,6 +61,8 @@ class Routes{
         return MaterialPageRoute(builder: (context)=>  Wavier());
       case RoutesName.KanchanFA:
         return MaterialPageRoute(builder: (context)=>  KanchanFA());
+      case RoutesName.Departmentallview:
+        return MaterialPageRoute(builder: (context)=>  Departmentallview());
       default:
         return MaterialPageRoute(builder: (context)=> const Splashscreen());
     }

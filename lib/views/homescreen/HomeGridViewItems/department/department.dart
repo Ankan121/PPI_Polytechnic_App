@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
 import 'package:ppi/constants/color.dart';
+import 'package:ppi/views/homescreen/HomeGridViewItems/department/departmentallview.dart';
 
 import '../../../../constants/custombutton.dart';
 import '../../../../constants/customtext.dart';
@@ -99,6 +100,8 @@ class _DepartmentState extends State<Department> {
                             return Padding(
                               padding: const EdgeInsets.all(20.0),
                               child: custombuttom(onpresed: (){
+                                Get.to(Departmentallview(textview: '${homcon.departmentitems[index]['items']}',name: '${homcon.departmentitems[index]['buttonitem']}',));
+                                //print('${homcon.departmentitems[index]['items']}',);
                                 // Get.toNamed(
                                 //   homcon.departmentitems[index]['page'],
                                 // );
