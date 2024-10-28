@@ -87,6 +87,42 @@ class HomeContrller extends GetxController{
     },
   ];
 
+  //==================Department===================
+  List departmentitems = [
+    {
+      'buttonitem' : 'Computer',
+      'page' : 'AdmissionRequirement',
+    },
+    {
+      'buttonitem' : 'Electrical',
+      'page' : 'AdmissionFee',
+    },
+    {
+      'buttonitem' : 'Mechanical',
+      'page' : 'Wavier',
+    },
+    {
+      'buttonitem' : 'Civil',
+      'page' : 'KanchanFA',
+    },
+    {
+      'buttonitem' : 'Automobile',
+      'page' : 'OnlineApply',
+    },
+    {
+      'buttonitem' : 'Fabric Manufacturing',
+      'page' : 'OnlineApply',
+    },
+    {
+      'buttonitem' : 'Fabric Manufacturing',
+      'page' : 'OnlineApply',
+    },
+    {
+      'buttonitem' : 'Apparel Manufacturing',
+      'page' : 'OnlineApply',
+    },
+  ];
+
 
   //======================Home Screen Gridview========================
   List<Homegridview> homegridviewlistmodelresponse = [];

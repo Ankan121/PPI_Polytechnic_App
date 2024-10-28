@@ -10,7 +10,7 @@ import '../views/homescreen/HomeGridViewItems/AdmissionandFee/admissionview/kanc
 import '../views/homescreen/HomeGridViewItems/AdmissionandFee/admissionview/onlineapply.dart';
 import '../views/homescreen/HomeGridViewItems/AdmissionandFee/admissionview/wavier.dart';
 import '../views/homescreen/HomeGridViewItems/aboutinstitute.dart';
-import '../views/homescreen/HomeGridViewItems/department.dart';
+import '../views/homescreen/HomeGridViewItems/department/department.dart';
 import '../views/homescreen/HomeGridViewItems/entertainment.dart';
 import '../views/homescreen/HomeGridViewItems/noticeboard.dart';
 import '../views/homescreen/HomeGridViewItems/ppialumniassociation.dart';
