@@ -21,6 +21,26 @@ class OnlineApply extends StatefulWidget {
 
 class _OnlineApplyState extends State<OnlineApply> {
 
+  final studentnameEditingController = TextEditingController();
+  final fathersnameEditingController = TextEditingController();
+  final mothersnameEditingController = TextEditingController();
+  final dateofbirthEditingController = TextEditingController();
+  final emailaddressEditingController = TextEditingController();
+  final permanentaddressEditingController = TextEditingController();
+  final mobilenumbernEditingController = TextEditingController();
+  final parentsmobilenumberEditingController = TextEditingController();
+  final technologyEditingController = TextEditingController();
+
+  final examnamesEditingController = TextEditingController();
+  final passingyearEditingController = TextEditingController();
+  final categoryEditingController = TextEditingController();
+  final boardEditingController = TextEditingController();
+  final sscrollnoEditingController = TextEditingController();
+  final sscregistrationnumberEditingController = TextEditingController();
+  final gpaEditingController = TextEditingController();
+
+
+
 
   @override
   Widget build(BuildContext context) {
@@ -126,7 +146,7 @@ class _OnlineApplyState extends State<OnlineApply> {
                                   borderRadius: BorderRadius.circular(40.r),
                                 ),
                                 child: TextFormField(
-                                  //controller: titleEditingController,
+                                  controller: studentnameEditingController,
                                   decoration: InputDecoration(
                                     enabledBorder: OutlineInputBorder(
                                       borderSide: BorderSide(color: Colors.transparent),
@@ -152,7 +172,7 @@ class _OnlineApplyState extends State<OnlineApply> {
                                   borderRadius: BorderRadius.circular(40.r),
                                 ),
                                 child: TextFormField(
-                                  //controller: titleEditingController,
+                                  controller: fathersnameEditingController,
                                   decoration: InputDecoration(
                                     enabledBorder: OutlineInputBorder(
                                       borderSide: BorderSide(color: Colors.transparent),
@@ -179,33 +199,7 @@ class _OnlineApplyState extends State<OnlineApply> {
                                   borderRadius: BorderRadius.circular(40.r),
                                 ),
                                 child: TextFormField(
-                                  //controller: titleEditingController,
-                                  decoration: InputDecoration(
-                                    enabledBorder: OutlineInputBorder(
-                                      borderSide: BorderSide(color: Colors.transparent),
-                                      borderRadius: BorderRadius.circular(40.r),
-                                    ),
-
-                                    border: OutlineInputBorder(
-                                      borderRadius: BorderRadius.circular(40.r),
-                                    ),
-                                    labelText: "Mother's Name",
-                                    labelStyle: TextStyle(
-                                        color: Colors.black
-                                    ),
-                                  ), // Label for the name field
-                                ),
-                              ),
-                              SizedBox(height: 10.h,),
-                              Text('''Mother's Name''',style: mediumblack,),
-                              SizedBox(height: 10.h,),
-                              Container(
-                                decoration: BoxDecoration(
-                                  color: AppColor.textfromfiledcolor,
-                                  borderRadius: BorderRadius.circular(40.r),
-                                ),
-                                child: TextFormField(
-                                  //controller: titleEditingController,
+                                  controller: mothersnameEditingController,
                                   decoration: InputDecoration(
                                     enabledBorder: OutlineInputBorder(
                                       borderSide: BorderSide(color: Colors.transparent),
@@ -231,7 +225,7 @@ class _OnlineApplyState extends State<OnlineApply> {
                                   borderRadius: BorderRadius.circular(40.r),
                                 ),
                                 child: TextFormField(
-                                  //controller: titleEditingController,
+                                  controller: dateofbirthEditingController,
                                   decoration: InputDecoration(
                                     enabledBorder: OutlineInputBorder(
                                       borderSide: BorderSide(color: Colors.transparent),
@@ -257,7 +251,7 @@ class _OnlineApplyState extends State<OnlineApply> {
                                   borderRadius: BorderRadius.circular(40.r),
                                 ),
                                 child: TextFormField(
-                                  //controller: titleEditingController,
+                                  controller: emailaddressEditingController,
                                   decoration: InputDecoration(
                                     enabledBorder: OutlineInputBorder(
                                       borderSide: BorderSide(color: Colors.transparent),
@@ -283,7 +277,7 @@ class _OnlineApplyState extends State<OnlineApply> {
                                   borderRadius: BorderRadius.circular(40.r),
                                 ),
                                 child: TextFormField(
-                                  //controller: titleEditingController,
+                                  controller: parentsmobilenumberEditingController,
                                   decoration: InputDecoration(
                                     enabledBorder: OutlineInputBorder(
                                       borderSide: BorderSide(color: Colors.transparent),
@@ -309,7 +303,7 @@ class _OnlineApplyState extends State<OnlineApply> {
                                   borderRadius: BorderRadius.circular(40.r),
                                 ),
                                 child: TextFormField(
-                                  //controller: titleEditingController,
+                                  controller: mobilenumbernEditingController,
                                   decoration: InputDecoration(
                                     enabledBorder: OutlineInputBorder(
                                       borderSide: BorderSide(color: Colors.transparent),
@@ -335,7 +329,7 @@ class _OnlineApplyState extends State<OnlineApply> {
                                   borderRadius: BorderRadius.circular(40.r),
                                 ),
                                 child: TextFormField(
-                                  //controller: titleEditingController,
+                                  controller: parentsmobilenumberEditingController,
                                   decoration: InputDecoration(
                                     enabledBorder: OutlineInputBorder(
                                       borderSide: BorderSide(color: Colors.transparent),
@@ -361,7 +355,7 @@ class _OnlineApplyState extends State<OnlineApply> {
                                   borderRadius: BorderRadius.circular(40.r),
                                 ),
                                 child: TextFormField(
-                                  //controller: titleEditingController,
+                                  controller: technologyEditingController,
                                   decoration: InputDecoration(
                                     enabledBorder: OutlineInputBorder(
                                       borderSide: BorderSide(color: Colors.transparent),
@@ -393,7 +387,7 @@ class _OnlineApplyState extends State<OnlineApply> {
                                   borderRadius: BorderRadius.circular(40.r),
                                 ),
                                 child: TextFormField(
-                                  //controller: titleEditingController,
+                                  controller: examnamesEditingController,
                                   decoration: InputDecoration(
                                     enabledBorder: OutlineInputBorder(
                                       borderSide: BorderSide(color: Colors.transparent),
@@ -419,7 +413,7 @@ class _OnlineApplyState extends State<OnlineApply> {
                                   borderRadius: BorderRadius.circular(40.r),
                                 ),
                                 child: TextFormField(
-                                  //controller: titleEditingController,
+                                  controller: passingyearEditingController,
                                   decoration: InputDecoration(
                                     enabledBorder: OutlineInputBorder(
                                       borderSide: BorderSide(color: Colors.transparent),
@@ -445,7 +439,7 @@ class _OnlineApplyState extends State<OnlineApply> {
                                   borderRadius: BorderRadius.circular(40.r),
                                 ),
                                 child: TextFormField(
-                                  //controller: titleEditingController,
+                                  controller: categoryEditingController,
                                   decoration: InputDecoration(
                                     enabledBorder: OutlineInputBorder(
                                       borderSide: BorderSide(color: Colors.transparent),
@@ -471,7 +465,7 @@ class _OnlineApplyState extends State<OnlineApply> {
                                   borderRadius: BorderRadius.circular(40.r),
                                 ),
                                 child: TextFormField(
-                                  //controller: titleEditingController,
+                                  controller: boardEditingController,
                                   decoration: InputDecoration(
                                     enabledBorder: OutlineInputBorder(
                                       borderSide: BorderSide(color: Colors.transparent),
@@ -497,7 +491,7 @@ class _OnlineApplyState extends State<OnlineApply> {
                                   borderRadius: BorderRadius.circular(40.r),
                                 ),
                                 child: TextFormField(
-                                  //controller: titleEditingController,
+                                  controller: sscrollnoEditingController,
                                   decoration: InputDecoration(
                                     enabledBorder: OutlineInputBorder(
                                       borderSide: BorderSide(color: Colors.transparent),
@@ -523,7 +517,7 @@ class _OnlineApplyState extends State<OnlineApply> {
                                   borderRadius: BorderRadius.circular(40.r),
                                 ),
                                 child: TextFormField(
-                                  //controller: titleEditingController,
+                                  controller: sscregistrationnumberEditingController,
                                   decoration: InputDecoration(
                                     enabledBorder: OutlineInputBorder(
                                       borderSide: BorderSide(color: Colors.transparent),
@@ -549,7 +543,7 @@ class _OnlineApplyState extends State<OnlineApply> {
                                   borderRadius: BorderRadius.circular(40.r),
                                 ),
                                 child: TextFormField(
-                                  //controller: titleEditingController,
+                                  controller: gpaEditingController,
                                   decoration: InputDecoration(
                                     enabledBorder: OutlineInputBorder(
                                       borderSide: BorderSide(color: Colors.transparent),
@@ -569,18 +563,37 @@ class _OnlineApplyState extends State<OnlineApply> {
                               SizedBox(height: 10.h,),
                               InkWell(
                                 onTap: () async{
-                                  // if(titleEditingController.text.isEmpty || died_dateEditingController.text.isEmpty || died_dateEditingController.text.isEmpty){
-                                  //   var snackBar = const SnackBar(content: Text('Please All field are required !'));
-                                  //   ScaffoldMessenger.of(context).showSnackBar(snackBar);
-                                  // }else{
-                                  //   await DbHelper().addnote(context, titleEditingController.text, died_dateEditingController.text, descriptionEditingController.text);
-                                  // }
-                                  var snackBar = SnackBar(content: Text('Online Apply Not Available, Please Try Again',
-                                    style: TextStyle(fontSize: 15,color: Colors.black),),
-                                  backgroundColor: Colors.red,
+                                  if(
+                                  studentnameEditingController.text.isEmpty ||
+                                      fathersnameEditingController.text.isEmpty ||
+                                      mothersnameEditingController.text.isEmpty ||
+                                      dateofbirthEditingController.text.isEmpty ||
+                                      emailaddressEditingController.text.isEmpty ||
+                                      parentsmobilenumberEditingController.text.isEmpty ||
+                                      mobilenumbernEditingController.text.isEmpty ||
+                                      parentsmobilenumberEditingController.text.isEmpty ||
+                                      technologyEditingController.text.isEmpty ||
+                                      examnamesEditingController.text.isEmpty ||
+                                      passingyearEditingController.text.isEmpty ||
+                                      categoryEditingController.text.isEmpty ||
+                                      boardEditingController.text.isEmpty ||
+                                      sscrollnoEditingController.text.isEmpty ||
+                                      sscregistrationnumberEditingController.text.isEmpty ||
+                                      gpaEditingController.text.isEmpty
+                                  ){
+                                    var snackBar = const SnackBar(content: Text('Please All field are required !',
+                                      style: TextStyle(fontSize: 15,color: Colors.black),),
+                                      backgroundColor: Colors.green,
+                                    );
+                                    ScaffoldMessenger.of(context).showSnackBar(snackBar);
+                                  }else{
+                                    var snackBar = SnackBar(content: Text('Online Apply Not Available, Please Try Again',
+                                      style: TextStyle(fontSize: 15,color: Colors.black),),
+                                    backgroundColor: Colors.red,
+                                    );
+                                    ScaffoldMessenger.of(context).showSnackBar(snackBar);
 
-                                  );
-                                  ScaffoldMessenger.of(context).showSnackBar(snackBar);
+                                  }
                                 },
                                 child: Center(
                                   child: Container(
