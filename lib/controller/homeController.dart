@@ -131,6 +131,295 @@ class HomeContrller extends GetxController{
     },
   ];
 
+  //==================Teachers Information===================
+  //techersinformation
+  List TeachersInformation = [
+    {
+      'buttonitem' : 'Administrative',
+      'page' : 'Administrative',
+    },
+    {
+      'buttonitem' : 'Teachers',
+      'page' : 'Teachersdepartment',
+    },
+  ];
+
+  //administrative
+  List administrative = [
+    {
+      'img' : 'assets/techersinformation/administrative/nurul huq.jpeg',
+      'name' : 'Engr. Nurul Hoque Prothan\nChairman (Kanchan Foundation)',
+      'designation' : 'AdmissionRequirement',
+      'phone' : 'AdmissionRequirement',
+      'email' : 'AdmissionRequirement',
+
+    },
+    {
+      'img' : 'assets/techersinformation/administrative/saroni.png',
+      'name' : 'Dr. Sharany Haque\nPrincipal (Pubergaon Polytechnic Institute)',
+      'designation' : 'AdmissionRequirement',
+      'phone' : 'AdmissionRequirement',
+      'email' : 'AdmissionRequirement',
+
+    },
+    {
+      'img' : 'assets/techersinformation/administrative/unknown.png',
+      'name' : 'Md. Atiqullah\nPrincipal (Acting),\nPubergaon Polytechnic Institute.',
+      'designation' : 'AdmissionRequirement',
+      'phone' : 'AdmissionRequirement',
+      'email' : 'AdmissionRequirement',
+
+    },
+    {
+      'img' : 'assets/techersinformation/administrative/unknown.png',
+      'name' : 'Dulal Roy',
+      'designation' : 'AdmissionRequirement',
+      'phone' : 'AdmissionRequirement',
+      'email' : 'AdmissionRequirement',
+
+    },
+  ];
+
+  //administrative
+  List teachers = [
+    {
+      'buttonitem' : 'Administrative',
+      'page' : 'AdmissionRequirement',
+    },
+    {
+      'buttonitem' : 'Teachers',
+      'page' : 'AdmissionFee',
+    },
+  ];
+
+  List techersdepartmentitems = [
+    //Computer department
+    {
+      "buttonitem": "Computer",
+      "items" : [
+        {
+          'img' : 'assets/techersinformation/teachers/computer/Monir.jpg',
+          'name' : 'Md. Monir Hossain',
+          'designation' : 'Instructor',
+          'phone' : '017**********',
+          'email' : '*****@gmail.com',
+
+        },
+        {
+          'img' : 'assets/techersinformation/administrative/saroni.png',
+          'name' : 'Dr. Sharany Haque',
+          'designation' : 'AdmissionRequirement',
+          'phone' : 'AdmissionRequirement',
+          'email' : 'AdmissionRequirement',
+
+        },
+        {
+          'img' : 'assets/techersinformation/administrative/unknown.png',
+          'name' : 'Md. Atiqullah',
+          'designation' : 'AdmissionRequirement',
+          'phone' : 'AdmissionRequirement',
+          'email' : 'AdmissionRequirement',
+
+        },
+        {
+          'img' : 'assets/techersinformation/administrative/unknown.png',
+          'name' : 'Dulal Roy',
+          'designation' : 'AdmissionRequirement',
+          'phone' : 'AdmissionRequirement',
+          'email' : 'AdmissionRequirement',
+
+        },
+
+      ]
+    },
+    {
+      "buttonitem": "Electrical",
+      "items" : [
+        {
+          'img' : 'assets/techersinformation/administrative/nurul huq.jpeg',
+          'name' : 'Hemail',
+          'designation' : 'AdmissionRequirement',
+          'phone' : 'AdmissionRequirement',
+          'email' : 'AdmissionRequirement',
+
+        },
+        {
+          'img' : 'assets/techersinformation/administrative/saroni.png',
+          'name' : 'Dr. Sharany HaquePrincipal (Pubergaon Polytechnic Institute)',
+          'designation' : 'AdmissionRequirement',
+          'phone' : 'AdmissionRequirement',
+          'email' : 'AdmissionRequirement',
+
+        },
+        {
+          'img' : 'assets/techersinformation/administrative/unknown.png',
+          'name' : 'Md. AtiqullahPrincipal (Acting),Pubergaon Polytechnic Institute.',
+          'designation' : 'AdmissionRequirement',
+          'phone' : 'AdmissionRequirement',
+          'email' : 'AdmissionRequirement',
+
+        },
+        {
+          'img' : 'assets/techersinformation/administrative/unknown.png',
+          'name' : 'Dulal Roy',
+          'designation' : 'AdmissionRequirement',
+          'phone' : 'AdmissionRequirement',
+          'email' : 'AdmissionRequirement',
+
+        },
+      ]
+    },
+    {
+      "buttonitem": "Mechanical",
+      "items" : [
+        {
+          'img' : 'assets/techersinformation/administrative/nurul huq.jpeg',
+          'name' : 'Monir',
+          'designation' : 'AdmissionRequirement',
+          'phone' : 'AdmissionRequirement',
+          'email' : 'AdmissionRequirement',
+
+        },
+        {
+          'img' : 'assets/techersinformation/administrative/saroni.png',
+          'name' : 'Dr. Sharany HaquePrincipal (Pubergaon Polytechnic Institute)',
+          'designation' : 'AdmissionRequirement',
+          'phone' : 'AdmissionRequirement',
+          'email' : 'AdmissionRequirement',
+
+        },
+        {
+          'img' : 'assets/techersinformation/administrative/unknown.png',
+          'name' : 'Md. Atiqullah',
+          'designation' : 'AdmissionRequirement',
+          'phone' : 'AdmissionRequirement',
+          'email' : 'AdmissionRequirement',
+
+        },
+        {
+          'img' : 'assets/techersinformation/administrative/unknown.png',
+          'name' : 'Dulal Roy',
+          'designation' : 'AdmissionRequirement',
+          'phone' : 'AdmissionRequirement',
+          'email' : 'AdmissionRequirement',
+
+        },
+      ]
+    },
+    {
+      "buttonitem": "Civil",
+      "items" : [
+        {
+          'img' : 'assets/techersinformation/administrative/nurul huq.jpeg',
+          'name' : 'Monir',
+          'designation' : 'AdmissionRequirement',
+          'phone' : 'AdmissionRequirement',
+          'email' : 'AdmissionRequirement',
+
+        },
+        {
+          'img' : 'assets/techersinformation/administrative/saroni.png',
+          'name' : 'Dr. Sharany Haqu',
+          'designation' : 'AdmissionRequirement',
+          'phone' : 'AdmissionRequirement',
+          'email' : 'AdmissionRequirement',
+
+        },
+        {
+          'img' : 'assets/techersinformation/administrative/unknown.png',
+          'name' : 'Md. Atiqullah',
+          'designation' : 'AdmissionRequirement',
+          'phone' : 'AdmissionRequirement',
+          'email' : 'AdmissionRequirement',
+
+        },
+        {
+          'img' : 'assets/techersinformation/administrative/unknown.png',
+          'name' : 'Dulal Roy',
+          'designation' : 'AdmissionRequirement',
+          'phone' : 'AdmissionRequirement',
+          'email' : 'AdmissionRequirement',
+
+        },
+      ]
+    },
+    {
+      "buttonitem": "Textile",
+      "items" : [
+        {
+          'img' : 'assets/techersinformation/administrative/nurul huq.jpeg',
+          'name' : 'Monir',
+          'designation' : 'AdmissionRequirement',
+          'phone' : 'AdmissionRequirement',
+          'email' : 'AdmissionRequirement',
+
+        },
+        {
+          'img' : 'assets/techersinformation/administrative/saroni.png',
+          'name' : 'Dr. Sharany Haque',
+          'designation' : 'AdmissionRequirement',
+          'phone' : 'AdmissionRequirement',
+          'email' : 'AdmissionRequirement',
+
+        },
+        {
+          'img' : 'assets/techersinformation/administrative/unknown.png',
+          'name' : 'Md. Atiqullah\nPrincipal (Acting),\nPubergaon Polytechnic Institute.',
+          'designation' : 'AdmissionRequirement',
+          'phone' : 'AdmissionRequirement',
+          'email' : 'AdmissionRequirement',
+
+        },
+        {
+          'img' : 'assets/techersinformation/administrative/unknown.png',
+          'name' : 'Dulal Roy',
+          'designation' : 'AdmissionRequirement',
+          'phone' : 'AdmissionRequirement',
+          'email' : 'AdmissionRequirement',
+
+        },
+      ]
+    },
+    {
+      'buttonitem' : 'Medical',
+      "items" : [
+        {
+          'img' : 'assets/techersinformation/administrative/nurul huq.jpeg',
+          'name' : 'Monir',
+          'designation' : 'AdmissionRequirement',
+          'phone' : 'AdmissionRequirement',
+          'email' : 'AdmissionRequirement',
+
+        },
+        {
+          'img' : 'assets/techersinformation/administrative/saroni.png',
+          'name' : 'Dr. Sharany Haque\nPrincipal (Pubergaon Polytechnic Institute)',
+          'designation' : 'AdmissionRequirement',
+          'phone' : 'AdmissionRequirement',
+          'email' : 'AdmissionRequirement',
+
+        },
+        {
+          'img' : 'assets/techersinformation/administrative/unknown.png',
+          'name' : 'Md. Atiqullah\nPrincipal (Acting),\nPubergaon Polytechnic Institute.',
+          'designation' : 'AdmissionRequirement',
+          'phone' : 'AdmissionRequirement',
+          'email' : 'AdmissionRequirement',
+
+        },
+        {
+          'img' : 'assets/techersinformation/administrative/unknown.png',
+          'name' : 'Dulal Roy',
+          'designation' : 'AdmissionRequirement',
+          'phone' : 'AdmissionRequirement',
+          'email' : 'AdmissionRequirement',
+        },
+      ]
+    },
+
+  ];
+
+
 
   //======================Home Screen Gridview========================
   List<Homegridview> homegridviewlistmodelresponse = [];

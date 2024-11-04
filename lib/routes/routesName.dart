@@ -39,4 +39,12 @@ class RoutesName{
   static const Wavier = 'Wavier';
   //Departmentallview
   static const Departmentallview = 'Departmentallview';
+  //TeachersInformation
+  static const Teachersinformationdepartment = 'Teachersinformationdepartment';
+  //Administrative
+  static const Administrative = 'Administrative';
+  //Teachers
+  static const Teachers = 'Teachers';
+  //Teachersdepartment
+  static const Teachersdepartment = 'Teachersdepartment';
 }
