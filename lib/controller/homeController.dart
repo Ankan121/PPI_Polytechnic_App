@@ -156,7 +156,7 @@ class HomeContrller extends GetxController{
     },
     {
       'img' : 'assets/techersinformation/administrative/saroni.png',
-      'name' : 'Dr. Sharany Haque\nPrincipal (Pubergaon Polytechnic Institute)',
+      'name' : 'Dr. Sharany Haque\nPrincipal\n(Pubergaon Polytechnic Institute)',
       'designation' : 'AdmissionRequirement',
       'phone' : 'AdmissionRequirement',
       'email' : 'AdmissionRequirement',
