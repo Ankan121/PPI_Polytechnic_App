@@ -47,4 +47,6 @@ class RoutesName{
   static const Teachers = 'Teachers';
   //Teachersdepartment
   static const Teachersdepartment = 'Teachersdepartment';
+  //Result
+  static const Resultpdf = 'Resultpdf';
 }

@@ -158,7 +158,7 @@ class _OnlineApplyState extends State<OnlineApply> {
                                     ),
                                     labelText: "Student Name",
                                     labelStyle: TextStyle(
-                                        color: Colors.black
+                                        color: Colors.black.withOpacity(0.7)
                                     ),
                                   ), // Label for the name field
                                 ),
@@ -184,7 +184,7 @@ class _OnlineApplyState extends State<OnlineApply> {
                                     ),
                                     labelText: "Father's Name",
                                     labelStyle: TextStyle(
-                                        color: Colors.black
+                                        color: Colors.black.withOpacity(0.7)
                                     ),
                                   ), // Label for the name field
                                 ),
@@ -211,7 +211,7 @@ class _OnlineApplyState extends State<OnlineApply> {
                                     ),
                                     labelText: "Mother's Name",
                                     labelStyle: TextStyle(
-                                        color: Colors.black
+                                        color: Colors.black.withOpacity(0.7)
                                     ),
                                   ), // Label for the name field
                                 ),
@@ -237,7 +237,7 @@ class _OnlineApplyState extends State<OnlineApply> {
                                     ),
                                     labelText: "DD/MM/YYYY",
                                     labelStyle: TextStyle(
-                                        color: Colors.black
+                                        color: Colors.black.withOpacity(0.7)
                                     ),
                                   ), // Label for the name field
                                 ),
@@ -263,7 +263,7 @@ class _OnlineApplyState extends State<OnlineApply> {
                                     ),
                                     labelText: "*****@gmail.com",
                                     labelStyle: TextStyle(
-                                        color: Colors.black
+                                        color: Colors.black.withOpacity(0.7)
                                     ),
                                   ), // Label for the name field
                                 ),
@@ -289,7 +289,7 @@ class _OnlineApplyState extends State<OnlineApply> {
                                     ),
                                     labelText: "Permanent Address",
                                     labelStyle: TextStyle(
-                                        color: Colors.black
+                                        color: Colors.black.withOpacity(0.7)
                                     ),
                                   ), // Label for the name field
                                 ),
@@ -315,7 +315,7 @@ class _OnlineApplyState extends State<OnlineApply> {
                                     ),
                                     labelText: "Mobile Number",
                                     labelStyle: TextStyle(
-                                        color: Colors.black
+                                        color: Colors.black.withOpacity(0.7)
                                     ),
                                   ), // Label for the name field
                                 ),
@@ -341,7 +341,7 @@ class _OnlineApplyState extends State<OnlineApply> {
                                     ),
                                     labelText: '''Parent's mobile number''',
                                     labelStyle: TextStyle(
-                                        color: Colors.black
+                                        color: Colors.black.withOpacity(0.7)
                                     ),
                                   ), // Label for the name field
                                 ),
@@ -367,16 +367,12 @@ class _OnlineApplyState extends State<OnlineApply> {
                                     ),
                                     labelText: "Technology",
                                     labelStyle: TextStyle(
-                                        color: Colors.black
+                                        color: Colors.black.withOpacity(0.7)
                                     ),
                                   ), // Label for the name field
                                 ),
                               ),
                               SizedBox(height: 10.h,),
-
-
-
-
                               Text('Academic information',style: largeblack,textAlign: TextAlign.left,),
                               SizedBox(height: 10.h,),
                               Text('Exam Names',style: mediumblack,),
@@ -399,7 +395,7 @@ class _OnlineApplyState extends State<OnlineApply> {
                                     ),
                                     labelText: "Exam Names",
                                     labelStyle: TextStyle(
-                                        color: Colors.black
+                                        color: Colors.black.withOpacity(0.7)
                                     ),
                                   ), // Label for the name field
                                 ),
@@ -425,7 +421,7 @@ class _OnlineApplyState extends State<OnlineApply> {
                                     ),
                                     labelText: "Passing Year",
                                     labelStyle: TextStyle(
-                                        color: Colors.black
+                                        color: Colors.black.withOpacity(0.7)
                                     ),
                                   ), // Label for the name field
                                 ),
@@ -451,7 +447,7 @@ class _OnlineApplyState extends State<OnlineApply> {
                                     ),
                                     labelText: "Category/বিভাগ ",
                                     labelStyle: TextStyle(
-                                        color: Colors.black
+                                        color: Colors.black.withOpacity(0.7)
                                     ),
                                   ), // Label for the name field
                                 ),
@@ -477,7 +473,7 @@ class _OnlineApplyState extends State<OnlineApply> {
                                     ),
                                     labelText: "Board",
                                     labelStyle: TextStyle(
-                                        color: Colors.black
+                                        color: Colors.black.withOpacity(0.7)
                                     ),
                                   ), // Label for the name field
                                 ),
@@ -503,7 +499,7 @@ class _OnlineApplyState extends State<OnlineApply> {
                                     ),
                                     labelText: "SSC Roll No",
                                     labelStyle: TextStyle(
-                                        color: Colors.black
+                                        color: Colors.black.withOpacity(0.7)
                                     ),
                                   ), // Label for the name field
                                 ),
@@ -529,7 +525,7 @@ class _OnlineApplyState extends State<OnlineApply> {
                                     ),
                                     labelText: "SSC Registration Number",
                                     labelStyle: TextStyle(
-                                        color: Colors.black
+                                        color: Colors.black.withOpacity(0.7)
                                     ),
                                   ), // Label for the name field
                                 ),
@@ -555,7 +551,7 @@ class _OnlineApplyState extends State<OnlineApply> {
                                     ),
                                     labelText: "GPA",
                                     labelStyle: TextStyle(
-                                        color: Colors.black
+                                        color: Colors.black.withOpacity(0.7)
                                     ),
                                   ), // Label for the name field
                                 ),

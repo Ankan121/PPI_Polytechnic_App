@@ -9,6 +9,7 @@ import '../views/homescreen/HomeGridViewItems/AdmissionandFee/admissionview/admi
 import '../views/homescreen/HomeGridViewItems/AdmissionandFee/admissionview/kanchanfa.dart';
 import '../views/homescreen/HomeGridViewItems/AdmissionandFee/admissionview/onlineapply.dart';
 import '../views/homescreen/HomeGridViewItems/AdmissionandFee/admissionview/wavier.dart';
+import '../views/homescreen/HomeGridViewItems/Result/resultpdf.dart';
 import '../views/homescreen/HomeGridViewItems/TeachersInformation/administrative.dart';
 import '../views/homescreen/HomeGridViewItems/TeachersInformation/teachers.dart';
 import '../views/homescreen/HomeGridViewItems/TeachersInformation/teachersdepartment.dart';
@@ -19,9 +20,9 @@ import '../views/homescreen/HomeGridViewItems/entertainment.dart';
 import '../views/homescreen/HomeGridViewItems/noticeboard.dart';
 import '../views/homescreen/HomeGridViewItems/ppialumniassociation.dart';
 import '../views/homescreen/HomeGridViewItems/ppicareer.dart';
-import '../views/homescreen/HomeGridViewItems/result.dart';
+import '../views/homescreen/HomeGridViewItems/Result/result.dart';
 import '../views/homescreen/HomeGridViewItems/skilldevelopment.dart';
-import '../views/homescreen/HomeGridViewItems/studentoftheaward.dart';
+import '../views/homescreen/HomeGridViewItems/studentoftheaward/studentoftheaward.dart';
 import '../views/homescreen/HomeGridViewItems/TeachersInformation/teachersinformation.dart';
 import '../views/homescreen/homeScreen.dart';
 
@@ -41,7 +42,7 @@ class Routes{
       case RoutesName.TeachersInformation:
         return MaterialPageRoute(builder: (context)=>  Teachersinformation());
       case RoutesName.Result:
-        return MaterialPageRoute(builder: (context)=> const Result());
+        return MaterialPageRoute(builder: (context)=>  Result());
       case RoutesName.StudentOfTheAward:
         return MaterialPageRoute(builder: (context)=> const StudentOfTheAward());
       case RoutesName.SkillDevelopment:
@@ -74,6 +75,8 @@ class Routes{
         return MaterialPageRoute(builder: (context)=>   Teachers(items: [],));
       case RoutesName.Teachersdepartment:
         return MaterialPageRoute(builder: (context)=>  const Teachersdepartment());
+      case RoutesName.Resultpdf:
+        return MaterialPageRoute(builder: (context)=>   Resultpdf());
       default:
         return MaterialPageRoute(builder: (context)=> const Splashscreen());
     }

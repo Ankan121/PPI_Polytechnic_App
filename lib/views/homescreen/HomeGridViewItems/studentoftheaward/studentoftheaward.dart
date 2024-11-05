@@ -2,16 +2,16 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:ppi/constants/color.dart';
 
-import '../../../constants/customtext.dart';
+import '../../../../constants/customtext.dart';
 
-class Result extends StatefulWidget {
-  const Result({super.key});
+class StudentOfTheAward extends StatefulWidget {
+  const StudentOfTheAward({super.key});
 
   @override
-  State<Result> createState() => _ResultState();
+  State<StudentOfTheAward> createState() => _StudentOfTheAwardState();
 }
 
-class _ResultState extends State<Result> {
+class _StudentOfTheAwardState extends State<StudentOfTheAward> {
   @override
   Widget build(BuildContext context) {
 
