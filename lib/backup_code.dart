@@ -269,3 +269,7 @@ color: Colors.black.withOpacity(0.7),
 ),
 ),
 ),
+
+
+
+// items: ['Computer Engineering', 'Electrical Engineering', 'Mechanical Engineering', 'Civil Engineering', 'Automobile Engineering', 'Fabric Manufacturing', 'Yarn Manufacturing', 'Apparel Manufacturing', 'Medical(Pharmacy)', 'Medical(Laboratory)'].map(

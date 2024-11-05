@@ -45,6 +45,15 @@ class _OnlineApplyState extends State<OnlineApply> {
   @override
   Widget build(BuildContext context) {
 
+    //Technology dropdown button value and items
+    String? _selectedTechnology; // নির্বাচিত ড্রপডাউন মান সংরক্ষণ
+    final List<String> _technologies = ['Computer Engineering', 'Electrical Engineering', 'Mechanical Engineering', 'Civil Engineering','Automobile Engineering','Fabric Manufacturing','Yarn Manufacturing','Apparel Manufacturing','Medical(Pharmacy)','Medical(Laboratory)']; // ড্রপডাউন আইটেমের তালিকা
+
+    //Exam Names dropdown button value and items
+    String? _selectedexamnames; // শুরুতে null রাখা হয়েছে
+    final List<String> _examnames = ['SSC', 'Dahkil', 'Vocational', 'HSC']; // ড্রপডাউন আইটেমের তালিকা
+    @override
+
     final TextStyle? largeblack = TextFormate(colors: Colors.black.withOpacity(1)).textLargeFormate(context);
     final TextStyle? largewhite = TextFormate(colors: Colors.white).textLargeFormate(context);
     final TextStyle? mediumblack = TextFormate(colors: Colors.black).textMediumFormate(context);
@@ -354,22 +363,30 @@ class _OnlineApplyState extends State<OnlineApply> {
                                   color: AppColor.textfromfiledcolor,
                                   borderRadius: BorderRadius.circular(40.r),
                                 ),
-                                child: TextFormField(
-                                  controller: technologyEditingController,
+                                child: DropdownButtonFormField<String>(
                                   decoration: InputDecoration(
                                     enabledBorder: OutlineInputBorder(
                                       borderSide: BorderSide(color: Colors.transparent),
                                       borderRadius: BorderRadius.circular(40.r),
                                     ),
-
                                     border: OutlineInputBorder(
                                       borderRadius: BorderRadius.circular(40.r),
                                     ),
-                                    labelText: "Technology",
-                                    labelStyle: TextStyle(
-                                        color: Colors.black.withOpacity(0.7)
-                                    ),
-                                  ), // Label for the name field
+                                    labelText: "Select Technology",
+                                    labelStyle: TextStyle(color: Colors.black.withOpacity(0.7)),
+                                  ),
+                                  value: _selectedTechnology,
+                                  items: _technologies.map((String technology) {
+                                    return DropdownMenuItem<String>(
+                                      value: technology,
+                                      child: Text(technology),
+                                    );
+                                  }).toList(),
+                                  onChanged: (String? newValue) {
+                                    setState(() {
+                                      _selectedTechnology = newValue; // নির্বাচিত মান আপডেট
+                                    });
+                                  },
                                 ),
                               ),
                               SizedBox(height: 10.h,),
@@ -382,22 +399,30 @@ class _OnlineApplyState extends State<OnlineApply> {
                                   color: AppColor.textfromfiledcolor,
                                   borderRadius: BorderRadius.circular(40.r),
                                 ),
-                                child: TextFormField(
-                                  controller: examnamesEditingController,
+                                child: DropdownButtonFormField<String>(
                                   decoration: InputDecoration(
                                     enabledBorder: OutlineInputBorder(
                                       borderSide: BorderSide(color: Colors.transparent),
-                                      borderRadius: BorderRadius.circular(40.r),
+                                      borderRadius: BorderRadius.circular(40),
                                     ),
-
                                     border: OutlineInputBorder(
-                                      borderRadius: BorderRadius.circular(40.r),
+                                      borderRadius: BorderRadius.circular(40),
                                     ),
-                                    labelText: "Exam Names",
-                                    labelStyle: TextStyle(
-                                        color: Colors.black.withOpacity(0.7)
-                                    ),
-                                  ), // Label for the name field
+                                    labelText: "Select Exam Names",
+                                    labelStyle: TextStyle(color: Colors.black.withOpacity(0.7)),
+                                  ),
+                                  value: _selectedexamnames,
+                                  items: _examnames.map((String exam) {
+                                    return DropdownMenuItem<String>(
+                                      value: exam,
+                                      child: Text(exam),
+                                    );
+                                  }).toList(),
+                                  onChanged: (String? newValueexam) {
+                                    setState(() {
+                                      _selectedexamnames = newValueexam; // নির্বাচিত মান আপডেট
+                                    });
+                                  },
                                 ),
                               ),
                               SizedBox(height: 10.h,),

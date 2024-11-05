@@ -21,6 +21,8 @@ class Result extends StatefulWidget {
 }
 
 class _ResultState extends State<Result> {
+  //dropdown result valuew
+  String? _resultcatagoriValue;
 
 
   final catagoriEditingController = TextEditingController();
@@ -36,7 +38,7 @@ class _ResultState extends State<Result> {
 
     final TextStyle? largeblack = TextFormate(colors: Colors.black.withOpacity(1)).textLargeFormate(context);
     final TextStyle? largewhite = TextFormate(colors: Colors.white).textLargeFormate(context);
-    final TextStyle? mediumblack = TextFormate(colors: Colors.black).textMediumFormate(context);
+    final TextStyle? mediumblack = TextFormate(colors: Colors.black.withOpacity(0.7)).textMediumFormate(context);
     final TextStyle? smallblack = TextFormate(colors: Colors.black).textSmallFormate(context);
 
 
@@ -132,22 +134,35 @@ class _ResultState extends State<Result> {
                                     color: AppColor.textfromfiledcolor,
                                     borderRadius: BorderRadius.circular(40.r),
                                   ),
-                                  child: TextFormField(
-                                    controller: catagoriEditingController,
-                                    decoration: InputDecoration(
-                                      enabledBorder: OutlineInputBorder(
-                                        borderSide: BorderSide(color: Colors.transparent),
-                                        borderRadius: BorderRadius.circular(40.r),
-                                      ),
-
-                                      border: OutlineInputBorder(
-                                        borderRadius: BorderRadius.circular(40.r),
-                                      ),
-                                      labelText: "Catagori",
-                                      labelStyle: TextStyle(
-                                          color: Colors.black.withOpacity(0.7)
-                                      ),
-                                    ), // Label for the name field
+                                  child:DropdownButton(
+                                    hint: _resultcatagoriValue == null
+                                        ? Center(child: Text('Please Select',style: mediumblack,))
+                                        : Center(
+                                          child: Text(
+                                                                                _resultcatagoriValue!,
+                                                                                style: TextStyle(color: Colors.black),
+                                                                              ),
+                                        ),
+                                    isExpanded: true,
+                                    iconSize: 30.0,
+                                    style: TextStyle(color: Colors.black),
+                                    items: ['Board Result', 'Midterm Result'].map(
+                                          (val) {
+                                        return DropdownMenuItem<String>(
+                                          value: val,
+                                          child: Text(val,style: largeblack,),
+                                        );
+                                      },
+                                    ).toList(),
+                                    onChanged: (val) {
+                                      setState(
+                                            () {
+                                          _resultcatagoriValue = val;
+                                          print(_resultcatagoriValue);
+                                        },
+                                      );
+                                    },
+                                    underline: SizedBox.shrink(), // এখানে underline সরানোর জন্য SizedBox.shrink() ব্যবহার করা হয়েছে
                                   ),
                                 ),
                                 SizedBox(height: 10.h,),
@@ -259,7 +274,7 @@ class _ResultState extends State<Result> {
                                 InkWell(
                                   onTap: () async{
                                     if(
-                                    catagoriEditingController.text.isEmpty ||
+                                    // catagoriEditingController.text.isEmpty ||
                                         enteryearEditingController.text.isEmpty ||
                                         departmentEditingController.text.isEmpty ||
                                         rollEditingController.text.isEmpty ||
@@ -278,6 +293,7 @@ class _ResultState extends State<Result> {
                                       ScaffoldMessenger.of(context).showSnackBar(snackBar);
 
                                     }
+                                    print(registrationnoEditingController);
                                   },
                                   child: Center(
                                     child: Container(
