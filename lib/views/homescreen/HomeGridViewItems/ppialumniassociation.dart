@@ -18,7 +18,7 @@ class _PPIAluminiAssociationState extends State<PPIAluminiAssociation> {
   Widget build(BuildContext context) {
 
     final TextStyle? largeblack = TextFormate(colors: Colors.black).textLargeFormate(context);
-    final TextStyle? mediumblack = TextFormate(colors: Colors.black).textMediumFormate(context);
+    final TextStyle? mediumblack = TextFormate(colors: Colors.black.withOpacity(0.7)).textMediumFormate(context);
     final TextStyle? smallblack = TextFormate(colors: Colors.black).textSmallFormate(context);
 
 
@@ -55,7 +55,7 @@ class _PPIAluminiAssociationState extends State<PPIAluminiAssociation> {
             IconButton(onPressed: (){}, icon: Icon(Icons.settings,color: AppColor.whiteColor,size: 30,))
           ],
           title: Text(
-            'Student of the Award',  // এখানে প্রাপ্ত নামটি দেখানো হচ্ছে
+            'PPI Alumni Association',  // এখানে প্রাপ্ত নামটি দেখানো হচ্ছে
             style: context.textTheme.titleLarge?.copyWith(
               color: AppColor.whiteColor,
               fontWeight: FontWeight.bold,
@@ -87,10 +87,11 @@ class _PPIAluminiAssociationState extends State<PPIAluminiAssociation> {
                         SizedBox(height: 10.h,),
                         ListTile(
                           leading: CircleAvatar(
-                            radius: 50, // Adjust the radius as needed
-                            backgroundImage: AssetImage('assets/ppialumoneassociation/teacher (4).png'),
+                            radius: 30, // Adjust the radius as needed
+                            backgroundImage: AssetImage('assets/ppialumoneassociation/man.png',),
                           ),
-                          title: Text('data'),
+                          title: Text('MD Shakil Mia',style: largeblack,),
+                          subtitle: Text('Manager in Eco Bank',style: mediumblack,),
                         ),
                         SizedBox(height: 10.h,),
 

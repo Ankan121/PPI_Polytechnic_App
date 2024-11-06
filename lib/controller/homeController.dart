@@ -1,6 +1,7 @@
 import 'package:get/get.dart';
 
 import '../model/home_gridview.dart';
+import '../model/ppialumniassociation.dart';
 
 class HomeContrller extends GetxController{
 
@@ -466,6 +467,23 @@ class HomeContrller extends GetxController{
 
 
 
+  //PPI Alumni Association
+  List ppialumnitiems = [
+    {
+      'img' : 'assets/techersinformation/administrative/passport size.png',
+      'Name' : 'Ankan Biswas',
+      'subtitle' : 'Manager in Eco Bank',
+      'Company' : 'Company Name:- Eco Bank',
+      'Phone' : 'Phone:- 01571258430',
+      'email' : 'Email Address:- ankan.dev.prog@gmail.com',
+      'Department' : 'Department:- Computer',
+      'Roll' : 'Roll:-566989',
+      'CGPA' : 'CGPA:-3.98',
+    },
+  ];
+
+
+
 
   //======================Home Screen Gridview========================
   List<Homegridview> homegridviewlistmodelresponse = [];
@@ -477,3 +495,11 @@ class HomeContrller extends GetxController{
   }
 
 }
+  //======================PPI Alumni Association========================
+  List<Ppialumniassociation> ppialumnimodelresponse = [];
+
+  //save response from api
+  void setppialumnimodel(){
+    ppialumnimodelresponse = ppialumniassociationFromJson(ppialumnitiems);
+
+  }
