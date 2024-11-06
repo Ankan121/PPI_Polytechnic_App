@@ -49,4 +49,6 @@ class RoutesName{
   static const Teachersdepartment = 'Teachersdepartment';
   //Result
   static const Resultpdf = 'Resultpdf';
+  //PPIAlumniAllView
+  static const PPIAlumniAllView = 'PPIAlumniAllView';
 }

@@ -3,88 +3,88 @@ import 'package:get/get.dart';
 import '../model/home_gridview.dart';
 import '../model/ppialumniassociation.dart';
 
-class HomeContrller extends GetxController{
+class HomeContrller extends GetxController {
 
   //==================Home Scren Gridview===================
-  List  HomeGridviewlist = [
+  List HomeGridviewlist = [
     {
-      'name' : 'Admission\nand  Fee',
-      'img' : 'assets/homepage/3-admission and fee.png',
-      'page' : 'Admissionandfee',
+      'name': 'Admission\nand  Fee',
+      'img': 'assets/homepage/3-admission and fee.png',
+      'page': 'Admissionandfee',
     },
     {
-      'name' : 'Department',
-      'img' : 'assets/homepage/4-department.png',
-      'page' : 'Department',
+      'name': 'Department',
+      'img': 'assets/homepage/4-department.png',
+      'page': 'Department',
     },
     {
-      'name' : 'Notice Board',
-      'img' : 'assets/homepage/5-noticeboard.png',
-      'page' : 'NoticeBoard',
+      'name': 'Notice Board',
+      'img': 'assets/homepage/5-noticeboard.png',
+      'page': 'NoticeBoard',
     },
     {
-      'name' : 'Teachers\nInformation',
-      'img' : 'assets/homepage/6-teachers information.png',
-      'page' : 'TeachersInformation',
+      'name': 'Teachers\nInformation',
+      'img': 'assets/homepage/6-teachers information.png',
+      'page': 'TeachersInformation',
     },
     {
-      'name' : 'Result',
-      'img' : 'assets/homepage/7-result.jpg',
-      'page' : 'Result',
+      'name': 'Result',
+      'img': 'assets/homepage/7-result.jpg',
+      'page': 'Result',
     },
     {
-      'name' : 'Student of the\nAward',
-      'img' : 'assets/homepage/8-student of the award.png',
-      'page' : 'StudentOfTheAward',
+      'name': 'Student of the\nAward',
+      'img': 'assets/homepage/8-student of the award.png',
+      'page': 'StudentOfTheAward',
     },
     {
-      'name' : 'Skill Development',
-      'img' : 'assets/homepage/9-skill development.png',
-      'page' : 'SkillDevelopment',
+      'name': 'Skill Development',
+      'img': 'assets/homepage/9-skill development.png',
+      'page': 'SkillDevelopment',
     },
     {
-      'name' : 'Entertainment',
-      'img' : 'assets/homepage/10-entertainment.png',
-      'page' : 'Entertainment',
+      'name': 'Entertainment',
+      'img': 'assets/homepage/10-entertainment.png',
+      'page': 'Entertainment',
     },
     {
-      'name' : 'PPI Alumni\nAssociation',
-      'img' : 'assets/homepage/11-ppi alumni association.png',
-      'page' : 'PPIAluminiAssociation',
+      'name': 'PPI Alumni\nAssociation',
+      'img': 'assets/homepage/11-ppi alumni association.png',
+      'page': 'PPIAluminiAssociation',
     },
     {
-      'name' : 'PPI Career',
-      'img' : 'assets/homepage/12-ppi career.png',
-      'page' : 'PPICareer',
+      'name': 'PPI Career',
+      'img': 'assets/homepage/12-ppi career.png',
+      'page': 'PPICareer',
     },
     {
-      'name' : 'About institute',
-      'img' : 'assets/homepage/13-about institute.png',
-      'page' : 'AboutInstitute',
+      'name': 'About institute',
+      'img': 'assets/homepage/13-about institute.png',
+      'page': 'AboutInstitute',
     },
   ];
 
   //==================Admission and Fee===================
   List AdmissionandfeeItems = [
     {
-      'buttonitem' : 'Admission Requirement',
-      'page' : 'AdmissionRequirement',
+      'buttonitem': 'Admission Requirement',
+      'page': 'AdmissionRequirement',
     },
     {
-      'buttonitem' : 'Admission Fee',
-      'page' : 'AdmissionFee',
+      'buttonitem': 'Admission Fee',
+      'page': 'AdmissionFee',
     },
     {
-      'buttonitem' : 'Wavier',
-      'page' : 'Wavier',
+      'buttonitem': 'Wavier',
+      'page': 'Wavier',
     },
     {
-      'buttonitem' : 'Kanchan Foundation Association',
-      'page' : 'KanchanFA',
+      'buttonitem': 'Kanchan Foundation Association',
+      'page': 'KanchanFA',
     },
     {
-      'buttonitem' : 'Online Apply',
-      'page' : 'OnlineApply',
+      'buttonitem': 'Online Apply',
+      'page': 'OnlineApply',
     },
   ];
 
@@ -119,16 +119,16 @@ class HomeContrller extends GetxController{
       "items": "কোর্সের উদ্দেশ্যঃ\n\nটেক্সটাইল শিল্প বাংলাদেশের সবচেয়ে বড় রপ্তানিমুখী শিল্পখাত। সারা বিশ্বের মানুষের পোষাকের চাহিদা মেটাতে যে পরিমান বস্ত্র বা পোষাক উৎপাদিত হয়, সেখানে দ্বিতীয় শীর্ষ পোশাক রপ্তানিকারক দেশ হলো বাংলাদেশ (Made in Bangladesh)। তৈরি পোশাক রপ্তানিতে চীনের পর বাংলাদেশের অবস্থান দ্বিতীয়, বাংলাদেশে মোট রপ্তানী আয়ের ৮৩ শতাংশ আসে এই পোষাক শিল্পখাত থেকে। প্রায় ৪০ লাখ নারী-পুরুষের কর্মসংস্থান হয় এই পোশাকশিল্পে। পরিবেশবান্ধব পোশাক কারখানার সংখ্যার দিক থেকেও বিশ্বে সবার ওপরে বাংলাদেশ। বাংলাদেশের সবচেয়ে বড় চাকরির ক্ষেত্র হচ্ছে টেক্সটাইল সেক্টর। প্রতিবছর প্রায় হাজার হাজার দক্ষ টেক্সটাইল ইঞ্জিনিয়ার এর প্রয়োজন হয় এই সেক্টরে। কিন্তু প্রয়োজনের তুলনায় দক্ষ টেক্সটাইল ডিপ্লোমা ইঞ্জিনিয়ার পাওয়া যায় না। বর্তমানে আমাদের দেশে ৪৪৫ টি স্পিনিং ফ্যাক্টরী, ৭৯৬ টি ফ্যাব্রিক ম্যানুফ্যাকচারিং ফ্যাক্টরী, ২৪০ টি ডাইং, প্রিন্টিং ও ফিনিশিং ফ্যাক্টরী এবং ৫৫০০ টির ও বেশি গার্মেন্টস ফ্যাক্টরী রয়েছে। দেশের সবচেয়ে বড় রপ্তানিমুখী এই শিল্পখাতকে সচল রাখতে দক্ষ টেক্সটাইল ইঞ্জিনিয়ার গড়ে তোলা এই কোর্সের প্রধান উদ্দেশ্য। \n\nএই কোর্স কি পড়ানো হয়ঃ\n\nটেক্সটাইল ইঞ্জিনিয়ারিং এর ছাত্রছাত্রীরা মূলত তিনটি ধারাবাহিক বিষয়ে বিস্তারিত জ্ঞান লাভ করে।\n\n১) ইয়ার্ন ম্যানুফ্যাকচারিং ইঞ্জিনিয়ারিং – যেখানে ছাত্রছাত্রীরা টেক্সটাইল ফাইবার বা আঁশ থেকে সুতা প্রস্তুত প্রক্রিয়া সম্পর্কীত যাবতীয় তত্ত্বীয় এবং ব্যবহারিক জ্ঞান লাভ করে।\n\n২) ফেব্রিক ম্যানুফ্যাকচারিং ইঞ্জিনিয়ারিং – যেখানে ছাত্রছাত্রীরা সুতা থেকে কাপড় প্রস্তুত প্রক্রিয়া সম্পর্কীত যাবতীয় তত্ত্বীয় এবং ব্যবহারিক জ্ঞান লাভ করে।\n\n৩) সর্বশেষ অ্যাপারেল ম্যানুফেকচারিং ইঞ্জিনিয়ারিং – যেখানে ছাত্রছাত্রীরা কাপড়কে পোষাকে রুপান্তর প্রক্রিয়া সম্পর্কীত যাবতীয় তত্ত্বীয় এবং ব্যবহারিক জ্ঞান লাভ করে।\n\n০৪ বছরব্যাপী উক্ত চারটি বিষয়ের যাবতীয় জ্ঞান অর্জন শেষে ছাত্রছাত্রীরা বাংলাদেশের সবচেয়ে বড় পোষাক শিল্পে টেক্সটাইল ইঞ্জিনিয়ার হিসেবে কর্মে যোগদান করতে সক্ষম হয়।\n\nজব প্লেসমেন্ট সেক্টরঃ\n\nবাংলাদেশের সবচেয়ে বড় চাকরির ক্ষেত্র হচ্ছে টেক্সটাইল সেক্টর। মূলত টেক্সটাইল ইঞ্জিনিয়ারদের ছোট-বড় টেক্সটাইল বা গার্মেন্টস ইন্ডাস্ট্রির পণ্য উৎপাদন কার্যক্রমের প্রাণ হিসেবে বিবেচনা করা হয়। টেক্সটাইল ইঞ্জিনিয়ারগন যে সকল ক্ষেত্রে চাকুরীর সুযোগ লাভ করে তা নিম্নরুপঃ\n\n• সরকারী বিভিন্ন টেক্সটাইল ইন্ডাস্ট্রি\n• বেসরকারি পর্যায়ে স্থাপিত দশী-বিদেশী টেক্সটাইল ইন্ডাস্ট্রি\n• জুট রিসার্চ ইন্সটিটিউট\n• তুলা উন্নয়ন বোর্ড\n• বস্ত্র মন্ত্রণালয়\n• রেশম বোর্ড\n• বিভিন্ন বায়িং অফিস\n• বুটিক হাউস\n• ফ্যাশন হাউস\n• কাস্টমস\n• বিনিয়োগ বোর্ড\n• বিসিক ইত্যাদি\n\nসেই সঙ্গে বিভিন্ন রাষ্ট্রায়ত্ব ও বেসরকারি ব্যাংক এবং শিল্পঋণ প্রদানকারী সংস্থাগুলোর শিল্পঋণ বিতরণ সংশ্লিষ্ট ক্ষেত্রে চাকরির সুযোগ রয়েছে। ফলে শুধু দেশের অভ্যন্তরেই টেক্সটাইল ইঞ্জিনিয়ারদের জন্য রয়েছে বিশাল চাকুরির ক্ষেত্র।\n\nভর্তির যোগ্যতাঃ\n\nন্যূনতম এসএসসি/সমমান পাস।\nসাধারণ গণিতে ন্যূনতম জিপিএ ২.০০ এবং ৪০% নম্বর।\nবয়স এবং এসএসসি পাসের বছরের জন্য কোন সীমাবদ্ধতা নেই।\n\nউচ্চ শিক্ষার সুযোগঃ\n\nটেক্সাটাইল ইঞ্জিনিয়ারিংয়ে সম্পূর্ণ ডিপ্লোমা করার পরে তাদের বিএসসি শেষ করার সুযোগ রয়েছে। এবং M.Sc. DUET, IEB এবং বাংলাদেশের অনেক বেসরকারি বিশ্ববিদ্যালয় থেকে টেক্সাটাইল ইঞ্জিনিয়ারিংয়ে শিক্ষার্থীরা তাদের B.Sc., M.Sc. এবং বিদেশ থেকে পিএইচডি ডিগ্রি।\n\nপাঠ্যক্রমঃ\n\nবাংলাদেশ কারিগরি শিক্ষা বোর্ডের (বিটিইবি) ডিপ্লোমা ইন টেক্সাটাইল ইঞ্জিনিয়ারিং-এর পাঠ্যক্রম তাত্ত্বিক এবং ব্যবহারিক উভয় উপাদান নিয়ে গঠিত। প্রোগ্রামের সময়কাল চার বছর, এবং এটি আটটি সেমিস্টারে বিভক্ত।"
     },
     {
-      'buttonitem' : 'Apparel Manufacturing',
+      'buttonitem': 'Apparel Manufacturing',
       "items": "কোর্সের উদ্দেশ্যঃ\n\nটেক্সটাইল শিল্প বাংলাদেশের সবচেয়ে বড় রপ্তানিমুখী শিল্পখাত। সারা বিশ্বের মানুষের পোষাকের চাহিদা মেটাতে যে পরিমান বস্ত্র বা পোষাক উৎপাদিত হয়, সেখানে দ্বিতীয় শীর্ষ পোশাক রপ্তানিকারক দেশ হলো বাংলাদেশ (Made in Bangladesh)। তৈরি পোশাক রপ্তানিতে চীনের পর বাংলাদেশের অবস্থান দ্বিতীয়, বাংলাদেশে মোট রপ্তানী আয়ের ৮৩ শতাংশ আসে এই পোষাক শিল্পখাত থেকে প্রায় ৪০ লাখ নারী - পুরুষের কর্মসংস্থান হয় এই পোশাকশিল্পে। পরিবেশবান্ধব পোশাক কারখানার সংখ্যার দিক থেকেও বিশ্বে সবার ওপরে বাংলাদেশ। বাংলাদেশের সবচেয়ে বড় চাকরির ক্ষেত্র হচ্ছে টেক্সটাইল সেক্টর। প্রতিবছর প্রায় হাজার হাজার দক্ষ টেক্সটাইল ইঞ্জিনিয়ার এর প্রয়োজন হয় এই সেক্টরে। কিন্তু প্রয়োজনের তুলনায় দক্ষ টেক্সটাইল ডিপ্লোমা ইঞ্জিনিয়ার পাওয়া যায় না। বর্তমানে আমাদের দেশে ৪৪৫ টি স্পিনিং ফ্যাক্টরী, ৭৯৬ টি ফ্যাব্রিক ম্যানুফ্যাকচারিং ফ্যাক্টরী, ২৪০ টি ডাইং, প্রিন্টিং ও ফিনিশিং ফ্যাক্টরী এবং ৫৫০০ টির ও বেশি গার্মেন্টস ফ্যাক্টরী রয়েছে। দেশের সবচেয়ে বড় রপ্তানিমুখী এই শিল্পখাতকে সচল রাখতে দক্ষ টেক্সটাইল ইঞ্জিনিয়ার গড়ে তোলা এই কোর্সের প্রধান উদ্দেশ্য।\n\nএই কোর্স কি পড়ানো হয়ঃ\n\nটেক্সটাইল ইঞ্জিনিয়ারিং এর ছাত্রছাত্রীরা মূলত তিনটি ধারাবাহিক বিষয়ে বিস্তারিত জ্ঞান লাভ করে।\n\n১) ইয়ার্ন ম্যানুফ্যাকচারিং ইঞ্জিনিয়ারিং – যেখানে ছাত্রছাত্রীরা টেক্সটাইল ফাইবার বা আঁশ থেকে সুতা প্রস্তুত প্রক্রিয়া সম্পর্কীত যাবতীয় তত্ত্বীয় এবং ব্যবহারিক জ্ঞান লাভ করে।\n\n২) ফেব্রিক ম্যানুফ্যাকচারিং ইঞ্জিনিয়ারিং – যেখানে ছাত্রছাত্রীরা সুতা থেকে কাপড় প্রস্তুত প্রক্রিয়া সম্পর্কীত যাবতীয় তত্ত্বীয় এবং ব্যবহারিক জ্ঞান লাভ করে।\n\n৩) সর্বশেষ অ্যাপারেল ম্যানুফেকচারিং ইঞ্জিনিয়ারিং – যেখানে ছাত্রছাত্রীরা কাপড়কে পোষাকে রুপান্তর প্রক্রিয়া সম্পর্কীত যাবতীয় তত্ত্বীয় এবং ব্যবহারিক জ্ঞান লাভ করে।\n\n০৪ বছরব্যাপী উক্ত চারটি বিষয়ের যাবতীয় জ্ঞান অর্জন শেষে ছাত্রছাত্রীরা বাংলাদেশের সবচেয়ে বড় পোষাক শিল্পে টেক্সটাইল ইঞ্জিনিয়ার হিসেবে কর্মে যোগদান করতে সক্ষম হয়।\n\nজব প্লেসমেন্ট সেক্টরঃ\n\nবাংলাদেশের সবচেয়ে বড় চাকরির ক্ষেত্র হচ্ছে টেক্সটাইল সেক্টর। মূলত টেক্সটাইল ইঞ্জিনিয়ারদের ছোট বড় টেক্সটাইল বা গার্মেন্টস ইন্ডাস্ট্রির পণ্য উৎপাদন কার্যক্রমের প্রাণ হিসেবে বিবেচনা করা হয়। টেক্সটাইল ইঞ্জিনিয়ারগন যে সকল ক্ষেত্রে চাকুরীর সুযোগ লাভ করে তা নিম্নরুপঃ\n\n• সরকারী বিভিন্ন টেক্সটাইল ইন্ডাস্ট্রি\n• বেসরকারি পর্যায়ে স্থাপিত দশী-বিদেশী টেক্সটাইল ইন্ডাস্ট্রি\n• জুট রিসার্চ ইন্সটিটিউট\n• তুলা উন্নয়ন বোর্ড\n• বস্ত্র মন্ত্রণালয়\n• রেশম বোর্ড\n• বিভিন্ন বায়িং অফিস\n• বুটিক হাউস\n• ফ্যাশন হাউস\n• কাস্টমস\n• বিনিয়োগ বোর্ড\n• বিসিক ইত্যাদি\n\nসেই সঙ্গে বিভিন্ন রাষ্ট্রায়ত্ব ও বেসরকারি ব্যাংক এবং শিল্পঋণ প্রদানকারী সংস্থাগুলোর শিল্পঋণ বিতরণ সংশ্লিষ্ট ক্ষেত্রে চাকরির সুযোগ রয়েছে। ফলে শুধু দেশের অভ্যন্তরেই টেক্সটাইল ইঞ্জিনিয়ারদের জন্য রয়েছে বিশাল চাকুরির ক্ষেত্র।\n\nভর্তির যোগ্যতাঃ\n\nন্যূনতম এসএসসি/সমমান পাস।\nসাধারণ গণিতে ন্যূনতম জিপিএ ২.০০ এবং ৪০% নম্বর।\nবয়স এবং এসএসসি পাসের বছরের জন্য কোন সীমাবদ্ধতা নেই।\n\nউচ্চ শিক্ষার সুযোগঃ\n\nটেক্সাটাইল ইঞ্জিনিয়ারিংয়ে সম্পূর্ণ ডিপ্লোমা করার পরে তাদের বিএসসি শেষ করার সুযোগ রয়েছে। এবং M.Sc. DUET, IEB এবং বাংলাদেশের অনেক বেসরকারি বিশ্ববিদ্যালয় থেকে টেক্সাটাইল ইঞ্জিনিয়ারিংয়ে শিক্ষার্থীরা তাদের B.Sc., M.Sc. এবং বিদেশ থেকে পিএইচডি ডিগ্রি।\n\nপাঠ্যক্রমঃ\n\nবাংলাদেশ কারিগরি শিক্ষা বোর্ডের (বিটিইবি) ডিপ্লোমা ইন টেক্সাটাইল ইঞ্জিনিয়ারিং-এর পাঠ্যক্রম তাত্ত্বিক এবং ব্যবহারিক উভয় উপাদান নিয়ে গঠিত। প্রোগ্রামের সময়কাল চার বছর, এবং এটি আটটি সেমিস্টারে বিভক্ত।",
     },
     {
-      'buttonitem' : 'Medical(Pharmacy)',
-      "items" : 'ADMISSION WILL START SOON...'
+      'buttonitem': 'Medical(Pharmacy)',
+      "items": 'ADMISSION WILL START SOON...'
     },
     {
-      'buttonitem' : 'Medical(Laboratory)',
-      "items" : 'ADMISSION WILL START SOON...'
+      'buttonitem': 'Medical(Laboratory)',
+      "items": 'ADMISSION WILL START SOON...'
     },
   ];
 
@@ -136,47 +136,47 @@ class HomeContrller extends GetxController{
   //techersinformation
   List TeachersInformation = [
     {
-      'buttonitem' : 'Administrative',
-      'page' : 'Administrative',
+      'buttonitem': 'Administrative',
+      'page': 'Administrative',
     },
     {
-      'buttonitem' : 'Teachers',
-      'page' : 'Teachersdepartment',
+      'buttonitem': 'Teachers',
+      'page': 'Teachersdepartment',
     },
   ];
 
   //administrative
   List administrative = [
     {
-      'img' : 'assets/techersinformation/administrative/nurul huq.jpeg',
-      'name' : 'Engr. Nurul Hoque Prothan\nChairman (Kanchan Foundation)',
-      'designation' : 'AdmissionRequirement',
-      'phone' : 'AdmissionRequirement',
-      'email' : 'AdmissionRequirement',
+      'img': 'assets/techersinformation/administrative/nurul huq.jpeg',
+      'name': 'Engr. Nurul Hoque Prothan\nChairman (Kanchan Foundation)',
+      'designation': 'AdmissionRequirement',
+      'phone': 'AdmissionRequirement',
+      'email': 'AdmissionRequirement',
 
     },
     {
-      'img' : 'assets/techersinformation/administrative/saroni.png',
-      'name' : 'Dr. Sharany Haque\nPrincipal\n(Pubergaon Polytechnic Institute)',
-      'designation' : 'AdmissionRequirement',
-      'phone' : 'AdmissionRequirement',
-      'email' : 'AdmissionRequirement',
+      'img': 'assets/techersinformation/administrative/saroni.png',
+      'name': 'Dr. Sharany Haque\nPrincipal\n(Pubergaon Polytechnic Institute)',
+      'designation': 'AdmissionRequirement',
+      'phone': 'AdmissionRequirement',
+      'email': 'AdmissionRequirement',
 
     },
     {
-      'img' : 'assets/techersinformation/administrative/unknown.png',
-      'name' : 'Md. Atiqullah\nPrincipal (Acting),\nPubergaon Polytechnic Institute.',
-      'designation' : 'AdmissionRequirement',
-      'phone' : 'AdmissionRequirement',
-      'email' : 'AdmissionRequirement',
+      'img': 'assets/techersinformation/administrative/unknown.png',
+      'name': 'Md. Atiqullah\nPrincipal (Acting),\nPubergaon Polytechnic Institute.',
+      'designation': 'AdmissionRequirement',
+      'phone': 'AdmissionRequirement',
+      'email': 'AdmissionRequirement',
 
     },
     {
-      'img' : 'assets/techersinformation/administrative/unknown.png',
-      'name' : 'Dulal Roy',
-      'designation' : 'AdmissionRequirement',
-      'phone' : 'AdmissionRequirement',
-      'email' : 'AdmissionRequirement',
+      'img': 'assets/techersinformation/administrative/unknown.png',
+      'name': 'Dulal Roy',
+      'designation': 'AdmissionRequirement',
+      'phone': 'AdmissionRequirement',
+      'email': 'AdmissionRequirement',
 
     },
   ];
@@ -184,12 +184,12 @@ class HomeContrller extends GetxController{
   //administrative
   List teachers = [
     {
-      'buttonitem' : 'Administrative',
-      'page' : 'AdmissionRequirement',
+      'buttonitem': 'Administrative',
+      'page': 'AdmissionRequirement',
     },
     {
-      'buttonitem' : 'Teachers',
-      'page' : 'AdmissionFee',
+      'buttonitem': 'Teachers',
+      'page': 'AdmissionFee',
     },
   ];
 
@@ -197,37 +197,37 @@ class HomeContrller extends GetxController{
     //Computer department
     {
       "buttonitem": "Computer",
-      "items" : [
+      "items": [
         {
-          'img' : 'assets/techersinformation/teachers/computer/Monir.jpg',
-          'name' : 'Md. Monir Hossain',
-          'designation' : 'Instructor',
-          'phone' : '017**********',
-          'email' : '*****@gmail.com',
+          'img': 'assets/techersinformation/teachers/computer/Monir.jpg',
+          'name': 'Md. Monir Hossain',
+          'designation': 'Instructor',
+          'phone': '017**********',
+          'email': '*****@gmail.com',
 
         },
         {
-          'img' : 'assets/techersinformation/administrative/saroni.png',
-          'name' : 'Dr. Sharany Haque',
-          'designation' : 'AdmissionRequirement',
-          'phone' : 'AdmissionRequirement',
-          'email' : 'AdmissionRequirement',
+          'img': 'assets/techersinformation/administrative/saroni.png',
+          'name': 'Dr. Sharany Haque',
+          'designation': 'AdmissionRequirement',
+          'phone': 'AdmissionRequirement',
+          'email': 'AdmissionRequirement',
 
         },
         {
-          'img' : 'assets/techersinformation/administrative/unknown.png',
-          'name' : 'Md. Atiqullah',
-          'designation' : 'AdmissionRequirement',
-          'phone' : 'AdmissionRequirement',
-          'email' : 'AdmissionRequirement',
+          'img': 'assets/techersinformation/administrative/unknown.png',
+          'name': 'Md. Atiqullah',
+          'designation': 'AdmissionRequirement',
+          'phone': 'AdmissionRequirement',
+          'email': 'AdmissionRequirement',
 
         },
         {
-          'img' : 'assets/techersinformation/administrative/unknown.png',
-          'name' : 'Dulal Roy',
-          'designation' : 'AdmissionRequirement',
-          'phone' : 'AdmissionRequirement',
-          'email' : 'AdmissionRequirement',
+          'img': 'assets/techersinformation/administrative/unknown.png',
+          'name': 'Dulal Roy',
+          'designation': 'AdmissionRequirement',
+          'phone': 'AdmissionRequirement',
+          'email': 'AdmissionRequirement',
 
         },
 
@@ -235,185 +235,185 @@ class HomeContrller extends GetxController{
     },
     {
       "buttonitem": "Electrical",
-      "items" : [
+      "items": [
         {
-          'img' : 'assets/techersinformation/administrative/nurul huq.jpeg',
-          'name' : 'Hemail',
-          'designation' : 'AdmissionRequirement',
-          'phone' : 'AdmissionRequirement',
-          'email' : 'AdmissionRequirement',
+          'img': 'assets/techersinformation/administrative/nurul huq.jpeg',
+          'name': 'Hemail',
+          'designation': 'AdmissionRequirement',
+          'phone': 'AdmissionRequirement',
+          'email': 'AdmissionRequirement',
 
         },
         {
-          'img' : 'assets/techersinformation/administrative/saroni.png',
-          'name' : 'Dr. Sharany HaquePrincipal (Pubergaon Polytechnic Institute)',
-          'designation' : 'AdmissionRequirement',
-          'phone' : 'AdmissionRequirement',
-          'email' : 'AdmissionRequirement',
+          'img': 'assets/techersinformation/administrative/saroni.png',
+          'name': 'Dr. Sharany HaquePrincipal (Pubergaon Polytechnic Institute)',
+          'designation': 'AdmissionRequirement',
+          'phone': 'AdmissionRequirement',
+          'email': 'AdmissionRequirement',
 
         },
         {
-          'img' : 'assets/techersinformation/administrative/unknown.png',
-          'name' : 'Md. AtiqullahPrincipal (Acting),Pubergaon Polytechnic Institute.',
-          'designation' : 'AdmissionRequirement',
-          'phone' : 'AdmissionRequirement',
-          'email' : 'AdmissionRequirement',
+          'img': 'assets/techersinformation/administrative/unknown.png',
+          'name': 'Md. AtiqullahPrincipal (Acting),Pubergaon Polytechnic Institute.',
+          'designation': 'AdmissionRequirement',
+          'phone': 'AdmissionRequirement',
+          'email': 'AdmissionRequirement',
 
         },
         {
-          'img' : 'assets/techersinformation/administrative/unknown.png',
-          'name' : 'Dulal Roy',
-          'designation' : 'AdmissionRequirement',
-          'phone' : 'AdmissionRequirement',
-          'email' : 'AdmissionRequirement',
+          'img': 'assets/techersinformation/administrative/unknown.png',
+          'name': 'Dulal Roy',
+          'designation': 'AdmissionRequirement',
+          'phone': 'AdmissionRequirement',
+          'email': 'AdmissionRequirement',
 
         },
       ]
     },
     {
       "buttonitem": "Mechanical",
-      "items" : [
+      "items": [
         {
-          'img' : 'assets/techersinformation/administrative/nurul huq.jpeg',
-          'name' : 'Monir',
-          'designation' : 'AdmissionRequirement',
-          'phone' : 'AdmissionRequirement',
-          'email' : 'AdmissionRequirement',
+          'img': 'assets/techersinformation/administrative/nurul huq.jpeg',
+          'name': 'Monir',
+          'designation': 'AdmissionRequirement',
+          'phone': 'AdmissionRequirement',
+          'email': 'AdmissionRequirement',
 
         },
         {
-          'img' : 'assets/techersinformation/administrative/saroni.png',
-          'name' : 'Dr. Sharany HaquePrincipal (Pubergaon Polytechnic Institute)',
-          'designation' : 'AdmissionRequirement',
-          'phone' : 'AdmissionRequirement',
-          'email' : 'AdmissionRequirement',
+          'img': 'assets/techersinformation/administrative/saroni.png',
+          'name': 'Dr. Sharany HaquePrincipal (Pubergaon Polytechnic Institute)',
+          'designation': 'AdmissionRequirement',
+          'phone': 'AdmissionRequirement',
+          'email': 'AdmissionRequirement',
 
         },
         {
-          'img' : 'assets/techersinformation/administrative/unknown.png',
-          'name' : 'Md. Atiqullah',
-          'designation' : 'AdmissionRequirement',
-          'phone' : 'AdmissionRequirement',
-          'email' : 'AdmissionRequirement',
+          'img': 'assets/techersinformation/administrative/unknown.png',
+          'name': 'Md. Atiqullah',
+          'designation': 'AdmissionRequirement',
+          'phone': 'AdmissionRequirement',
+          'email': 'AdmissionRequirement',
 
         },
         {
-          'img' : 'assets/techersinformation/administrative/unknown.png',
-          'name' : 'Dulal Roy',
-          'designation' : 'AdmissionRequirement',
-          'phone' : 'AdmissionRequirement',
-          'email' : 'AdmissionRequirement',
+          'img': 'assets/techersinformation/administrative/unknown.png',
+          'name': 'Dulal Roy',
+          'designation': 'AdmissionRequirement',
+          'phone': 'AdmissionRequirement',
+          'email': 'AdmissionRequirement',
 
         },
       ]
     },
     {
       "buttonitem": "Civil",
-      "items" : [
+      "items": [
         {
-          'img' : 'assets/techersinformation/administrative/nurul huq.jpeg',
-          'name' : 'Monir',
-          'designation' : 'AdmissionRequirement',
-          'phone' : 'AdmissionRequirement',
-          'email' : 'AdmissionRequirement',
+          'img': 'assets/techersinformation/administrative/nurul huq.jpeg',
+          'name': 'Monir',
+          'designation': 'AdmissionRequirement',
+          'phone': 'AdmissionRequirement',
+          'email': 'AdmissionRequirement',
 
         },
         {
-          'img' : 'assets/techersinformation/administrative/saroni.png',
-          'name' : 'Dr. Sharany Haqu',
-          'designation' : 'AdmissionRequirement',
-          'phone' : 'AdmissionRequirement',
-          'email' : 'AdmissionRequirement',
+          'img': 'assets/techersinformation/administrative/saroni.png',
+          'name': 'Dr. Sharany Haqu',
+          'designation': 'AdmissionRequirement',
+          'phone': 'AdmissionRequirement',
+          'email': 'AdmissionRequirement',
 
         },
         {
-          'img' : 'assets/techersinformation/administrative/unknown.png',
-          'name' : 'Md. Atiqullah',
-          'designation' : 'AdmissionRequirement',
-          'phone' : 'AdmissionRequirement',
-          'email' : 'AdmissionRequirement',
+          'img': 'assets/techersinformation/administrative/unknown.png',
+          'name': 'Md. Atiqullah',
+          'designation': 'AdmissionRequirement',
+          'phone': 'AdmissionRequirement',
+          'email': 'AdmissionRequirement',
 
         },
         {
-          'img' : 'assets/techersinformation/administrative/unknown.png',
-          'name' : 'Dulal Roy',
-          'designation' : 'AdmissionRequirement',
-          'phone' : 'AdmissionRequirement',
-          'email' : 'AdmissionRequirement',
+          'img': 'assets/techersinformation/administrative/unknown.png',
+          'name': 'Dulal Roy',
+          'designation': 'AdmissionRequirement',
+          'phone': 'AdmissionRequirement',
+          'email': 'AdmissionRequirement',
 
         },
       ]
     },
     {
       "buttonitem": "Textile",
-      "items" : [
+      "items": [
         {
-          'img' : 'assets/techersinformation/administrative/nurul huq.jpeg',
-          'name' : 'Monir',
-          'designation' : 'AdmissionRequirement',
-          'phone' : 'AdmissionRequirement',
-          'email' : 'AdmissionRequirement',
+          'img': 'assets/techersinformation/administrative/nurul huq.jpeg',
+          'name': 'Monir',
+          'designation': 'AdmissionRequirement',
+          'phone': 'AdmissionRequirement',
+          'email': 'AdmissionRequirement',
 
         },
         {
-          'img' : 'assets/techersinformation/administrative/saroni.png',
-          'name' : 'Dr. Sharany Haque',
-          'designation' : 'AdmissionRequirement',
-          'phone' : 'AdmissionRequirement',
-          'email' : 'AdmissionRequirement',
+          'img': 'assets/techersinformation/administrative/saroni.png',
+          'name': 'Dr. Sharany Haque',
+          'designation': 'AdmissionRequirement',
+          'phone': 'AdmissionRequirement',
+          'email': 'AdmissionRequirement',
 
         },
         {
-          'img' : 'assets/techersinformation/administrative/unknown.png',
-          'name' : 'Md. Atiqullah\nPrincipal (Acting),\nPubergaon Polytechnic Institute.',
-          'designation' : 'AdmissionRequirement',
-          'phone' : 'AdmissionRequirement',
-          'email' : 'AdmissionRequirement',
+          'img': 'assets/techersinformation/administrative/unknown.png',
+          'name': 'Md. Atiqullah\nPrincipal (Acting),\nPubergaon Polytechnic Institute.',
+          'designation': 'AdmissionRequirement',
+          'phone': 'AdmissionRequirement',
+          'email': 'AdmissionRequirement',
 
         },
         {
-          'img' : 'assets/techersinformation/administrative/unknown.png',
-          'name' : 'Dulal Roy',
-          'designation' : 'AdmissionRequirement',
-          'phone' : 'AdmissionRequirement',
-          'email' : 'AdmissionRequirement',
+          'img': 'assets/techersinformation/administrative/unknown.png',
+          'name': 'Dulal Roy',
+          'designation': 'AdmissionRequirement',
+          'phone': 'AdmissionRequirement',
+          'email': 'AdmissionRequirement',
 
         },
       ]
     },
     {
-      'buttonitem' : 'Medical',
-      "items" : [
+      'buttonitem': 'Medical',
+      "items": [
         {
-          'img' : 'assets/techersinformation/administrative/nurul huq.jpeg',
-          'name' : 'Monir',
-          'designation' : 'AdmissionRequirement',
-          'phone' : 'AdmissionRequirement',
-          'email' : 'AdmissionRequirement',
+          'img': 'assets/techersinformation/administrative/nurul huq.jpeg',
+          'name': 'Monir',
+          'designation': 'AdmissionRequirement',
+          'phone': 'AdmissionRequirement',
+          'email': 'AdmissionRequirement',
 
         },
         {
-          'img' : 'assets/techersinformation/administrative/saroni.png',
-          'name' : 'Dr. Sharany Haque\nPrincipal (Pubergaon Polytechnic Institute)',
-          'designation' : 'AdmissionRequirement',
-          'phone' : 'AdmissionRequirement',
-          'email' : 'AdmissionRequirement',
+          'img': 'assets/techersinformation/administrative/saroni.png',
+          'name': 'Dr. Sharany Haque\nPrincipal (Pubergaon Polytechnic Institute)',
+          'designation': 'AdmissionRequirement',
+          'phone': 'AdmissionRequirement',
+          'email': 'AdmissionRequirement',
 
         },
         {
-          'img' : 'assets/techersinformation/administrative/unknown.png',
-          'name' : 'Md. Atiqullah\nPrincipal (Acting),\nPubergaon Polytechnic Institute.',
-          'designation' : 'AdmissionRequirement',
-          'phone' : 'AdmissionRequirement',
-          'email' : 'AdmissionRequirement',
+          'img': 'assets/techersinformation/administrative/unknown.png',
+          'name': 'Md. Atiqullah\nPrincipal (Acting),\nPubergaon Polytechnic Institute.',
+          'designation': 'AdmissionRequirement',
+          'phone': 'AdmissionRequirement',
+          'email': 'AdmissionRequirement',
 
         },
         {
-          'img' : 'assets/techersinformation/administrative/unknown.png',
-          'name' : 'Dulal Roy',
-          'designation' : 'AdmissionRequirement',
-          'phone' : 'AdmissionRequirement',
-          'email' : 'AdmissionRequirement',
+          'img': 'assets/techersinformation/administrative/unknown.png',
+          'name': 'Dulal Roy',
+          'designation': 'AdmissionRequirement',
+          'phone': 'AdmissionRequirement',
+          'email': 'AdmissionRequirement',
         },
       ]
     },
@@ -424,82 +424,102 @@ class HomeContrller extends GetxController{
   //studentoftheaward
   List studentoftheaward = [
     {
-      'img' : 'assets/techersinformation/administrative/passport size.png',
-      'session' : '2011-2012 session 1st position in all of Bangladesh.',
-      'Name' : 'Name:- Mukta Akhtar',
-      'Department' : 'Department:- Civil',
-      'Roll' : 'Roll:-512766',
-      'CGPA' : 'CGPA:-3.97',
+      'img': 'assets/techersinformation/administrative/passport size.png',
+      'session': '2011-2012 session 1st position in all of Bangladesh.',
+      'Name': 'Name:- Mukta Akhtar',
+      'Department': 'Department:- Civil',
+      'Roll': 'Roll:-512766',
+      'CGPA': 'CGPA:-3.97',
     },
     {
-      'img' : 'assets/techersinformation/administrative/passport size.png',
-      'session' : '2012-2013 session 1st position in all of Bangladesh.',
-      'Name' : 'Name:- Suma Akhter',
-      'Department' : 'Department:- Civil',
-      'Roll' : 'Roll:- 619510',
-      'CGPA' : 'CGPA:- 3.99',
+      'img': 'assets/techersinformation/administrative/passport size.png',
+      'session': '2012-2013 session 1st position in all of Bangladesh.',
+      'Name': 'Name:- Suma Akhter',
+      'Department': 'Department:- Civil',
+      'Roll': 'Roll:- 619510',
+      'CGPA': 'CGPA:- 3.99',
     },
     {
-      'img' : 'assets/techersinformation/administrative/passport size.png',
-      'session' : '2012-2013 session 1st position in all of Bangladesh.',
-      'Name' : 'Name:- Prema Akhter',
-      'Department' : 'Department:- Computer',
-      'Roll' : 'Roll:- 62998',
-      'CGPA' : 'CGPA:- 3.97',
+      'img': 'assets/techersinformation/administrative/passport size.png',
+      'session': '2012-2013 session 1st position in all of Bangladesh.',
+      'Name': 'Name:- Prema Akhter',
+      'Department': 'Department:- Computer',
+      'Roll': 'Roll:- 62998',
+      'CGPA': 'CGPA:- 3.97',
     },
     {
-      'img' : 'assets/techersinformation/administrative/unknown.png',
-      'session' : '2012-2013 session 2nd position in all of Bangladesh.',
-      'Name' : 'Name:- Md. Rakib Hasan.',
-      'Department' : 'Department:- Civil',
-      'Roll' : 'Roll:- 614612',
-      'CGPA' : 'CGPA:- 3.98',
+      'img': 'assets/techersinformation/administrative/unknown.png',
+      'session': '2012-2013 session 2nd position in all of Bangladesh.',
+      'Name': 'Name:- Md. Rakib Hasan.',
+      'Department': 'Department:- Civil',
+      'Roll': 'Roll:- 614612',
+      'CGPA': 'CGPA:- 3.98',
     },
     {
-      'img' : 'assets/techersinformation/administrative/passport size.png',
-      'session' : '2012-2013 session 2nd position in all of Bangladesh.',
-      'Name' : 'Name:- Zakia Sultana',
-      'Department' : 'Department:- Computer',
-      'Roll' : 'Roll:- 630018',
-      'CGPA' : 'CGPA:- 3.96',
+      'img': 'assets/techersinformation/administrative/passport size.png',
+      'session': '2012-2013 session 2nd position in all of Bangladesh.',
+      'Name': 'Name:- Zakia Sultana',
+      'Department': 'Department:- Computer',
+      'Roll': 'Roll:- 630018',
+      'CGPA': 'CGPA:- 3.96',
     },
   ];
-
 
 
   //PPI Alumni Association
   List ppialumnitiems = [
     {
-      'img' : 'assets/techersinformation/administrative/passport size.png',
-      'Name' : 'Ankan Biswas',
-      'subtitle' : 'Manager in Eco Bank',
-      'Company' : 'Company Name:- Eco Bank',
-      'Phone' : 'Phone:- 01571258430',
-      'email' : 'Email Address:- ankan.dev.prog@gmail.com',
-      'Department' : 'Department:- Computer',
-      'Roll' : 'Roll:-566989',
-      'CGPA' : 'CGPA:-3.98',
+      'img': 'assets/ppialumoneassociation/man.png',
+      'Name': 'Ankan Biswas',
+      'subtitle': 'Manager in Eco Bank',
+      'Company': 'Company Name:- Eco Bank',
+      'Phone': 'Phone:- 01571258430',
+      'email': 'Email Address:- ankan.dev.prog@gmail.com',
+      'Department': 'Department:- Computer',
+      'Roll': 'Roll:-566989',
+      'CGPA': 'CGPA:-3.98',
+    },
+    {
+      'img': 'assets/ppialumoneassociation/man.png',
+      'Name': 'Ankan Biswas',
+      'subtitle': 'Manager in Eco Bank',
+      'Company': 'Company Name:- Eco Bank',
+      'Phone': 'Phone:- 01571258430',
+      'email': 'Email Address:- ankan.dev.prog@gmail.com',
+      'Department': 'Department:- Computer',
+      'Roll': 'Roll:-566989',
+      'CGPA': 'CGPA:-3.98',
+    },
+    {
+      'img': 'assets/ppialumoneassociation/man.png',
+      'Name': 'Ankan Biswas',
+      'subtitle': 'Manager in Eco Bank',
+      'Company': 'Company Name:- Eco Bank',
+      'Phone': 'Phone:- 01571258430',
+      'email': 'Email Address:- ankan.dev.prog@gmail.com',
+      'Department': 'Department:- Computer',
+      'Roll': 'Roll:-566989',
+      'CGPA': 'CGPA:-3.98',
     },
   ];
 
 
-
-
-  //======================Home Screen Gridview========================
-  List<Homegridview> homegridviewlistmodelresponse = [];
-
-  //save response from api
-  void sethomegridviewlistmodel(){
-    homegridviewlistmodelresponse = homegridviewFromJson(HomeGridviewlist);
-    update();
-  }
-
-}
+//   //======================Home Screen Gridview========================
+//   List<Homegridview> homegridviewlistmodelresponse = [];
+//
+//   //save response from api
+//   void sethomegridviewlistmodel(){
+//     homegridviewlistmodelresponse = homegridviewFromJson(HomeGridviewlist);
+//     update();
+//   }
+//
+// }
   //======================PPI Alumni Association========================
   List<Ppialumniassociation> ppialumnimodelresponse = [];
 
   //save response from api
-  void setppialumnimodel(){
+  void setppialumnimodel() {
     ppialumnimodelresponse = ppialumniassociationFromJson(ppialumnitiems);
-
+    update();
   }
+}

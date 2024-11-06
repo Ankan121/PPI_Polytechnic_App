@@ -9,6 +9,7 @@ import '../views/homescreen/HomeGridViewItems/AdmissionandFee/admissionview/admi
 import '../views/homescreen/HomeGridViewItems/AdmissionandFee/admissionview/kanchanfa.dart';
 import '../views/homescreen/HomeGridViewItems/AdmissionandFee/admissionview/onlineapply.dart';
 import '../views/homescreen/HomeGridViewItems/AdmissionandFee/admissionview/wavier.dart';
+import '../views/homescreen/HomeGridViewItems/PPIAlumniassociation/ppialumniallview.dart';
 import '../views/homescreen/HomeGridViewItems/Result/resultpdf.dart';
 import '../views/homescreen/HomeGridViewItems/TeachersInformation/administrative.dart';
 import '../views/homescreen/HomeGridViewItems/TeachersInformation/teachers.dart';
@@ -18,7 +19,7 @@ import '../views/homescreen/HomeGridViewItems/department/department.dart';
 import '../views/homescreen/HomeGridViewItems/department/departmentallview.dart';
 import '../views/homescreen/HomeGridViewItems/Entertainment/entertainment.dart';
 import '../views/homescreen/HomeGridViewItems/Noticeboard/noticeboard.dart';
-import '../views/homescreen/HomeGridViewItems/ppialumniassociation.dart';
+import '../views/homescreen/HomeGridViewItems/PPIAlumniassociation/ppialumniassociation.dart';
 import '../views/homescreen/HomeGridViewItems/ppicareer.dart';
 import '../views/homescreen/HomeGridViewItems/Result/result.dart';
 import '../views/homescreen/HomeGridViewItems/Skilldevelopment/skilldevelopment.dart';
@@ -40,7 +41,7 @@ class Routes{
       case RoutesName.NoticeBoard:
         return MaterialPageRoute(builder: (context)=> const NoticeBoard());
       case RoutesName.TeachersInformation:
-        return MaterialPageRoute(builder: (context)=>  Teachersinformation());
+        return MaterialPageRoute(builder: (context)=>  const Teachersinformation());
       case RoutesName.Result:
         return MaterialPageRoute(builder: (context)=>  Result());
       case RoutesName.StudentOfTheAward:
@@ -68,7 +69,7 @@ class Routes{
       case RoutesName.Departmentallview:
         return MaterialPageRoute(builder: (context)=>  Departmentallview());
       case RoutesName.TeachersInformation:
-        return MaterialPageRoute(builder: (context)=>  Teachersinformation());
+        return MaterialPageRoute(builder: (context)=>  const Teachersinformation());
       case RoutesName.Administrative:
         return MaterialPageRoute(builder: (context)=>  const Administrative());
       case RoutesName.Teachers:
@@ -77,6 +78,8 @@ class Routes{
         return MaterialPageRoute(builder: (context)=>  const Teachersdepartment());
       case RoutesName.Resultpdf:
         return MaterialPageRoute(builder: (context)=>   Resultpdf());
+      case RoutesName.PPIAlumniAllView:
+        return MaterialPageRoute(builder: (context)=>   PPIAlumniAllView());
       default:
         return MaterialPageRoute(builder: (context)=> const Splashscreen());
     }
