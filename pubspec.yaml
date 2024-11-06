@@ -72,6 +72,10 @@ flutter:
     - assets/techersinformation/administrative/
     - assets/techersinformation/teachers/
     - assets/techersinformation/teachers/computer/
+    - assets/entertaintment/
+    - assets/entertaintment/2022/
+    - assets/entertaintment/2023/
+    - assets/ppialumoneassociation/
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/to/resolution-aware-images
 

@@ -16,12 +16,12 @@ import '../views/homescreen/HomeGridViewItems/TeachersInformation/teachersdepart
 import '../views/homescreen/HomeGridViewItems/aboutinstitute.dart';
 import '../views/homescreen/HomeGridViewItems/department/department.dart';
 import '../views/homescreen/HomeGridViewItems/department/departmentallview.dart';
-import '../views/homescreen/HomeGridViewItems/entertainment.dart';
-import '../views/homescreen/HomeGridViewItems/noticeboard.dart';
+import '../views/homescreen/HomeGridViewItems/Entertainment/entertainment.dart';
+import '../views/homescreen/HomeGridViewItems/Noticeboard/noticeboard.dart';
 import '../views/homescreen/HomeGridViewItems/ppialumniassociation.dart';
 import '../views/homescreen/HomeGridViewItems/ppicareer.dart';
 import '../views/homescreen/HomeGridViewItems/Result/result.dart';
-import '../views/homescreen/HomeGridViewItems/skilldevelopment.dart';
+import '../views/homescreen/HomeGridViewItems/Skilldevelopment/skilldevelopment.dart';
 import '../views/homescreen/HomeGridViewItems/studentoftheaward/studentoftheaward.dart';
 import '../views/homescreen/HomeGridViewItems/TeachersInformation/teachersinformation.dart';
 import '../views/homescreen/homeScreen.dart';

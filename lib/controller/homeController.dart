@@ -420,6 +420,52 @@ class HomeContrller extends GetxController{
   ];
 
 
+  //studentoftheaward
+  List studentoftheaward = [
+    {
+      'img' : 'assets/techersinformation/administrative/passport size.png',
+      'session' : '2011-2012 session 1st position in all of Bangladesh.',
+      'Name' : 'Name:- Mukta Akhtar',
+      'Department' : 'Department:- Civil',
+      'Roll' : 'Roll:-512766',
+      'CGPA' : 'CGPA:-3.97',
+    },
+    {
+      'img' : 'assets/techersinformation/administrative/passport size.png',
+      'session' : '2012-2013 session 1st position in all of Bangladesh.',
+      'Name' : 'Name:- Suma Akhter',
+      'Department' : 'Department:- Civil',
+      'Roll' : 'Roll:- 619510',
+      'CGPA' : 'CGPA:- 3.99',
+    },
+    {
+      'img' : 'assets/techersinformation/administrative/passport size.png',
+      'session' : '2012-2013 session 1st position in all of Bangladesh.',
+      'Name' : 'Name:- Prema Akhter',
+      'Department' : 'Department:- Computer',
+      'Roll' : 'Roll:- 62998',
+      'CGPA' : 'CGPA:- 3.97',
+    },
+    {
+      'img' : 'assets/techersinformation/administrative/unknown.png',
+      'session' : '2012-2013 session 2nd position in all of Bangladesh.',
+      'Name' : 'Name:- Md. Rakib Hasan.',
+      'Department' : 'Department:- Civil',
+      'Roll' : 'Roll:- 614612',
+      'CGPA' : 'CGPA:- 3.98',
+    },
+    {
+      'img' : 'assets/techersinformation/administrative/passport size.png',
+      'session' : '2012-2013 session 2nd position in all of Bangladesh.',
+      'Name' : 'Name:- Zakia Sultana',
+      'Department' : 'Department:- Computer',
+      'Roll' : 'Roll:- 630018',
+      'CGPA' : 'CGPA:- 3.96',
+    },
+  ];
+
+
+
 
   //======================Home Screen Gridview========================
   List<Homegridview> homegridviewlistmodelresponse = [];
