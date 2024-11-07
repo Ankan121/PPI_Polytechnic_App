@@ -39,6 +39,7 @@ dependencies:
   get: ^4.6.6
   data_table_2: ^2.5.15
   dob_input_field: ^2.0.0
+  url_launcher: ^6.3.1
 
 dev_dependencies:
   flutter_test:
