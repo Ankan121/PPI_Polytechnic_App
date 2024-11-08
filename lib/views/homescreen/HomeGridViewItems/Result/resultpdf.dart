@@ -62,6 +62,7 @@ class _ResultpdfState extends State<Resultpdf> {
                 // height: 10,
                 // width: 10,
                   decoration: BoxDecoration(
+
                     borderRadius: BorderRadius.circular(100),
                     border: Border.all(
                       width: 3,
@@ -94,6 +95,10 @@ class _ResultpdfState extends State<Resultpdf> {
                   height: 600.h,
                   width: double.infinity.w,
                   decoration: BoxDecoration(
+                    border: Border.all(
+                      width: 10,
+                      color: Colors.white,
+                    ),
                     color: AppColor.whiteColor,
                     borderRadius: BorderRadius.only(
                       topRight: Radius.circular(40.0),
@@ -101,7 +106,7 @@ class _ResultpdfState extends State<Resultpdf> {
                     ),
                   ),
                   child:  Padding(
-                    padding: const EdgeInsets.all(8.0),
+                    padding: const EdgeInsets.all(10.0),
                     child: SingleChildScrollView(
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,

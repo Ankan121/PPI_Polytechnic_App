@@ -73,6 +73,10 @@ class _DepartmentallviewState extends State<Departmentallview> {
                 height: 600.h,
                 width: double.infinity.w,
                 decoration: BoxDecoration(
+                  border: Border.all(
+                    width: 10,
+                    color: Colors.white,
+                  ),
                   color: AppColor.whiteColor,
                   borderRadius: BorderRadius.only(
                     topRight: Radius.circular(40.0),
@@ -84,7 +88,7 @@ class _DepartmentallviewState extends State<Departmentallview> {
                     children: [
                       SizedBox(height: 15.h,),
                       Padding(
-                        padding: const EdgeInsets.all(30.0),
+                        padding: const EdgeInsets.all(10.0),
                         child: Column(
                           children: [
                             Text('${widget.textview}',

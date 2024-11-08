@@ -71,6 +71,10 @@ class _AdmissionFeeState extends State<AdmissionFee> {
                 height: 600.h,
                 width: double.infinity.w,
                 decoration: BoxDecoration(
+                  border: Border.all(
+                    width: 10,
+                    color: Colors.white,
+                  ),
                   color: AppColor.whiteColor,
                   borderRadius: BorderRadius.only(
                     topRight: Radius.circular(40.0),

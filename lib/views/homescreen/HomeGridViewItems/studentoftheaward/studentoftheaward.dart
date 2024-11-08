@@ -122,25 +122,6 @@ class _StudentOfTheAwardState extends State<StudentOfTheAward> {
                                           crossAxisAlignment: CrossAxisAlignment.start,
                                           mainAxisAlignment: MainAxisAlignment.center,
                                           children: [
-                                            // ClipRRect(
-                                            //   borderRadius: BorderRadius.circular(12.0),
-                                            //   child:homcon.studentoftheaward[index]["img"] != null || img!.isNotEmpty
-                                            //       ? Image.asset(
-                                            //     img!,
-                                            //     height: 90,
-                                            //     width: 90,
-                                            //     fit: BoxFit.cover,
-                                            //   )
-                                            //       : Container(
-                                            //           height: 90,
-                                            //           width: 90,
-                                            //           alignment: Alignment.center,
-                                            //           color: Colors.grey, // Optional: Background color for the placeholder
-                                            //           child: const Text(
-                                            //             'No Image',
-                                            //             style: TextStyle(fontSize: 16, color: Colors.white),
-                                            //           ),
-                                            //         ),),
                                             Center(
                                               child: Container(
                                                 width: 131.0,   // Equivalent to 40 mm

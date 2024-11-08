@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
 import 'package:ppi/constants/color.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 import '../../../../constants/customtext.dart';
 import '../../../../controller/homeController.dart';
@@ -19,7 +20,7 @@ class _AboutInstituteState extends State<AboutInstitute> {
 
     final TextStyle? largeblack = TextFormate(colors: Colors.black.withOpacity(0.7)).textLargeFormate(context);
     final TextStyle? mediumblack = TextFormate(colors: Colors.black.withOpacity(0.7)).textMediumFormate(context);
-    final TextStyle? smallblack = TextFormate(colors: Colors.black).textSmallFormate(context);
+    final TextStyle? smallblack = TextFormate(colors: Colors.black.withOpacity(0.5)).textSmallFormate(context);
 
 
     return GetBuilder<HomeContrller>(builder: (HomeContrller homcon) {
@@ -74,6 +75,10 @@ class _AboutInstituteState extends State<AboutInstitute> {
                 width: double.infinity.w,
                 decoration: BoxDecoration(
                   color: AppColor.whiteColor,
+                  border: Border.all(
+                    width: 10,
+                    color: Colors.white,
+                  ),
                   borderRadius: BorderRadius.only(
                     topRight: Radius.circular(40.0),
                     topLeft: Radius.circular(40.0),
@@ -84,7 +89,7 @@ class _AboutInstituteState extends State<AboutInstitute> {
                     children: [
                       SizedBox(height: 15.h,),
                       Padding(
-                        padding: const EdgeInsets.all(10.0),
+                        padding: const EdgeInsets.all(5.0),
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.center,
                           children: [
@@ -338,9 +343,64 @@ class _AboutInstituteState extends State<AboutInstitute> {
                                   leading: Icon(Icons.circle, size: 10, color: Colors.black),
                                   title: Text("The entire campus is monitored by CC cameras.",style: mediumblack,),
                                 ),
+                                SizedBox(height: 30.h,),
+                                Row(
+                                  crossAxisAlignment: CrossAxisAlignment.center,
+                                  mainAxisAlignment: MainAxisAlignment.center,
+                                  children: [
+                                    Expanded(
+                                      child: Column(
+                                        crossAxisAlignment: CrossAxisAlignment.center,
+                                        mainAxisAlignment: MainAxisAlignment.center,
+                                        children: [
+                                          Icon(Icons.location_pin, color: Colors.black.withOpacity(0.5)),
+                                          Center(child: Text("ADDRESS", style: smallblack)),
+                                          Center(child: Text("Pubergaon,", style: smallblack)),
+                                          Center(child: Text("Atlapur,Rupganj,", style: smallblack)),
+                                          Center(child: Text("Narayangan", style: smallblack)),
+                                        ],
+                                      ),
+                                    ),
+                                    SizedBox(width: 10.w),
+                                    Expanded(
+                                      child: InkWell(
+                                        onTap: (){
+                                          launch("tel:+8801735-364353");
+                                        },
+                                        child: Column(
+                                          crossAxisAlignment: CrossAxisAlignment.center,
+                                          mainAxisAlignment: MainAxisAlignment.center,
+                                          children: [
+                                            Icon(Icons.call, color: Colors.black.withOpacity(0.5)),
+                                            Center(child: Text("LET'S TALK", style: smallblack)),
+                                            Center(child: Text("Phone: ", style: smallblack)),
+                                            Center(child: Text("01735-364353", style: smallblack)),
+                                          ],
+                                        ),
+                                      ),
+                                    ),
+                                    SizedBox(width: 10.w),
+                                    Expanded(
+                                      child: InkWell(
+                                        onTap: () {
+                                          launch("mailto:ppmirg@gmail.com?subject=Hello&body=I would like to contact you.");
+                                        },
+                                        child: Column(
+                                          crossAxisAlignment: CrossAxisAlignment.center,
+                                          mainAxisAlignment: MainAxisAlignment.center,
+                                          children: [
+                                            Icon(Icons.email, color: Colors.black.withOpacity(0.5)),
+                                            Center(child: Text("EMAIL US", style: smallblack)),
+                                            Center(child: Text("ppmirg@gmail.com", style: smallblack)),
+                                          ],
+                                        ),
+                                      ),
+                                    ),
+                                  ],
+                                )
                               ],
                             ),
-                            SizedBox(height: 10.h,),
+                            SizedBox(height: 40.h,),
 
 
 
