@@ -28,7 +28,7 @@ class _EntertainmentState extends State<Entertainment> {
       double screenWidth = MediaQuery.of(context).size.width;
 
       // Calculate height based on a 3:2 aspect ratio
-      double containerHeight = screenWidth * (2 / 3);
+      double containerHeight = screenWidth * (2 / 3.3);
 
       return Scaffold(
         backgroundColor: AppColor.homepageappbarcolor,

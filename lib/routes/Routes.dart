@@ -14,7 +14,7 @@ import '../views/homescreen/HomeGridViewItems/Result/resultpdf.dart';
 import '../views/homescreen/HomeGridViewItems/TeachersInformation/administrative.dart';
 import '../views/homescreen/HomeGridViewItems/TeachersInformation/teachers.dart';
 import '../views/homescreen/HomeGridViewItems/TeachersInformation/teachersdepartment.dart';
-import '../views/homescreen/HomeGridViewItems/aboutinstitute.dart';
+import '../views/homescreen/HomeGridViewItems/aboutinstitute/aboutinstitute.dart';
 import '../views/homescreen/HomeGridViewItems/department/department.dart';
 import '../views/homescreen/HomeGridViewItems/department/departmentallview.dart';
 import '../views/homescreen/HomeGridViewItems/Entertainment/entertainment.dart';

@@ -4,6 +4,7 @@ import 'package:get/get.dart';
 import 'package:ppi/constants/color.dart';
 import 'package:url_launcher/url_launcher.dart';
 
+
 import '../../../../constants/customtext.dart';
 import '../../../../controller/homeController.dart';
 import '../../../../model/ppialumniassociation.dart';
@@ -24,33 +25,6 @@ class _PPIAlumniAllViewState extends State<PPIAlumniAllView> {
     WidgetsBinding.instance.addPostFrameCallback((_) {
       Get.find<HomeContrller>().setppialumnimodel();
     });
-  }
-
-  // ফোন ডায়ালার খোলার ফাংশন
-  void _launchDialPad() async {
-    final Uri phoneUri = Uri(
-      scheme: 'tel',
-      path: widget.ppialumnimodel?.phone,
-    );
-    if (await canLaunchUrl(phoneUri)) {
-      await launchUrl(phoneUri);
-    } else {
-      throw 'Could not launch ${widget.ppialumnimodel?.phone}';
-    }
-  }
-
-  // ইমেইল পাঠানোর ফাংশন
-  void _sendEmail() async {
-    final Uri emailUri = Uri(
-      scheme: 'mailto',
-      path: widget.ppialumnimodel?.email ?? 'example@gmail.com',
-      query: 'subject=Hello&body=I would like to contact you', // ঐচ্ছিক
-    );
-    if (await canLaunchUrl(emailUri)) {
-      await launchUrl(emailUri);
-    } else {
-      throw 'Could not send email to ${widget.ppialumnimodel?.email}';
-    }
   }
 
 
@@ -169,7 +143,9 @@ class _PPIAlumniAllViewState extends State<PPIAlumniAllView> {
                                             child: Padding(
                                               padding: const EdgeInsets.all(8.0),
                                               child: ListTile(
-                                                onTap: _launchDialPad, // ফোন নম্বরে ক্লিক করলে ডায়ালার খোলে
+                                                onTap: (){
+                                                  launch("tel:${widget.ppialumnimodel!.phone}");
+                                                }, // ফোন নম্বরে ক্লিক করলে ডায়ালার খোলে
                                                 leading: Container(
                                                   padding: EdgeInsets.all(8.0), // আইকনের চারপাশে স্পেস
                                                   decoration: BoxDecoration(
@@ -195,7 +171,9 @@ class _PPIAlumniAllViewState extends State<PPIAlumniAllView> {
                                             child: Padding(
                                               padding: const EdgeInsets.all(8.0),
                                               child: ListTile(
-                                                onTap: _sendEmail,
+                                                onTap: () {
+                                                  launch("mailto:${widget.ppialumnimodel!.email}?subject=Hello&body=I would like to contact you.");
+                                                },
                                                 leading: Container(
                                                   padding: EdgeInsets.all(8.0), // আইকনের চারপাশে স্পেস
                                                   decoration: BoxDecoration(
