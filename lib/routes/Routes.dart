@@ -12,6 +12,7 @@ import '../views/homescreen/HomeGridViewItems/AdmissionandFee/admissionview/onli
 import '../views/homescreen/HomeGridViewItems/AdmissionandFee/admissionview/wavier.dart';
 import '../views/homescreen/HomeGridViewItems/PPIAlumniassociation/ppialumniallview.dart';
 import '../views/homescreen/HomeGridViewItems/Result/resultpdf.dart';
+import '../views/homescreen/HomeGridViewItems/Skilldevelopment/skilldwebview.dart';
 import '../views/homescreen/HomeGridViewItems/TeachersInformation/administrative.dart';
 import '../views/homescreen/HomeGridViewItems/TeachersInformation/teachers.dart';
 import '../views/homescreen/HomeGridViewItems/TeachersInformation/teachersdepartment.dart';
@@ -83,6 +84,8 @@ class Routes{
         return MaterialPageRoute(builder: (context)=>   PPIAlumniAllView());
       case RoutesName.skilldevolopmentallview:
         return MaterialPageRoute(builder: (context)=>   skilldevolopmentallview(items: [],));
+      case RoutesName.SkillDVebview:
+        return MaterialPageRoute(builder: (context)=>   SkillDVebview());
       default:
         return MaterialPageRoute(builder: (context)=> const Splashscreen());
     }

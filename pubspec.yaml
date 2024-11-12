@@ -40,6 +40,7 @@ dependencies:
   data_table_2: ^2.5.15
   dob_input_field: ^2.0.0
   url_launcher: ^6.3.1
+  webview_flutter: ^4.10.0
 
 dev_dependencies:
   flutter_test:

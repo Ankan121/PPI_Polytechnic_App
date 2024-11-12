@@ -51,7 +51,7 @@ class _SkillDevelopmentState extends State<SkillDevelopment> {
             IconButton(onPressed: (){}, icon: Icon(Icons.settings,color: AppColor.whiteColor,size: 30,))
           ],
           title: Text(
-            'Department',  // এখানে প্রাপ্ত নামটি দেখানো হচ্ছে
+            'Skill Development',  // এখানে প্রাপ্ত নামটি দেখানো হচ্ছে
             style: context.textTheme.titleLarge?.copyWith(
               color: AppColor.whiteColor,
               fontWeight: FontWeight.bold,

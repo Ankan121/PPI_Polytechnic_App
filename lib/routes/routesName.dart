@@ -53,4 +53,6 @@ class RoutesName{
   static const PPIAlumniAllView = 'PPIAlumniAllView';
   //skilldevolopmentallview
   static const skilldevolopmentallview = 'skilldevolopmentallview';
+  //SkillDVebview
+  static const SkillDVebview = 'SkillDVebview';
 }

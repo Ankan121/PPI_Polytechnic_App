@@ -4,6 +4,7 @@ import 'package:get/get.dart';
 import 'package:ppi/constants/color.dart';
 import 'package:ppi/constants/custombutton.dart';
 import 'package:ppi/main.dart';
+import 'package:ppi/views/homescreen/HomeGridViewItems/Skilldevelopment/skilldwebview.dart';
 
 import '../../../../../constants/customtext.dart';
 import '../../../../../controller/homeController.dart';
@@ -105,37 +106,42 @@ class _skilldevolopmentallviewState extends State<skilldevolopmentallview> {
 
                             return Padding(
                               padding: const EdgeInsets.all(20.0),
-                              child: Column(
-                                crossAxisAlignment: CrossAxisAlignment.center,
-                                mainAxisAlignment: MainAxisAlignment.start,
-                                children: [
-
-                                  Container(
-                                    height: 150.0.h,
-                                    width: 150.0.w,
-                                    decoration: BoxDecoration(
-                                      border: Border.all(color: Colors.black.withOpacity(0.5)),
-                                      image: DecorationImage(
-                                        image: AssetImage("${widget.items[index]['img']}"),
-                                        fit: BoxFit.fill,
+                              child: InkWell(
+                                onTap: (){
+                                  Get.to(SkillDVebview(alllink: "${widget.items[index]['link']}",));
+                                  //print("${widget.items[index]['link']}",);
+                                },
+                                child: Column(
+                                  crossAxisAlignment: CrossAxisAlignment.center,
+                                  mainAxisAlignment: MainAxisAlignment.start,
+                                  children: [
+                                    Container(
+                                      height: 120.0.h,
+                                      width: 120.0.w,
+                                      decoration: BoxDecoration(
+                                        border: Border.all(color: Colors.black.withOpacity(0.5)),
+                                        image: DecorationImage(
+                                          image: AssetImage("${widget.items[index]['img']}"),
+                                          fit: BoxFit.fill,
+                                        ),
+                                        //shape: BoxShape.circle,
                                       ),
-                                      //shape: BoxShape.circle,
                                     ),
-                                  ),
-                                  SizedBox(height: 10.h,),
-                                      Text("${widget.items[index]['name']}",style: largeblack,),
-                                      // Text("${widget.items[index]['designation']}",style: mediumblack,),
+                                    SizedBox(height: 10.h,),
+                                        Text("${widget.items[index]['name']}",style: largeblack,),
+                                        // Text("${widget.items[index]['designation']}",style: mediumblack,),
 
-                                  // Column(
-                                  //   crossAxisAlignment: CrossAxisAlignment.start,
-                                  //   children: [
-                                  //     Text("${widget.items[index]['name']}",style: largeblack,),
-                                  //     Text("${widget.items[index]['designation']}",style: mediumblack,),
-                                  //     Text("${widget.items[index]['phone']}",style: mediumblack,),
-                                  //     Text("${widget.items[index]['email']}",style: mediumblack,),
-                                  //   ],
-                                  // ),
-                                ],
+                                    // Column(
+                                    //   crossAxisAlignment: CrossAxisAlignment.start,
+                                    //   children: [
+                                    //     Text("${widget.items[index]['name']}",style: largeblack,),
+                                    //     Text("${widget.items[index]['designation']}",style: mediumblack,),
+                                    //     Text("${widget.items[index]['phone']}",style: mediumblack,),
+                                    //     Text("${widget.items[index]['email']}",style: mediumblack,),
+                                    //   ],
+                                    // ),
+                                  ],
+                                ),
                               ),
                             );
                           },

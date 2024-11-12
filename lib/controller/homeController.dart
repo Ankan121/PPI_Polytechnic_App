@@ -487,7 +487,7 @@ class HomeContrller extends GetxController {
           {
             'img': 'assets/webview/extra knowlage/muktopaath.png',
             'name': 'Muktopaath',
-            'Muktopaath': '''
+            'link': '''
                            WebViewController()
                           ..setJavaScriptMode(JavaScriptMode.unrestricted)
                           ..setNavigationDelegate(
@@ -513,7 +513,7 @@ class HomeContrller extends GetxController {
           {
             'img': 'assets/techersinformation/administrative/nurul huq.jpeg',
             'name': 'Muktopaath',
-            'Muktopaath': '''
+            'link': '''
                            WebViewController()
                           ..setJavaScriptMode(JavaScriptMode.unrestricted)
                           ..setNavigationDelegate(
@@ -539,7 +539,7 @@ class HomeContrller extends GetxController {
           {
             'img': 'assets/webview/extra knowlage/muktopaath.png',
             'name': 'Muktopaath',
-            'Muktopaath': '''
+            'link': '''
                            WebViewController()
                           ..setJavaScriptMode(JavaScriptMode.unrestricted)
                           ..setNavigationDelegate(
@@ -565,7 +565,7 @@ class HomeContrller extends GetxController {
           {
             'img': 'assets/webview/extra knowlage/muktopaath.png',
             'name': 'Muktopaath',
-            'Muktopaath': '''
+            'link': '''
                            WebViewController()
                           ..setJavaScriptMode(JavaScriptMode.unrestricted)
                           ..setNavigationDelegate(
@@ -596,7 +596,7 @@ class HomeContrller extends GetxController {
           {
             'img': 'assets/webview/extra knowlage/muktopaath.png',
             'name': 'Muktopaath',
-            'Muktopaath': '''
+            'link': '''
                            WebViewController()
                           ..setJavaScriptMode(JavaScriptMode.unrestricted)
                           ..setNavigationDelegate(
@@ -622,7 +622,7 @@ class HomeContrller extends GetxController {
           {
             'img': 'assets/techersinformation/administrative/nurul huq.jpeg',
             'name': 'Muktopaath',
-            'Muktopaath': '''
+            'link': '''
                            WebViewController()
                           ..setJavaScriptMode(JavaScriptMode.unrestricted)
                           ..setNavigationDelegate(
@@ -653,7 +653,7 @@ class HomeContrller extends GetxController {
           {
             'img': 'assets/techersinformation/administrative/nurul huq.jpeg',
             'name': 'Muktopaath',
-            'Muktopaath': '''
+            'link': '''
                            WebViewController()
                           ..setJavaScriptMode(JavaScriptMode.unrestricted)
                           ..setNavigationDelegate(
@@ -679,7 +679,7 @@ class HomeContrller extends GetxController {
           {
             'img': 'assets/techersinformation/administrative/nurul huq.jpeg',
             'name': 'Muktopaath',
-            'Muktopaath': '''
+            'link': '''
                            WebViewController()
                           ..setJavaScriptMode(JavaScriptMode.unrestricted)
                           ..setNavigationDelegate(
@@ -710,7 +710,7 @@ class HomeContrller extends GetxController {
           {
             'img': 'assets/techersinformation/administrative/nurul huq.jpeg',
             'name': 'Muktopaath',
-            'Muktopaath': '''
+            'link': '''
                            WebViewController()
                           ..setJavaScriptMode(JavaScriptMode.unrestricted)
                           ..setNavigationDelegate(
@@ -736,7 +736,7 @@ class HomeContrller extends GetxController {
           {
             'img': 'assets/techersinformation/administrative/nurul huq.jpeg',
             'name': 'Muktopaath',
-            'Muktopaath': '''
+            'link': '''
                            WebViewController()
                           ..setJavaScriptMode(JavaScriptMode.unrestricted)
                           ..setNavigationDelegate(
@@ -767,7 +767,7 @@ class HomeContrller extends GetxController {
           {
             'img': 'assets/techersinformation/administrative/nurul huq.jpeg',
             'name': 'Muktopaath',
-            'Muktopaath': '''
+            'link': '''
                            WebViewController()
                           ..setJavaScriptMode(JavaScriptMode.unrestricted)
                           ..setNavigationDelegate(
@@ -793,7 +793,7 @@ class HomeContrller extends GetxController {
           {
             'img': 'assets/techersinformation/administrative/nurul huq.jpeg',
             'name': 'Muktopaath',
-            'Muktopaath': '''
+            'link': '''
                            WebViewController()
                           ..setJavaScriptMode(JavaScriptMode.unrestricted)
                           ..setNavigationDelegate(
@@ -824,7 +824,7 @@ class HomeContrller extends GetxController {
           {
             'img': 'assets/techersinformation/administrative/nurul huq.jpeg',
             'name': 'Muktopaath',
-            'Muktopaath': '''
+            'link': '''
                            WebViewController()
                           ..setJavaScriptMode(JavaScriptMode.unrestricted)
                           ..setNavigationDelegate(
@@ -850,7 +850,7 @@ class HomeContrller extends GetxController {
           {
             'img': 'assets/techersinformation/administrative/nurul huq.jpeg',
             'name': 'Muktopaath',
-            'Muktopaath': '''
+            'link': '''
                            WebViewController()
                           ..setJavaScriptMode(JavaScriptMode.unrestricted)
                           ..setNavigationDelegate(
@@ -881,7 +881,7 @@ class HomeContrller extends GetxController {
           {
             'img': 'assets/techersinformation/administrative/nurul huq.jpeg',
             'name': 'Muktopaath',
-            'Muktopaath': '''
+            'link': '''
                            WebViewController()
                           ..setJavaScriptMode(JavaScriptMode.unrestricted)
                           ..setNavigationDelegate(
@@ -907,7 +907,7 @@ class HomeContrller extends GetxController {
           {
             'img': 'assets/techersinformation/administrative/nurul huq.jpeg',
             'name': 'Muktopaath',
-            'Muktopaath': '''
+            'link': '''
                            WebViewController()
                           ..setJavaScriptMode(JavaScriptMode.unrestricted)
                           ..setNavigationDelegate(
@@ -938,7 +938,7 @@ class HomeContrller extends GetxController {
           {
             'img': 'assets/techersinformation/administrative/nurul huq.jpeg',
             'name': 'Muktopaath',
-            'Muktopaath': '''
+            'link': '''
                            WebViewController()
                           ..setJavaScriptMode(JavaScriptMode.unrestricted)
                           ..setNavigationDelegate(
@@ -964,7 +964,7 @@ class HomeContrller extends GetxController {
           {
             'img': 'assets/techersinformation/administrative/nurul huq.jpeg',
             'name': 'Muktopaath',
-            'Muktopaath': '''
+            'link': '''
                            WebViewController()
                           ..setJavaScriptMode(JavaScriptMode.unrestricted)
                           ..setNavigationDelegate(
@@ -995,7 +995,7 @@ class HomeContrller extends GetxController {
           {
             'img': 'assets/techersinformation/administrative/nurul huq.jpeg',
             'name': 'Muktopaath',
-            'Muktopaath': '''
+            'link': '''
                            WebViewController()
                           ..setJavaScriptMode(JavaScriptMode.unrestricted)
                           ..setNavigationDelegate(
@@ -1021,7 +1021,7 @@ class HomeContrller extends GetxController {
           {
             'img': 'assets/techersinformation/administrative/nurul huq.jpeg',
             'name': 'Muktopaath',
-            'Muktopaath': '''
+            'link': '''
                            WebViewController()
                           ..setJavaScriptMode(JavaScriptMode.unrestricted)
                           ..setNavigationDelegate(
@@ -1052,7 +1052,7 @@ class HomeContrller extends GetxController {
           {
             'img': 'assets/techersinformation/administrative/nurul huq.jpeg',
             'name': 'Muktopaath',
-            'Muktopaath': '''
+            'link': '''
                            WebViewController()
                           ..setJavaScriptMode(JavaScriptMode.unrestricted)
                           ..setNavigationDelegate(
@@ -1078,7 +1078,7 @@ class HomeContrller extends GetxController {
           {
             'img': 'assets/techersinformation/administrative/nurul huq.jpeg',
             'name': 'Muktopaath',
-            'Muktopaath': '''
+            'link': '''
                            WebViewController()
                           ..setJavaScriptMode(JavaScriptMode.unrestricted)
                           ..setNavigationDelegate(
@@ -1109,7 +1109,7 @@ class HomeContrller extends GetxController {
           {
             'img': 'assets/techersinformation/administrative/nurul huq.jpeg',
             'name': 'Muktopaath',
-            'Muktopaath': '''
+            'link': '''
                            WebViewController()
                           ..setJavaScriptMode(JavaScriptMode.unrestricted)
                           ..setNavigationDelegate(
@@ -1135,7 +1135,7 @@ class HomeContrller extends GetxController {
           {
             'img': 'assets/techersinformation/administrative/nurul huq.jpeg',
             'name': 'Muktopaath',
-            'Muktopaath': '''
+            'link': '''
                            WebViewController()
                           ..setJavaScriptMode(JavaScriptMode.unrestricted)
                           ..setNavigationDelegate(
