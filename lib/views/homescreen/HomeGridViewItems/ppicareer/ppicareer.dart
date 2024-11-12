@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:ppi/constants/color.dart';
 
-import '../../../constants/customtext.dart';
+import '../../../../constants/customtext.dart';
 
 class PPICareer extends StatefulWidget {
   const PPICareer({super.key});

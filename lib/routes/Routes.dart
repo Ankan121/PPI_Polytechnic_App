@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:ppi/routes/routesName.dart';
+import 'package:ppi/views/homescreen/HomeGridViewItems/Skilldevelopment/skilldevelopmentallview.dart';
 import 'package:ppi/views/splashScreen/splashScreen.dart';
 
 import '../views/homescreen/HomeGridViewItems/AdmissionandFee/AdmissionAndFee.dart';
@@ -20,7 +21,7 @@ import '../views/homescreen/HomeGridViewItems/department/departmentallview.dart'
 import '../views/homescreen/HomeGridViewItems/Entertainment/entertainment.dart';
 import '../views/homescreen/HomeGridViewItems/Noticeboard/noticeboard.dart';
 import '../views/homescreen/HomeGridViewItems/PPIAlumniassociation/ppialumniassociation.dart';
-import '../views/homescreen/HomeGridViewItems/ppicareer.dart';
+import '../views/homescreen/HomeGridViewItems/ppicareer/ppicareer.dart';
 import '../views/homescreen/HomeGridViewItems/Result/result.dart';
 import '../views/homescreen/HomeGridViewItems/Skilldevelopment/skilldevelopment.dart';
 import '../views/homescreen/HomeGridViewItems/studentoftheaward/studentoftheaward.dart';
@@ -80,6 +81,8 @@ class Routes{
         return MaterialPageRoute(builder: (context)=>   Resultpdf());
       case RoutesName.PPIAlumniAllView:
         return MaterialPageRoute(builder: (context)=>   PPIAlumniAllView());
+      case RoutesName.skilldevolopmentallview:
+        return MaterialPageRoute(builder: (context)=>   skilldevolopmentallview(items: [],));
       default:
         return MaterialPageRoute(builder: (context)=> const Splashscreen());
     }

@@ -78,6 +78,8 @@ flutter:
     - assets/entertaintment/2023/
     - assets/ppialumoneassociation/
     - assets/aboutinformation/
+    - assets/webview/
+    - assets/webview/extra knowlage/
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/to/resolution-aware-images
 

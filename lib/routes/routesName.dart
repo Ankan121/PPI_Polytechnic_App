@@ -51,4 +51,6 @@ class RoutesName{
   static const Resultpdf = 'Resultpdf';
   //PPIAlumniAllView
   static const PPIAlumniAllView = 'PPIAlumniAllView';
+  //skilldevolopmentallview
+  static const skilldevolopmentallview = 'skilldevolopmentallview';
 }
