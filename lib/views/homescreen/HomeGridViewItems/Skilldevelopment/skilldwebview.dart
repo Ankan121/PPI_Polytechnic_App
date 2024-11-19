@@ -233,6 +233,8 @@ class _SkillDVebviewState extends State<SkillDVebview> {
               color: AppColor.whiteColor,
               fontWeight: FontWeight.bold,
             ),
+            maxLines: 1,
+            overflow: TextOverflow.ellipsis,
           ),
           centerTitle: true,
         ),

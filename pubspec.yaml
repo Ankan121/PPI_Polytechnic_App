@@ -83,6 +83,14 @@ flutter:
     - assets/webview/extra knowlage/
     - assets/webview/electrical/
     - assets/webview/computer/
+    - assets/webview/civil/
+    - assets/webview/mechanical/
+    - assets/webview/automobile/
+    - assets/webview/Fabric Manufacturing/
+    - assets/webview/Yarn Manufacturing/
+    - assets/webview/Apparel Manufacturing/
+    - assets/webview/Medical(Pharmacy)/
+    - assets/webview/Medical(Laboratory)/
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/to/resolution-aware-images
 

@@ -531,56 +531,9 @@ class HomeContrller extends GetxController {
         "buttonitem": "Mechanical",
         "items": [
           {
-            'img': 'assets/techersinformation/administrative/nurul huq.jpeg',
-            'name': 'Muktopaath',
-            'link': '''
-                           WebViewController()
-                          ..setJavaScriptMode(JavaScriptMode.unrestricted)
-                          ..setNavigationDelegate(
-                            NavigationDelegate(
-                              onProgress: (int progress) {
-                                // Update loading bar.
-                              },
-                              onPageStarted: (String url) {},
-                              onPageFinished: (String url) {},
-                              onHttpError: (HttpResponseError error) {},
-                              onWebResourceError: (WebResourceError error) {},
-                              onNavigationRequest: (NavigationRequest request) {
-                                if (request.url.startsWith('https://www.youtube.com/')) {
-                                  return NavigationDecision.prevent;
-                                }
-                                return NavigationDecision.navigate;
-                              },
-                            ),
-                          )
-                          ..loadRequest(Uri.parse('https://muktopaath.gov.bd/'))
-                            ''',
-          },
-          {
-            'img': 'assets/techersinformation/administrative/nurul huq.jpeg',
-            'name': 'Muktopaath',
-            'link': '''
-                           WebViewController()
-                          ..setJavaScriptMode(JavaScriptMode.unrestricted)
-                          ..setNavigationDelegate(
-                            NavigationDelegate(
-                              onProgress: (int progress) {
-                                // Update loading bar.
-                              },
-                              onPageStarted: (String url) {},
-                              onPageFinished: (String url) {},
-                              onHttpError: (HttpResponseError error) {},
-                              onWebResourceError: (WebResourceError error) {},
-                              onNavigationRequest: (NavigationRequest request) {
-                                if (request.url.startsWith('https://www.youtube.com/')) {
-                                  return NavigationDecision.prevent;
-                                }
-                                return NavigationDecision.navigate;
-                              },
-                            ),
-                          )
-                          ..loadRequest(Uri.parse('https://muktopaath.gov.bd/'))
-                            ''',
+            'img': 'assets/webview/mechanical/welding.jpg',
+            'name': 'Welding ',
+            'link': 'https://www.youtube.com/watch?v=UkpTq0m8IeE'
           },
         ]
       },
@@ -588,56 +541,9 @@ class HomeContrller extends GetxController {
         "buttonitem": "Civil",
         "items": [
           {
-            'img': 'assets/techersinformation/administrative/nurul huq.jpeg',
-            'name': 'Muktopaath',
-            'link': '''
-                           WebViewController()
-                          ..setJavaScriptMode(JavaScriptMode.unrestricted)
-                          ..setNavigationDelegate(
-                            NavigationDelegate(
-                              onProgress: (int progress) {
-                                // Update loading bar.
-                              },
-                              onPageStarted: (String url) {},
-                              onPageFinished: (String url) {},
-                              onHttpError: (HttpResponseError error) {},
-                              onWebResourceError: (WebResourceError error) {},
-                              onNavigationRequest: (NavigationRequest request) {
-                                if (request.url.startsWith('https://www.youtube.com/')) {
-                                  return NavigationDecision.prevent;
-                                }
-                                return NavigationDecision.navigate;
-                              },
-                            ),
-                          )
-                          ..loadRequest(Uri.parse('https://muktopaath.gov.bd/'))
-                            ''',
-          },
-          {
-            'img': 'assets/techersinformation/administrative/nurul huq.jpeg',
-            'name': 'Muktopaath',
-            'link': '''
-                           WebViewController()
-                          ..setJavaScriptMode(JavaScriptMode.unrestricted)
-                          ..setNavigationDelegate(
-                            NavigationDelegate(
-                              onProgress: (int progress) {
-                                // Update loading bar.
-                              },
-                              onPageStarted: (String url) {},
-                              onPageFinished: (String url) {},
-                              onHttpError: (HttpResponseError error) {},
-                              onWebResourceError: (WebResourceError error) {},
-                              onNavigationRequest: (NavigationRequest request) {
-                                if (request.url.startsWith('https://www.youtube.com/')) {
-                                  return NavigationDecision.prevent;
-                                }
-                                return NavigationDecision.navigate;
-                              },
-                            ),
-                          )
-                          ..loadRequest(Uri.parse('https://muktopaath.gov.bd/'))
-                            ''',
+            'img': 'assets/webview/civil/autocad.jpeg',
+            'name': 'AutoCad',
+            'link': 'https://www.youtube.com/watch?v=tNATCAHSgzY&list=PLfZ-5ZqoS0xGCBGQxGemqIbufUmtJyxMx&index=1'
           },
         ]
       },
@@ -645,56 +551,9 @@ class HomeContrller extends GetxController {
         "buttonitem": "Automobile",
         "items": [
           {
-            'img': 'assets/techersinformation/administrative/nurul huq.jpeg',
-            'name': 'Muktopaath',
-            'link': '''
-                           WebViewController()
-                          ..setJavaScriptMode(JavaScriptMode.unrestricted)
-                          ..setNavigationDelegate(
-                            NavigationDelegate(
-                              onProgress: (int progress) {
-                                // Update loading bar.
-                              },
-                              onPageStarted: (String url) {},
-                              onPageFinished: (String url) {},
-                              onHttpError: (HttpResponseError error) {},
-                              onWebResourceError: (WebResourceError error) {},
-                              onNavigationRequest: (NavigationRequest request) {
-                                if (request.url.startsWith('https://www.youtube.com/')) {
-                                  return NavigationDecision.prevent;
-                                }
-                                return NavigationDecision.navigate;
-                              },
-                            ),
-                          )
-                          ..loadRequest(Uri.parse('https://muktopaath.gov.bd/'))
-                            ''',
-          },
-          {
-            'img': 'assets/techersinformation/administrative/nurul huq.jpeg',
-            'name': 'Muktopaath',
-            'link': '''
-                           WebViewController()
-                          ..setJavaScriptMode(JavaScriptMode.unrestricted)
-                          ..setNavigationDelegate(
-                            NavigationDelegate(
-                              onProgress: (int progress) {
-                                // Update loading bar.
-                              },
-                              onPageStarted: (String url) {},
-                              onPageFinished: (String url) {},
-                              onHttpError: (HttpResponseError error) {},
-                              onWebResourceError: (WebResourceError error) {},
-                              onNavigationRequest: (NavigationRequest request) {
-                                if (request.url.startsWith('https://www.youtube.com/')) {
-                                  return NavigationDecision.prevent;
-                                }
-                                return NavigationDecision.navigate;
-                              },
-                            ),
-                          )
-                          ..loadRequest(Uri.parse('https://muktopaath.gov.bd/'))
-                            ''',
+            'img': 'assets/webview/automobile/automobile.jpg',
+            'name': 'Automobile ',
+            'link': 'https://www.youtube.com/watch?v=6O6Jzrj5HDs&list=PL_qYi3X0_AN5IFMFTvQhwVQpKeWEruDIN'
           },
         ]
       },
@@ -702,56 +561,9 @@ class HomeContrller extends GetxController {
         "buttonitem": "Fabric Manufacturing",
         "items": [
           {
-            'img': 'assets/techersinformation/administrative/nurul huq.jpeg',
-            'name': 'Muktopaath',
-            'link': '''
-                           WebViewController()
-                          ..setJavaScriptMode(JavaScriptMode.unrestricted)
-                          ..setNavigationDelegate(
-                            NavigationDelegate(
-                              onProgress: (int progress) {
-                                // Update loading bar.
-                              },
-                              onPageStarted: (String url) {},
-                              onPageFinished: (String url) {},
-                              onHttpError: (HttpResponseError error) {},
-                              onWebResourceError: (WebResourceError error) {},
-                              onNavigationRequest: (NavigationRequest request) {
-                                if (request.url.startsWith('https://www.youtube.com/')) {
-                                  return NavigationDecision.prevent;
-                                }
-                                return NavigationDecision.navigate;
-                              },
-                            ),
-                          )
-                          ..loadRequest(Uri.parse('https://muktopaath.gov.bd/'))
-                            ''',
-          },
-          {
-            'img': 'assets/techersinformation/administrative/nurul huq.jpeg',
-            'name': 'Muktopaath',
-            'link': '''
-                           WebViewController()
-                          ..setJavaScriptMode(JavaScriptMode.unrestricted)
-                          ..setNavigationDelegate(
-                            NavigationDelegate(
-                              onProgress: (int progress) {
-                                // Update loading bar.
-                              },
-                              onPageStarted: (String url) {},
-                              onPageFinished: (String url) {},
-                              onHttpError: (HttpResponseError error) {},
-                              onWebResourceError: (WebResourceError error) {},
-                              onNavigationRequest: (NavigationRequest request) {
-                                if (request.url.startsWith('https://www.youtube.com/')) {
-                                  return NavigationDecision.prevent;
-                                }
-                                return NavigationDecision.navigate;
-                              },
-                            ),
-                          )
-                          ..loadRequest(Uri.parse('https://muktopaath.gov.bd/'))
-                            ''',
+            'img': 'assets/webview/Fabric Manufacturing/Fabric Manufacturing-1.jpeg',
+            'name': 'Fabric Manufacturing-1',
+            'link': 'https://www.youtube.com/watch?v=0qzwhB92kuE&list=PLdJiYK7Nvb7qJnWKausf6zEEgtPFULr8Y'
           },
         ]
       },
@@ -759,56 +571,9 @@ class HomeContrller extends GetxController {
         "buttonitem": "Yarn Manufacturing",
         "items": [
           {
-            'img': 'assets/techersinformation/administrative/nurul huq.jpeg',
-            'name': 'Muktopaath',
-            'link': '''
-                           WebViewController()
-                          ..setJavaScriptMode(JavaScriptMode.unrestricted)
-                          ..setNavigationDelegate(
-                            NavigationDelegate(
-                              onProgress: (int progress) {
-                                // Update loading bar.
-                              },
-                              onPageStarted: (String url) {},
-                              onPageFinished: (String url) {},
-                              onHttpError: (HttpResponseError error) {},
-                              onWebResourceError: (WebResourceError error) {},
-                              onNavigationRequest: (NavigationRequest request) {
-                                if (request.url.startsWith('https://www.youtube.com/')) {
-                                  return NavigationDecision.prevent;
-                                }
-                                return NavigationDecision.navigate;
-                              },
-                            ),
-                          )
-                          ..loadRequest(Uri.parse('https://muktopaath.gov.bd/'))
-                            ''',
-          },
-          {
-            'img': 'assets/techersinformation/administrative/nurul huq.jpeg',
-            'name': 'Muktopaath',
-            'link': '''
-                           WebViewController()
-                          ..setJavaScriptMode(JavaScriptMode.unrestricted)
-                          ..setNavigationDelegate(
-                            NavigationDelegate(
-                              onProgress: (int progress) {
-                                // Update loading bar.
-                              },
-                              onPageStarted: (String url) {},
-                              onPageFinished: (String url) {},
-                              onHttpError: (HttpResponseError error) {},
-                              onWebResourceError: (WebResourceError error) {},
-                              onNavigationRequest: (NavigationRequest request) {
-                                if (request.url.startsWith('https://www.youtube.com/')) {
-                                  return NavigationDecision.prevent;
-                                }
-                                return NavigationDecision.navigate;
-                              },
-                            ),
-                          )
-                          ..loadRequest(Uri.parse('https://muktopaath.gov.bd/'))
-                            ''',
+            'img': 'assets/webview/Yarn Manufacturing/Yarn Manufacturing-1.png',
+            'name': 'Yarn Manufacturing',
+            'link': 'https://www.youtube.com/watch?v=77_a0lNT5_s&list=PLdJiYK7Nvb7qaBK7NXJCPDHjADkBsJyJy'
           },
         ]
       },
@@ -816,56 +581,9 @@ class HomeContrller extends GetxController {
         'buttonitem': 'Apparel Manufacturing',
         "items": [
           {
-            'img': 'assets/techersinformation/administrative/nurul huq.jpeg',
-            'name': 'Muktopaath',
-            'link': '''
-                           WebViewController()
-                          ..setJavaScriptMode(JavaScriptMode.unrestricted)
-                          ..setNavigationDelegate(
-                            NavigationDelegate(
-                              onProgress: (int progress) {
-                                // Update loading bar.
-                              },
-                              onPageStarted: (String url) {},
-                              onPageFinished: (String url) {},
-                              onHttpError: (HttpResponseError error) {},
-                              onWebResourceError: (WebResourceError error) {},
-                              onNavigationRequest: (NavigationRequest request) {
-                                if (request.url.startsWith('https://www.youtube.com/')) {
-                                  return NavigationDecision.prevent;
-                                }
-                                return NavigationDecision.navigate;
-                              },
-                            ),
-                          )
-                          ..loadRequest(Uri.parse('https://muktopaath.gov.bd/'))
-                            ''',
-          },
-          {
-            'img': 'assets/techersinformation/administrative/nurul huq.jpeg',
-            'name': 'Muktopaath',
-            'link': '''
-                           WebViewController()
-                          ..setJavaScriptMode(JavaScriptMode.unrestricted)
-                          ..setNavigationDelegate(
-                            NavigationDelegate(
-                              onProgress: (int progress) {
-                                // Update loading bar.
-                              },
-                              onPageStarted: (String url) {},
-                              onPageFinished: (String url) {},
-                              onHttpError: (HttpResponseError error) {},
-                              onWebResourceError: (WebResourceError error) {},
-                              onNavigationRequest: (NavigationRequest request) {
-                                if (request.url.startsWith('https://www.youtube.com/')) {
-                                  return NavigationDecision.prevent;
-                                }
-                                return NavigationDecision.navigate;
-                              },
-                            ),
-                          )
-                          ..loadRequest(Uri.parse('https://muktopaath.gov.bd/'))
-                            ''',
+            'img': 'assets/webview/Apparel Manufacturing/Apparel Manufacturing.jpg',
+            'name': 'Apparel Manufacturing',
+            'link': 'https://www.youtube.com/watch?v=bRbAKotBQJ8&list=PLfLSQzjCX1K9-p2iqJIaE6Qp7uZ_k5nSw'
           },
         ]
       },
@@ -873,56 +591,9 @@ class HomeContrller extends GetxController {
         'buttonitem': 'Medical(Pharmacy)',
         "items": [
           {
-            'img': 'assets/techersinformation/administrative/nurul huq.jpeg',
-            'name': 'Muktopaath',
-            'link': '''
-                           WebViewController()
-                          ..setJavaScriptMode(JavaScriptMode.unrestricted)
-                          ..setNavigationDelegate(
-                            NavigationDelegate(
-                              onProgress: (int progress) {
-                                // Update loading bar.
-                              },
-                              onPageStarted: (String url) {},
-                              onPageFinished: (String url) {},
-                              onHttpError: (HttpResponseError error) {},
-                              onWebResourceError: (WebResourceError error) {},
-                              onNavigationRequest: (NavigationRequest request) {
-                                if (request.url.startsWith('https://www.youtube.com/')) {
-                                  return NavigationDecision.prevent;
-                                }
-                                return NavigationDecision.navigate;
-                              },
-                            ),
-                          )
-                          ..loadRequest(Uri.parse('https://muktopaath.gov.bd/'))
-                            ''',
-          },
-          {
-            'img': 'assets/techersinformation/administrative/nurul huq.jpeg',
-            'name': 'Muktopaath',
-            'link': '''
-                           WebViewController()
-                          ..setJavaScriptMode(JavaScriptMode.unrestricted)
-                          ..setNavigationDelegate(
-                            NavigationDelegate(
-                              onProgress: (int progress) {
-                                // Update loading bar.
-                              },
-                              onPageStarted: (String url) {},
-                              onPageFinished: (String url) {},
-                              onHttpError: (HttpResponseError error) {},
-                              onWebResourceError: (WebResourceError error) {},
-                              onNavigationRequest: (NavigationRequest request) {
-                                if (request.url.startsWith('https://www.youtube.com/')) {
-                                  return NavigationDecision.prevent;
-                                }
-                                return NavigationDecision.navigate;
-                              },
-                            ),
-                          )
-                          ..loadRequest(Uri.parse('https://muktopaath.gov.bd/'))
-                            ''',
+            'img': 'assets/webview/Medical(Pharmacy)/Pharmacy.jpg',
+            'name': 'ডাক্তারের প্রেসক্রিপশন পড়া শিখুন',
+            'link': 'https://www.youtube.com/watch?v=F81pOWLXMgw'
           },
         ]
       },
@@ -930,56 +601,9 @@ class HomeContrller extends GetxController {
         'buttonitem': 'Medical(Laboratory)',
         "items": [
           {
-            'img': 'assets/techersinformation/administrative/nurul huq.jpeg',
-            'name': 'Muktopaath',
-            'link': '''
-                           WebViewController()
-                          ..setJavaScriptMode(JavaScriptMode.unrestricted)
-                          ..setNavigationDelegate(
-                            NavigationDelegate(
-                              onProgress: (int progress) {
-                                // Update loading bar.
-                              },
-                              onPageStarted: (String url) {},
-                              onPageFinished: (String url) {},
-                              onHttpError: (HttpResponseError error) {},
-                              onWebResourceError: (WebResourceError error) {},
-                              onNavigationRequest: (NavigationRequest request) {
-                                if (request.url.startsWith('https://www.youtube.com/')) {
-                                  return NavigationDecision.prevent;
-                                }
-                                return NavigationDecision.navigate;
-                              },
-                            ),
-                          )
-                          ..loadRequest(Uri.parse('https://muktopaath.gov.bd/'))
-                            ''',
-          },
-          {
-            'img': 'assets/techersinformation/administrative/nurul huq.jpeg',
-            'name': 'Muktopaath',
-            'link': '''
-                           WebViewController()
-                          ..setJavaScriptMode(JavaScriptMode.unrestricted)
-                          ..setNavigationDelegate(
-                            NavigationDelegate(
-                              onProgress: (int progress) {
-                                // Update loading bar.
-                              },
-                              onPageStarted: (String url) {},
-                              onPageFinished: (String url) {},
-                              onHttpError: (HttpResponseError error) {},
-                              onWebResourceError: (WebResourceError error) {},
-                              onNavigationRequest: (NavigationRequest request) {
-                                if (request.url.startsWith('https://www.youtube.com/')) {
-                                  return NavigationDecision.prevent;
-                                }
-                                return NavigationDecision.navigate;
-                              },
-                            ),
-                          )
-                          ..loadRequest(Uri.parse('https://muktopaath.gov.bd/'))
-                            ''',
+            'img': 'assets/webview/Medical(Laboratory)/Laboratory.jpg',
+            'name': 'Laboratory',
+            'link': 'https://www.youtube.com/watch?v=FDpqGX5Ia0g'
           },
         ]
 

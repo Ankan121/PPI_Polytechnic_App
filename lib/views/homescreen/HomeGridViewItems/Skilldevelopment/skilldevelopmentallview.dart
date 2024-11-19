@@ -131,7 +131,8 @@ class _skilldevolopmentallviewState extends State<skilldevolopmentallview> {
                                       ),
                                     ),
                                     SizedBox(height: 10.h,),
-                                        Text("${widget.items[index]['name']}",style: largeblack,),
+                                        Text("${widget.items[index]['name']}",style: largeblack,maxLines: 1,
+                                          overflow: TextOverflow.ellipsis,),
                                         // Text("${widget.items[index]['designation']}",style: mediumblack,),
 
                                     // Column(
