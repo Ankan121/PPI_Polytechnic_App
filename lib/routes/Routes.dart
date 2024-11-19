@@ -85,7 +85,7 @@ class Routes{
       case RoutesName.skilldevolopmentallview:
         return MaterialPageRoute(builder: (context)=>   skilldevolopmentallview(items: [],));
       case RoutesName.SkillDVebview:
-        return MaterialPageRoute(builder: (context)=>   SkillDVebview());
+        return MaterialPageRoute(builder: (context)=>   SkillDVebview(alllink: '',));
       default:
         return MaterialPageRoute(builder: (context)=> const Splashscreen());
     }

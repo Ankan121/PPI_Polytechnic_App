@@ -1,4 +1,5 @@
 import 'package:get/get.dart';
+import 'package:webview_flutter/webview_flutter.dart';
 
 import '../model/home_gridview.dart';
 import '../model/ppialumniassociation.dart';
@@ -487,28 +488,7 @@ class HomeContrller extends GetxController {
           {
             'img': 'assets/webview/extra knowlage/muktopaath.png',
             'name': 'Muktopaath',
-            'link': '''
-                           WebViewController()
-                          ..setJavaScriptMode(JavaScriptMode.unrestricted)
-                          ..setNavigationDelegate(
-                            NavigationDelegate(
-                              onProgress: (int progress) {
-                                // Update loading bar.
-                              },
-                              onPageStarted: (String url) {},
-                              onPageFinished: (String url) {},
-                              onHttpError: (HttpResponseError error) {},
-                              onWebResourceError: (WebResourceError error) {},
-                              onNavigationRequest: (NavigationRequest request) {
-                                if (request.url.startsWith('https://www.youtube.com/')) {
-                                  return NavigationDecision.prevent;
-                                }
-                                return NavigationDecision.navigate;
-                              },
-                            ),
-                          )
-                          ..loadRequest(Uri.parse('https://muktopaath.gov.bd/'))
-                            ''',
+            'link': 'https://muktopaath.gov.bd/'
           },
           {
             'img': 'assets/techersinformation/administrative/nurul huq.jpeg',

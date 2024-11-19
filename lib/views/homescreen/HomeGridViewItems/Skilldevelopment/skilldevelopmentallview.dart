@@ -94,7 +94,7 @@ class _skilldevolopmentallviewState extends State<skilldevolopmentallview> {
                             crossAxisSpacing: 10,  // Column এর মধ্যে spacing
                             //mainAxisSpacing: 10,  // Row এর মধ্যে spacing
                             //childAspectRatio: 1,  // Aspect ratio ঠিক রাখতে হবে (height:width = 1:1)
-                            childAspectRatio: 2 / 3, // প্রতিটি কন্টেইনারের অনুপাত (width : height)
+                            childAspectRatio: 2 / 2.5, // প্রতিটি কন্টেইনারের অনুপাত (width : height)
                           ),
                           itemBuilder: (context, index) {
 
@@ -108,7 +108,10 @@ class _skilldevolopmentallviewState extends State<skilldevolopmentallview> {
                               padding: const EdgeInsets.all(20.0),
                               child: InkWell(
                                 onTap: (){
-                                  Get.to(SkillDVebview(alllink: "${widget.items[index]['link']}",));
+                                  Get.to(SkillDVebview(
+                                    alllink: "${widget.items[index]['link']}",
+                                    name: "${widget.items[index]['name']}",
+                                  ));
                                   //print("${widget.items[index]['link']}",);
                                 },
                                 child: Column(
