@@ -25,6 +25,7 @@ import '../views/homescreen/HomeGridViewItems/PPIAlumniassociation/ppialumniasso
 import '../views/homescreen/HomeGridViewItems/ppicareer/ppicareer.dart';
 import '../views/homescreen/HomeGridViewItems/Result/result.dart';
 import '../views/homescreen/HomeGridViewItems/Skilldevelopment/skilldevelopment.dart';
+import '../views/homescreen/HomeGridViewItems/ppicareer/ppicareerallview.dart';
 import '../views/homescreen/HomeGridViewItems/studentoftheaward/studentoftheaward.dart';
 import '../views/homescreen/HomeGridViewItems/TeachersInformation/teachersinformation.dart';
 import '../views/homescreen/homeScreen.dart';
@@ -55,7 +56,7 @@ class Routes{
       case RoutesName.PPIAluminiAssociation:
         return MaterialPageRoute(builder: (context)=> const PPIAluminiAssociation());
       case RoutesName.PPICareer:
-        return MaterialPageRoute(builder: (context)=> const PPICareer());
+        return MaterialPageRoute(builder: (context)=>  PPICareer());
       case RoutesName.AboutInstitute:
         return MaterialPageRoute(builder: (context)=> const AboutInstitute());
       case RoutesName.AdmissionRequirement:
@@ -86,6 +87,8 @@ class Routes{
         return MaterialPageRoute(builder: (context)=>   skilldevolopmentallview(items: [],));
       case RoutesName.SkillDVebview:
         return MaterialPageRoute(builder: (context)=>   SkillDVebview(alllink: '',));
+      case RoutesName.ppicareerallview:
+        return MaterialPageRoute(builder: (context)=>   ppicareerallview(alllink: '',));
       default:
         return MaterialPageRoute(builder: (context)=> const Splashscreen());
     }

@@ -5,16 +5,16 @@ import 'package:webview_flutter/webview_flutter.dart';
 
 import '../../../../controller/homeController.dart';
 
-class SkillDVebview extends StatefulWidget {
-  SkillDVebview({super.key, required this.alllink, this.name});
+class ppicareerallview extends StatefulWidget {
+  ppicareerallview({super.key, required this.alllink, this.name});
   final alllink;
   final name;
 
   @override
-  State<SkillDVebview> createState() => _SkillDVebviewState();
+  State<ppicareerallview> createState() => _ppicareerallviewState();
 }
 
-class _SkillDVebviewState extends State<SkillDVebview> {
+class _ppicareerallviewState extends State<ppicareerallview> {
   late final WebViewController _controller;
   bool isLoading = true;
 

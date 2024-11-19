@@ -611,6 +611,21 @@ class HomeContrller extends GetxController {
 
   ];
 
+  //PPI Career
+  List ppicareer = [
+    {
+      'img': 'assets/ppicareer/Alljobs.png',
+      'name': 'Alljobs by Teletalk',
+      'link': 'https://alljobs.teletalk.com.bd/'
+    },
+    {
+      'img': 'assets/ppicareer/bpsc.png',
+      'name': 'BD Govt Job',
+      'link': 'https://bdgovtjob.net/'
+    },
+  ];
+
+
 
 
 
