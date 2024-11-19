@@ -91,6 +91,15 @@ class _CustomDrawerState extends State<CustomDrawer> {
             },
           ),
           ListTile(
+            leading: Icon(Icons.admin_panel_settings_outlined),
+            title: Text('Admin Panel'),
+            onTap: () {
+              // Navigate to settings
+              Navigator.pop(context);
+              Get.snackbar("Not Available", "Please, Try Again",);
+            },
+          ),
+          ListTile(
             leading: Icon(Icons.info_outline),
             title: Text('About'),
             onTap: () {
@@ -105,7 +114,7 @@ class _CustomDrawerState extends State<CustomDrawer> {
             onTap: () {
               // Log out action
               Navigator.pop(context);
-              Get.snackbar("Don't Logout", "Try Again",);
+              Get.snackbar("Don't Logout", "Please, Try Again",);
             },
           ),
         ],
