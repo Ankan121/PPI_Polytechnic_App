@@ -4,6 +4,8 @@ import 'package:ppi/constants/color.dart';
 import 'package:ppi/main.dart';
 import 'package:ppi/views/homescreen/home_all_itemgriview.dart';
 
+import '../drawer.dart';
+
 class Homescreen extends StatefulWidget {
   const Homescreen({super.key});
 
@@ -34,7 +36,7 @@ class _HomescreenState extends State<Homescreen> {
           ))
         ],
       ),
-      drawer: Drawer(),
+      drawer: CustomDrawer(),
       body: Stack(
         clipBehavior: Clip.none,
       // Center(
@@ -67,30 +69,6 @@ class _HomescreenState extends State<Homescreen> {
                 Transform.translate(
                     offset: Offset(0, -80),  // X এবং Y এ স্থানান্তর করবে
                     child: Image.asset('assets/homepage/2-ppi logo me.png',height: 360,width: 360,)),
-
-                // Transform.translate(
-                //   offset: Offset(0, -180),  // X এবং Y এ স্থানান্তর করবে
-                //   child: GridView.builder(
-                //     itemCount: 20,
-                //     physics: NeverScrollableScrollPhysics(),
-                //     shrinkWrap: true,
-                //     gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-                //       crossAxisCount: 2, // Number of columns
-                //       crossAxisSpacing: 10, // Spacing between columns
-                //       mainAxisSpacing: 10, // Spacing between rows
-                //     ),            itemBuilder: (BuildContext context, int index) {
-                //       return Padding(
-                //         padding: const EdgeInsets.all(8.0),
-                //         child: Container(
-                //           height: 100,
-                //           width: 100,
-                //           color: Colors.red,
-                //
-                //         ),
-                //       );
-                //     },
-                //   ),
-                // ),
                HomeAllItemgriview(),
                 //Home_Gridview()
 
