@@ -4,6 +4,8 @@ import 'package:ppi/routes/routesName.dart';
 import 'package:ppi/views/homescreen/HomeGridViewItems/Skilldevelopment/skilldevelopmentallview.dart';
 import 'package:ppi/views/splashScreen/splashScreen.dart';
 
+import '../views/Drawer/profile/profile.dart';
+import '../views/Drawer/profile/profileadd.dart';
 import '../views/homescreen/HomeGridViewItems/AdmissionandFee/AdmissionAndFee.dart';
 import '../views/homescreen/HomeGridViewItems/AdmissionandFee/admissionview/admissionfee.dart';
 import '../views/homescreen/HomeGridViewItems/AdmissionandFee/admissionview/admissionrequirement.dart';
@@ -89,6 +91,10 @@ class Routes{
         return MaterialPageRoute(builder: (context)=>   SkillDVebview(alllink: '',));
       case RoutesName.ppicareerallview:
         return MaterialPageRoute(builder: (context)=>   ppicareerallview(alllink: '',));
+      case RoutesName.Profilescreen:
+        return MaterialPageRoute(builder: (context)=>   Profilescreen());
+      // case RoutesName.profileadd:
+      //   return MaterialPageRoute(builder: (context)=>   profileadd());
       default:
         return MaterialPageRoute(builder: (context)=> const Splashscreen());
     }

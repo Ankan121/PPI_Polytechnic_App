@@ -41,6 +41,9 @@ dependencies:
   dob_input_field: ^2.0.0
   url_launcher: ^6.3.1
   webview_flutter: ^4.10.0
+  sqflite: ^2.4.1
+  path_provider: ^2.1.5
+  image_picker: ^1.1.2
 
 dev_dependencies:
   flutter_test:

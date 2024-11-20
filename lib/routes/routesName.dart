@@ -57,4 +57,8 @@ class RoutesName{
   static const SkillDVebview = 'SkillDVebview';
   //ppicareerallview
   static const ppicareerallview = 'ppicareerallview';
+  //Profilescreen
+  static const Profilescreen = 'Profilescreen';
+  //Profilescreen
+  static const profileadd = 'profileadd';
 }

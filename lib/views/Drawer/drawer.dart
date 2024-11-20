@@ -2,8 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:get/get_core/src/get_main.dart';
 import 'package:ppi/constants/color.dart';
+import 'package:ppi/views/Drawer/profile/profile.dart';
 
-import '../constants/customtext.dart';
+import '../../constants/customtext.dart';
 
 
 class CustomDrawer extends StatefulWidget {  // Renamed to CustomDrawer
@@ -78,8 +79,9 @@ class _CustomDrawerState extends State<CustomDrawer> {
             leading: Icon(Icons.person),
             title: Text('Profile'),
             onTap: () {
+              Get.to(()=>Profilescreen());
               // Navigate to profile
-              Navigator.pop(context);
+              //Navigator.pop(context);
             },
           ),
           ListTile(
