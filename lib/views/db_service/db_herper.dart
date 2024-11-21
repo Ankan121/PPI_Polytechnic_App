@@ -1,8 +1,11 @@
 import 'dart:io';
 
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:get/get_core/src/get_main.dart';
 import 'package:path/path.dart';
 import 'package:path_provider/path_provider.dart';
+import 'package:ppi/constants/color.dart';
 import 'package:sqflite/sqflite.dart';
 
 
@@ -53,8 +56,7 @@ class DbHelper{
       "email": email,
       "date": '$now',
     });
-    var snackBar = const SnackBar(content: Text('Title Added successfully '));
-    ScaffoldMessenger.of(context).showSnackBar(snackBar);
+    Get.snackbar("Save", " Successfully");
   }
 
   //database all data read

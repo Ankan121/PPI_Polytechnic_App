@@ -112,7 +112,7 @@ class _ProfilescreenState extends State<Profilescreen> {
           ),
           actions: [
             IconButton(onPressed: (){
-              Get.to(()=>profileadd());
+              Get.to(()=>profileadd(refrish: readItemsDatabase,));
             }, icon: Icon(Icons.edit,color: AppColor.whiteColor,size: 30,))
           ],
           title: Text(
@@ -124,252 +124,297 @@ class _ProfilescreenState extends State<Profilescreen> {
           ),
           centerTitle: true,
         ),
-        body: SingleChildScrollView(
-          child: Column(
-            children: [
-              SizedBox(height: 100.h,),
-              Stack(
-                clipBehavior: Clip.none, // Overflow অংশ কাটবে না
-                children: [
-                  Container(
-                    width: double.infinity.w,
-                    decoration: BoxDecoration(
-                      color: AppColor.whiteColor,
-                      borderRadius: BorderRadius.only(
-                        topRight: Radius.circular(40.0),
-                        topLeft: Radius.circular(40.0),
-                      ),
-                    ),
-                    child:  Padding(
-                      padding: const EdgeInsets.all(20.0),
-                      child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        mainAxisAlignment: MainAxisAlignment.start,
-                        children: [
-                          SizedBox(height: 50.h,),
-                          Column(
-                            children: [
-                              Padding(
-                                padding: const EdgeInsets.all(8.0),
-                                child: Column(
-                                  crossAxisAlignment: CrossAxisAlignment.start,
-                                  mainAxisAlignment: MainAxisAlignment.center,
-                                  children: [
-                                    SizedBox(height: 10.h,),
-                                    Center(
-                                      child:  Text(
-                                        items.isNotEmpty && items.last['name'] != null
-                                            ? items.last['name'] // লিস্টের শেষ আইটেমের 'name'
-                                            : 'Your Name',  // যদি নাম না থাকে, 'Your Name' দেখাবে
-                                        style: largeblack,
-                                        overflow: TextOverflow.ellipsis, // টেক্সটের শেষের অংশে '...' দেখাবে যদি এটি বড় হয়ে যায়
-                                        maxLines: 1, // এক লাইনে সীমাবদ্ধ রাখবে
-                                      )
+        body: RefreshIndicator(
+          onRefresh: ()=> readItemsDatabase(),
 
-                                    ),
-
-                                    SizedBox(height: 10.h,),
-                                    Card(
-                                        color: AppColor.ppialumniview,
-                                        child: Padding(
-                                          padding: const EdgeInsets.all(8.0),
-                                          child: ListTile(
-                                            leading: Container(
-                                              padding: EdgeInsets.all(8.0), // আইকনের চারপাশে স্পেস
-                                              decoration: BoxDecoration(
-                                                shape: BoxShape.circle,
-                                                border: Border.all(
-                                                  color: Colors.white, // বর্ডারের রঙ
-                                                  width: 3.0,         // বর্ডারের প্রস্থ
-                                                ),
-                                                color: Colors.transparent,   // পটভূমির রঙ (আইকনের পিছনে)
-                                              ),
-                                              child: Icon(
-                                                Icons.apartment,
-                                                color: Colors.blue.withOpacity(0.7), // আইকনের রঙ
-                                                size: 25,            // আইকনের আকার
-                                              ),
-                                            ),
-                                            title: Text('Department',style: mediumblack,),
-                                          ),
-                                        )),
-                                    SizedBox(height: 10.h,),
-                                    Card(
-                                        color: AppColor.ppialumniview,
-                                        child: Padding(
-                                          padding: const EdgeInsets.all(8.0),
-                                          child: ListTile(
-                                            leading: Container(
-                                              padding: EdgeInsets.all(8.0), // আইকনের চারপাশে স্পেস
-                                              decoration: BoxDecoration(
-                                                shape: BoxShape.circle,
-                                                border: Border.all(
-                                                  color: Colors.white, // বর্ডারের রঙ
-                                                  width: 3.0,         // বর্ডারের প্রস্থ
-                                                ),
-                                                color: Colors.transparent,   // পটভূমির রঙ (আইকনের পিছনে)
-                                              ),
-                                              child: Icon(
-                                                Icons.school,
-                                                color: Colors.blue.withOpacity(0.7), // আইকনের রঙ
-                                                size: 25,            // আইকনের আকার
-                                              ),
-                                            ),
-                                            title: Text('Semester',style: mediumblack,),
-                                          ),
-                                        )),
-                                    SizedBox(height: 10.h,),
-                                    Card(
-                                        color: AppColor.ppialumniview,
-                                        child: Padding(
-                                          padding: const EdgeInsets.all(8.0),
-                                          child: ListTile(
-                                            leading: Container(
-                                              padding: EdgeInsets.all(8.0), // আইকনের চারপাশে স্পেস
-                                              decoration: BoxDecoration(
-                                                shape: BoxShape.circle,
-                                                border: Border.all(
-                                                  color: Colors.white, // বর্ডারের রঙ
-                                                  width: 3.0,         // বর্ডারের প্রস্থ
-                                                ),
-                                                color: Colors.transparent,   // পটভূমির রঙ (আইকনের পিছনে)
-                                              ),
-                                              child: Icon(
-                                                Icons.assignment,
-                                                color: Colors.blue.withOpacity(0.7), // আইকনের রঙ
-                                                size: 25,            // আইকনের আকার
-                                              ),
-                                            ),
-                                            title: Text('Roll',style: mediumblack,),
-                                          ),
-                                        )),
-                                    SizedBox(height: 10.h,),
-                                    Card(
-                                        color: AppColor.ppialumniview,
-                                        child: Padding(
-                                          padding: const EdgeInsets.all(8.0),
-                                          child: ListTile(
-                                            leading: Container(
-                                              padding: EdgeInsets.all(8.0), // আইকনের চারপাশে স্পেস
-                                              decoration: BoxDecoration(
-                                                shape: BoxShape.circle,
-                                                border: Border.all(
-                                                  color: Colors.white, // বর্ডারের রঙ
-                                                  width: 3.0,         // বর্ডারের প্রস্থ
-                                                ),
-                                                color: Colors.transparent,   // পটভূমির রঙ (আইকনের পিছনে)
-                                              ),
-                                              child: Icon(
-                                                Icons.confirmation_number,
-                                                color: Colors.blue.withOpacity(0.7), // আইকনের রঙ
-                                                size: 25,            // আইকনের আকার
-                                              ),
-                                            ),
-                                            title: Text('Registration',style: mediumblack,),
-                                          ),
-                                        )),
-                                    SizedBox(height: 10.h,),
-                                    Card(
-                                        color: AppColor.ppialumniview,
-                                        child: Padding(
-                                          padding: const EdgeInsets.all(8.0),
-                                          child: ListTile(
-                                            leading: Container(
-                                              padding: EdgeInsets.all(8.0), // আইকনের চারপাশে স্পেস
-                                              decoration: BoxDecoration(
-                                                shape: BoxShape.circle,
-                                                border: Border.all(
-                                                  color: Colors.white, // বর্ডারের রঙ
-                                                  width: 3.0,         // বর্ডারের প্রস্থ
-                                                ),
-                                                color: Colors.transparent,   // পটভূমির রঙ (আইকনের পিছনে)
-                                              ),
-                                              child: Icon(
-                                                Icons.cake ,
-                                                color: Colors.blue.withOpacity(0.7), // আইকনের রঙ
-                                                size: 25,            // আইকনের আকার
-                                              ),
-                                            ),
-                                            title: Text('Birthday',style: mediumblack,),
-                                          ),
-                                        )),
-                                    SizedBox(height: 10.h,),
-                                    Card(
-                                        color: AppColor.ppialumniview,
-                                        child: Padding(
-                                          padding: const EdgeInsets.all(8.0),
-                                          child: ListTile(
-                                            leading: Container(
-                                              padding: EdgeInsets.all(8.0), // আইকনের চারপাশে স্পেস
-                                              decoration: BoxDecoration(
-                                                shape: BoxShape.circle,
-                                                border: Border.all(
-                                                  color: Colors.white, // বর্ডারের রঙ
-                                                  width: 3.0,         // বর্ডারের প্রস্থ
-                                                ),
-                                                color: Colors.transparent,   // পটভূমির রঙ (আইকনের পিছনে)
-                                              ),
-                                              child: Icon(
-                                                Icons.email_outlined,
-                                                color: Colors.blue.withOpacity(0.7), // আইকনের রঙ
-                                                size: 25,            // আইকনের আকার
-                                              ),
-                                            ),
-                                            title: Text('Email',style: mediumblack,),
-                                          ),
-                                        )),
-                                    SizedBox(height: 10.h,),
-                                  ],
-                                ),
-                              ),
-                            ],
-                          ),
-                          SizedBox(height: 10.h,),
-                        ],
-                      ),
-                    ),
-
-                  ),
-                  Positioned(
-                    top: -MediaQuery.of(context).size.height * 0.1, // স্ক্রিনের উচ্চতার ১০% হিসাবে উপরে থাকবে
-                    right: MediaQuery.of(context).size.width * 0.3,  // স্ক্রিনের প্রস্থের ৩০% হিসাবে ডানে অবস্থান করবে
-                    child: Container(
-                      padding: EdgeInsets.all(2.0), // বর্ডার ও ছবির মধ্যে কিছু জায়গা রাখবে
+          child: SingleChildScrollView(
+            child: Column(
+              children: [
+                SizedBox(height: 100.h,),
+                Stack(
+                  clipBehavior: Clip.none, // Overflow অংশ কাটবে না
+                  children: [
+                    Container(
+                      width: double.infinity.w,
                       decoration: BoxDecoration(
-                        shape: BoxShape.circle,
-                        border: Border.all(
-                          color: Colors.grey, // বর্ডারের রঙ
-                          width: 5.0, // বর্ডারের প্রস্থ
+                        color: AppColor.whiteColor,
+                        borderRadius: BorderRadius.only(
+                          topRight: Radius.circular(40.0),
+                          topLeft: Radius.circular(40.0),
                         ),
                       ),
-                      child:
-                      CircleAvatar(
-                        radius: MediaQuery.of(context).size.width * 0.2 - 4, // প্যাডিং এর জন্য একটু ছোট করে দিবে
-                        backgroundImage: items.isNotEmpty && items[0]['img'] != null && File(items[0]['img']).existsSync()
-                            ? FileImage(File(items[0]['img'])) // ফাইল পাওয়া গেলে সেটি দেখাবে
-                            : null, // না পেলে child ব্যবহার করবে
-                        child: items.isEmpty || items[0]['img'] == null || !File(items[0]['img']).existsSync()
-                            ? Icon(
-                          Icons.account_circle, // ডিফল্ট আইকন
-                          size: 50, // আইকনের আকার
-                          color: Colors.grey, // আইকনের রঙ
-                        )
-                            : null, // ফাইল থাকলে child খালি রাখবে
+                      child:  Padding(
+                        padding: const EdgeInsets.all(20.0),
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          mainAxisAlignment: MainAxisAlignment.start,
+                          children: [
+                            SizedBox(height: 50.h,),
+                            Column(
+                              children: [
+                                Padding(
+                                  padding: const EdgeInsets.all(8.0),
+                                  child: Column(
+                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                    mainAxisAlignment: MainAxisAlignment.center,
+                                    children: [
+                                      SizedBox(height: 10.h,),
+                                      Center(
+                                        child:  Text(
+                                          items.isNotEmpty && items.last['name'] != null
+                                              ? items.last['name'] // লিস্টের শেষ আইটেমের 'name'
+                                              : 'Your Name',  // যদি নাম না থাকে, 'Your Name' দেখাবে
+                                          style: largeblack,
+                                          overflow: TextOverflow.ellipsis, // টেক্সটের শেষের অংশে '...' দেখাবে যদি এটি বড় হয়ে যায়
+                                          maxLines: 2, // এক লাইনে সীমাবদ্ধ রাখবে
+                                        )
+                                      ),
+
+                                      SizedBox(height: 10.h,),
+                                      Card(
+                                          color: AppColor.ppialumniview,
+                                          child: Padding(
+                                            padding: const EdgeInsets.all(8.0),
+                                            child: ListTile(
+                                              leading: Container(
+                                                padding: EdgeInsets.all(8.0), // আইকনের চারপাশে স্পেস
+                                                decoration: BoxDecoration(
+                                                  shape: BoxShape.circle,
+                                                  border: Border.all(
+                                                    color: Colors.white, // বর্ডারের রঙ
+                                                    width: 3.0,         // বর্ডারের প্রস্থ
+                                                  ),
+                                                  color: Colors.transparent,   // পটভূমির রঙ (আইকনের পিছনে)
+                                                ),
+                                                child: Icon(
+                                                  Icons.apartment,
+                                                  color: Colors.blue.withOpacity(0.7), // আইকনের রঙ
+                                                  size: 25,            // আইকনের আকার
+                                                ),
+                                              ),
+                                              title: Text(
+                                                items.isNotEmpty && items.last['department'] != null
+                                                    ? items.last['department'] // লিস্টের শেষ আইটেমের 'name'
+                                                    : 'Your Department',  // যদি নাম না থাকে, 'Your Name' দেখাবে
+                                                style: largeblack,
+                                                //overflow: TextOverflow.ellipsis, // টেক্সটের শেষের অংশে '...' দেখাবে যদি এটি বড় হয়ে যায়
+                                                //maxLines: 1, // এক লাইনে সীমাবদ্ধ রাখবে
+                                              ),
+                                            ),
+                                          )),
+                                      SizedBox(height: 10.h,),
+                                      Card(
+                                          color: AppColor.ppialumniview,
+                                          child: Padding(
+                                            padding: const EdgeInsets.all(8.0),
+                                            child: ListTile(
+                                              leading: Container(
+                                                padding: EdgeInsets.all(8.0), // আইকনের চারপাশে স্পেস
+                                                decoration: BoxDecoration(
+                                                  shape: BoxShape.circle,
+                                                  border: Border.all(
+                                                    color: Colors.white, // বর্ডারের রঙ
+                                                    width: 3.0,         // বর্ডারের প্রস্থ
+                                                  ),
+                                                  color: Colors.transparent,   // পটভূমির রঙ (আইকনের পিছনে)
+                                                ),
+                                                child: Icon(
+                                                  Icons.school,
+                                                  color: Colors.blue.withOpacity(0.7), // আইকনের রঙ
+                                                  size: 25,            // আইকনের আকার
+                                                ),
+                                              ),
+                                              title: Text(
+                                                items.isNotEmpty && items.last['semester'] != null
+                                                    ? items.last['semester'] // লিস্টের শেষ আইটেমের 'name'
+                                                    : 'Your Semester',  // যদি নাম না থাকে, 'Your Name' দেখাবে
+                                                style: largeblack,
+                                                //overflow: TextOverflow.ellipsis, // টেক্সটের শেষের অংশে '...' দেখাবে যদি এটি বড় হয়ে যায়
+                                                //maxLines: 1, // এক লাইনে সীমাবদ্ধ রাখবে
+                                              ),
+                                            ),
+                                          )),
+                                      SizedBox(height: 10.h,),
+                                      Card(
+                                          color: AppColor.ppialumniview,
+                                          child: Padding(
+                                            padding: const EdgeInsets.all(8.0),
+                                            child: ListTile(
+                                              leading: Container(
+                                                padding: EdgeInsets.all(8.0), // আইকনের চারপাশে স্পেস
+                                                decoration: BoxDecoration(
+                                                  shape: BoxShape.circle,
+                                                  border: Border.all(
+                                                    color: Colors.white, // বর্ডারের রঙ
+                                                    width: 3.0,         // বর্ডারের প্রস্থ
+                                                  ),
+                                                  color: Colors.transparent,   // পটভূমির রঙ (আইকনের পিছনে)
+                                                ),
+                                                child: Icon(
+                                                  Icons.assignment,
+                                                  color: Colors.blue.withOpacity(0.7), // আইকনের রঙ
+                                                  size: 25,            // আইকনের আকার
+                                                ),
+                                              ),
+                                              title: Text(
+                                                items.isNotEmpty && items.last['roll'] != null
+                                                    ? items.last['roll'] // লিস্টের শেষ আইটেমের 'name'
+                                                    : 'Your Roll',  // যদি নাম না থাকে, 'Your Name' দেখাবে
+                                                style: largeblack,
+                                                //overflow: TextOverflow.ellipsis, // টেক্সটের শেষের অংশে '...' দেখাবে যদি এটি বড় হয়ে যায়
+                                                //maxLines: 1, // এক লাইনে সীমাবদ্ধ রাখবে
+                                              ),
+                                            ),
+                                          )),
+                                      SizedBox(height: 10.h,),
+                                      Card(
+                                          color: AppColor.ppialumniview,
+                                          child: Padding(
+                                            padding: const EdgeInsets.all(8.0),
+                                            child: ListTile(
+                                              leading: Container(
+                                                padding: EdgeInsets.all(8.0), // আইকনের চারপাশে স্পেস
+                                                decoration: BoxDecoration(
+                                                  shape: BoxShape.circle,
+                                                  border: Border.all(
+                                                    color: Colors.white, // বর্ডারের রঙ
+                                                    width: 3.0,         // বর্ডারের প্রস্থ
+                                                  ),
+                                                  color: Colors.transparent,   // পটভূমির রঙ (আইকনের পিছনে)
+                                                ),
+                                                child: Icon(
+                                                  Icons.confirmation_number,
+                                                  color: Colors.blue.withOpacity(0.7), // আইকনের রঙ
+                                                  size: 25,            // আইকনের আকার
+                                                ),
+                                              ),
+                                              title: Text(
+                                                items.isNotEmpty && items.last['registration'] != null
+                                                    ? items.last['registration'] // লিস্টের শেষ আইটেমের 'name'
+                                                    : 'Your Registration',  // যদি নাম না থাকে, 'Your Name' দেখাবে
+                                                style: largeblack,
+                                                //overflow: TextOverflow.ellipsis, // টেক্সটের শেষের অংশে '...' দেখাবে যদি এটি বড় হয়ে যায়
+                                                //maxLines: 1, // এক লাইনে সীমাবদ্ধ রাখবে
+                                              ),
+                                            ),
+                                          )),
+                                      SizedBox(height: 10.h,),
+                                      Card(
+                                          color: AppColor.ppialumniview,
+                                          child: Padding(
+                                            padding: const EdgeInsets.all(8.0),
+                                            child: ListTile(
+                                              leading: Container(
+                                                padding: EdgeInsets.all(8.0), // আইকনের চারপাশে স্পেস
+                                                decoration: BoxDecoration(
+                                                  shape: BoxShape.circle,
+                                                  border: Border.all(
+                                                    color: Colors.white, // বর্ডারের রঙ
+                                                    width: 3.0,         // বর্ডারের প্রস্থ
+                                                  ),
+                                                  color: Colors.transparent,   // পটভূমির রঙ (আইকনের পিছনে)
+                                                ),
+                                                child: Icon(
+                                                  Icons.cake ,
+                                                  color: Colors.blue.withOpacity(0.7), // আইকনের রঙ
+                                                  size: 25,            // আইকনের আকার
+                                                ),
+                                              ),
+                                              title: Text(
+                                                items.isNotEmpty && items.last['birthday'] != null
+                                                    ? items.last['birthday'] // লিস্টের শেষ আইটেমের 'name'
+                                                    : 'Your Birthday',  // যদি নাম না থাকে, 'Your Name' দেখাবে
+                                                style: largeblack,
+                                                //overflow: TextOverflow.ellipsis, // টেক্সটের শেষের অংশে '...' দেখাবে যদি এটি বড় হয়ে যায়
+                                                //maxLines: 1, // এক লাইনে সীমাবদ্ধ রাখবে
+                                              ),
+                                            ),
+                                          )),
+                                      SizedBox(height: 10.h,),
+                                      Card(
+                                          color: AppColor.ppialumniview,
+                                          child: Padding(
+                                            padding: const EdgeInsets.all(8.0),
+                                            child: ListTile(
+                                              leading: Container(
+                                                padding: EdgeInsets.all(8.0), // আইকনের চারপাশে স্পেস
+                                                decoration: BoxDecoration(
+                                                  shape: BoxShape.circle,
+                                                  border: Border.all(
+                                                    color: Colors.white, // বর্ডারের রঙ
+                                                    width: 3.0,         // বর্ডারের প্রস্থ
+                                                  ),
+                                                  color: Colors.transparent,   // পটভূমির রঙ (আইকনের পিছনে)
+                                                ),
+                                                child: Icon(
+                                                  Icons.email_outlined,
+                                                  color: Colors.blue.withOpacity(0.7), // আইকনের রঙ
+                                                  size: 25,            // আইকনের আকার
+                                                ),
+                                              ),
+                                              title: Text(
+                                                items.isNotEmpty && items.last['email'] != null
+                                                    ? items.last['email'] // লিস্টের শেষ আইটেমের 'name'
+                                                    : 'Your Email',  // যদি নাম না থাকে, 'Your Name' দেখাবে
+                                                style: largeblack,
+                                                //overflow: TextOverflow.ellipsis, // টেক্সটের শেষের অংশে '...' দেখাবে যদি এটি বড় হয়ে যায়
+                                                //maxLines: 1, // এক লাইনে সীমাবদ্ধ রাখবে
+                                              ),
+                                            ),
+                                          )),
+                                      SizedBox(height: 10.h,),
+                                    ],
+                                  ),
+                                ),
+                              ],
+                            ),
+                            SizedBox(height: 10.h,),
+                          ],
+                        ),
                       ),
 
-
-                      // CircleAvatar(
-                      //   radius: MediaQuery.of(context).size.width * 0.2 - 4, // প্যাডিং এর জন্য একটু ছোট করে দিবে
-                      //   backgroundImage: FileImage(File('g')),
-                      //   // backgroundImage: AssetImage('assets/ppicareer/Alljobs.png'),
-                      // ),
                     ),
-                  ),
+                    Positioned(
+                      top: -MediaQuery.of(context).size.height * 0.1, // স্ক্রিনের উচ্চতার ১০% হিসাবে উপরে থাকবে
+                      right: MediaQuery.of(context).size.width * 0.3,  // স্ক্রিনের প্রস্থের ৩০% হিসাবে ডানে অবস্থান করবে
+                      child: Container(
+                        padding: EdgeInsets.all(2.0), // বর্ডার ও ছবির মধ্যে কিছু জায়গা রাখবে
+                        decoration: BoxDecoration(
+                          shape: BoxShape.circle,
+                          border: Border.all(
+                            color: Colors.grey, // বর্ডারের রঙ
+                            width: 5.0, // বর্ডারের প্রস্থ
+                          ),
+                        ),
+                        child:
+                        CircleAvatar(
+                          radius: MediaQuery.of(context).size.width * 0.2 - 4, // প্যাডিং এর জন্য একটু ছোট করে দিবে
+                          backgroundImage: items.isNotEmpty && items[0]['img'] != null && File(items[0]['img']).existsSync()
+                              ? FileImage(File(items[0]['img'])) // ফাইল পাওয়া গেলে সেটি দেখাবে
+                              : null, // না পেলে child ব্যবহার করবে
+                          child: items.isEmpty || items[0]['img'] == null || !File(items[0]['img']).existsSync()
+                              ? Icon(
+                            Icons.account_circle, // ডিফল্ট আইকন
+                            size: 50, // আইকনের আকার
+                            color: Colors.grey, // আইকনের রঙ
+                          )
+                              : null, // ফাইল থাকলে child খালি রাখবে
+                        ),
 
 
-                ],
-              ),
-            ],
+                        // CircleAvatar(
+                        //   radius: MediaQuery.of(context).size.width * 0.2 - 4, // প্যাডিং এর জন্য একটু ছোট করে দিবে
+                        //   backgroundImage: FileImage(File('g')),
+                        //   // backgroundImage: AssetImage('assets/ppicareer/Alljobs.png'),
+                        // ),
+                      ),
+                    ),
+
+
+                  ],
+                ),
+              ],
+            ),
           ),
         ),
       );

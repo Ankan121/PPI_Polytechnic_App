@@ -156,8 +156,8 @@ import '../../../../model/ppialumniassociation.dart';
 import '../../db_service/db_herper.dart';
 
 class profileadd extends StatefulWidget {
-  profileadd({super.key,});
-  // final Ppialumniassociation? ppialumnimodel;
+  profileadd({super.key, this.refrish,});
+  final refrish;
 
   @override
   State<profileadd> createState() => _profileaddState();
@@ -188,6 +188,13 @@ class _profileaddState extends State<profileadd> {
   final registrationEditController = TextEditingController();
   final birthdayEditingController = TextEditingController();
   final emailEditController = TextEditingController();
+
+  //text show local database
+  // void setData(){
+  //   setState(() {
+  //     nameEditingController.text = widget.title.toString() ;
+  //   });
+  // }
 
   @override
   Widget build(BuildContext context) {
@@ -223,6 +230,7 @@ class _profileaddState extends State<profileadd> {
                 ),
                 child: Icon(Icons.arrow_back,color: AppColor.whiteColor,size: 25,)), // এই আইকনটি বাম দিকে অ্যারো দেখাবে
             onPressed: () async {
+              widget.refrish;
               Get.back(); // এটি ব্যাক ন্যাভিগেশনের জন্য ব্যবহার করা হয়
               // await DbHelper().noteupdate(widget.id,
               //     {
@@ -513,43 +521,47 @@ class _profileaddState extends State<profileadd> {
                                             fixedSize: Size(306.w, 35.h), // specify width, height
                                             shape: RoundedRectangleBorder(
                                                 borderRadius: BorderRadius.circular(20.r,))),
-                                        onPressed: () async {
-                                          await DbHelper().addnote(context,
-                                            _image!.path,
-                                            nameEditingController.text,
-                                            rollEditingController.text,
-                                            birthdayEditingController.text,
-                                            departmentEditController.text,
-                                            semesterEditController.text,
-                                            registrationEditController.text,
-                                            emailEditController.text,
-                                          );
-                                        },
-                                        // onPressed: ()async{
-                                        //   if(
-                                        //   nameEditingController.text.isEmpty ||
-                                        //       departmentEditController.text.isEmpty ||
-                                        //       semesterEditController.text.isEmpty ||
-                                        //       rollEditingController.text.isEmpty ||
-                                        //       registrationEditController.text.isEmpty ||
-                                        //       birthdayEditingController.text.isEmpty ||
-                                        //       emailEditController.text.isEmpty
-                                        //   ){
-                                        //     var snackBar = const SnackBar(content: Text('Please All field are required !'));
-                                        //     ScaffoldMessenger.of(context).showSnackBar(snackBar);
-                                        //   }else{
-                                        //     await DbHelper().addnote(context,
-                                        //       _image!.path,
-                                        //       nameEditingController.text,
-                                        //       rollEditingController.text,
-                                        //       birthdayEditingController.text,
-                                        //       departmentEditController.text,
-                                        //       semesterEditController.text,
-                                        //       registrationEditController.text,
-                                        //       emailEditController.text,
-                                        //     );
-                                        //   }
+                                        // onPressed: () async {
+                                        //   await DbHelper().addnote(context,
+                                        //     _image!.path,
+                                        //     nameEditingController.text,
+                                        //     rollEditingController.text,
+                                        //     birthdayEditingController.text,
+                                        //     departmentEditController.text,
+                                        //     semesterEditController.text,
+                                        //     registrationEditController.text,
+                                        //     emailEditController.text,
+                                        //   );
                                         // },
+                                        onPressed: ()async{
+                                          if(
+                                              _image!.path.isEmpty ||
+                                              nameEditingController.text.isEmpty ||
+                                              departmentEditController.text.isEmpty ||
+                                              semesterEditController.text.isEmpty ||
+                                              rollEditingController.text.isEmpty ||
+                                              registrationEditController.text.isEmpty ||
+                                              birthdayEditingController.text.isEmpty ||
+                                              emailEditController.text.isEmpty
+                                          ){
+                                            var snackBar = SnackBar(
+                                              content: const Text('Please All fields are required!'),
+                                              backgroundColor: Colors.red, // Change to your desired color
+                                            );
+                                            ScaffoldMessenger.of(context).showSnackBar(snackBar);
+                                          }else{
+                                            await DbHelper().addnote(context,
+                                              _image!.path,
+                                              nameEditingController.text,
+                                              rollEditingController.text,
+                                              birthdayEditingController.text,
+                                              departmentEditController.text,
+                                              semesterEditController.text,
+                                              registrationEditController.text,
+                                              emailEditController.text,
+                                            );
+                                          }
+                                        },
                                         child: Text('Save',style: context.textTheme.titleLarge?.copyWith(color: Colors.blue)), // Text on the button
                                       ),
                                     ),
@@ -560,11 +572,9 @@ class _profileaddState extends State<profileadd> {
                             ],
                           ),
                           SizedBox(height: 10.h,),
-
                         ],
                       ),
                     ),
-
                   ),
                   Positioned(
                     top: -MediaQuery.of(context).size.height * 0.1, // স্ক্রিনের উচ্চতার ১০% হিসাবে উপরে থাকবে
