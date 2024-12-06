@@ -65,9 +65,6 @@ class _PPIAlumniAllViewState extends State<PPIAlumniAllView> {
               Get.back(); // এটি ব্যাক ন্যাভিগেশনের জন্য ব্যবহার করা হয়
             },
           ),
-          actions: [
-            IconButton(onPressed: (){}, icon: Icon(Icons.settings,color: AppColor.whiteColor,size: 30,))
-          ],
           title: Text(
             '${widget.ppialumnimodel!.name}',  // এখানে প্রাপ্ত নামটি দেখানো হচ্ছে
             style: context.textTheme.titleLarge?.copyWith(
@@ -296,6 +293,7 @@ class _PPIAlumniAllViewState extends State<PPIAlumniAllView> {
                         ),
                       ),
                       child: CircleAvatar(
+                        // radius: 40,
                         radius: MediaQuery.of(context).size.width * 0.2 - 4, // প্যাডিং এর জন্য একটু ছোট করে দিবে
                         backgroundImage: AssetImage('${widget.ppialumnimodel!.img}'),
                       ),

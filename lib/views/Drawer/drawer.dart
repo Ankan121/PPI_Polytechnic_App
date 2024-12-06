@@ -5,6 +5,7 @@ import 'package:ppi/constants/color.dart';
 import 'package:ppi/views/Drawer/profile/profile.dart';
 
 import '../../constants/customtext.dart';
+import 'about.dart';
 
 
 class CustomDrawer extends StatefulWidget {  // Renamed to CustomDrawer
@@ -105,8 +106,7 @@ class _CustomDrawerState extends State<CustomDrawer> {
             leading: Icon(Icons.info_outline),
             title: Text('About'),
             onTap: () {
-              // Navigate to settings
-              Navigator.pop(context);
+              Get.to(()=>AboutScreen());
             },
           ),
           Divider(),

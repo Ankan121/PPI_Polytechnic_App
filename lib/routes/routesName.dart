@@ -61,4 +61,6 @@ class RoutesName{
   static const Profilescreen = 'Profilescreen';
   //Profilescreen
   static const profileadd = 'profileadd';
+  //AboutScreen
+  static const AboutScreen = 'AboutScreen';
 }
