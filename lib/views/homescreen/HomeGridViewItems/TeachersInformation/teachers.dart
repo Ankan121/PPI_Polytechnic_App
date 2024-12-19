@@ -94,7 +94,7 @@ class _TeachersState extends State<Teachers> {
                             crossAxisSpacing: 10,  // Column এর মধ্যে spacing
                             //mainAxisSpacing: 10,  // Row এর মধ্যে spacing
                             //childAspectRatio: 1,  // Aspect ratio ঠিক রাখতে হবে (height:width = 1:1)
-                            childAspectRatio: 3 / 3, // প্রতিটি কন্টেইনারের অনুপাত (width : height)
+                            childAspectRatio: 3 / 3.1, // প্রতিটি কন্টেইনারের অনুপাত (width : height)
                           ),
                           itemBuilder: (context, index) {
 
@@ -132,6 +132,7 @@ class _TeachersState extends State<Teachers> {
                                       Text("${widget.items[index]['email']}",style: mediumblack,),
                                     ],
                                   ),
+                                  SizedBox(height: 10.h,),
                                 ],
                               ),
                             );

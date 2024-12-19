@@ -97,6 +97,14 @@ flutter:
     - assets/ppicareer/
     - assets/ppicareer/
     - assets/developer img/
+    - assets/techersinformation/teachers/
+    - assets/techersinformation/teachers/civil/
+    - assets/techersinformation/teachers/computer/
+    - assets/techersinformation/teachers/electrical/
+    - assets/techersinformation/teachers/machanical/
+    - assets/techersinformation/teachers/medical/
+    - assets/techersinformation/teachers/Non Tech Department/
+    - assets/techersinformation/teachers/textile/
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/to/resolution-aware-images
 

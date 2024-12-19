@@ -157,26 +157,26 @@ class HomeContrller extends GetxController {
 
     },
     {
-      'img': 'assets/techersinformation/administrative/saroni.png',
-      'name': 'Dr. Sharany Haque\nPrincipal\n(Pubergaon Polytechnic Institute)',
-      'designation': 'AdmissionRequirement',
-      'phone': 'AdmissionRequirement',
-      'email': 'AdmissionRequirement',
-
-    },
-    {
       'img': 'assets/techersinformation/administrative/unknown.png',
       'name': 'Md. Atiqullah\nPrincipal (Acting),\nPubergaon Polytechnic Institute.',
-      'designation': 'AdmissionRequirement',
-      'phone': 'AdmissionRequirement',
+      'designation': 'Principal (Act.)',
+      'phone': '01711-661514',
       'email': 'AdmissionRequirement',
 
     },
     {
       'img': 'assets/techersinformation/administrative/unknown.png',
-      'name': 'Dulal Roy',
-      'designation': 'AdmissionRequirement',
-      'phone': 'AdmissionRequirement',
+      'name': 'Jamir Uddin Bhuiyan',
+      'designation': 'Vice Principle',
+      'phone': '01738-618923',
+      'email': 'AdmissionRequirement',
+
+    },
+    {
+      'img': 'assets/techersinformation/teachers/medical/MAZHARUL.jpg',
+      'name': 'Md. Mazharul Alam',
+      'designation': 'Chief Instructor',
+      'phone': '01735-364353',
       'email': 'AdmissionRequirement',
 
     },
@@ -200,74 +200,72 @@ class HomeContrller extends GetxController {
       "buttonitem": "Computer",
       "items": [
         {
-          'img': 'assets/techersinformation/teachers/computer/Monir.jpg',
-          'name': 'Md. Monir Hossain',
+          'img': 'assets/techersinformation/teachers/computer/MUSHFIQUR RAHMAN.jpg',
+          'name': 'Mushfiqur Rahman',
           'designation': 'Instructor',
-          'phone': '017**********',
-          'email': '*****@gmail.com',
+          'phone': '01775-443776',
+          'email': 'mushfiq174@gmail.com',
 
         },
         {
-          'img': 'assets/techersinformation/administrative/saroni.png',
-          'name': 'Dr. Sharany Haque',
-          'designation': 'AdmissionRequirement',
-          'phone': 'AdmissionRequirement',
-          'email': 'AdmissionRequirement',
+          'img': 'assets/techersinformation/teachers/computer/MD LUTFUR RAHMAN.jpg',
+          'name': 'Md Lutfur Rahman',
+          'designation': 'Jr. Instructor',
+          'phone': '01865-680679',
+          'email': 'mlrtarek7@gmail.com',
 
-        },
-        {
-          'img': 'assets/techersinformation/administrative/unknown.png',
-          'name': 'Md. Atiqullah',
-          'designation': 'AdmissionRequirement',
-          'phone': 'AdmissionRequirement',
-          'email': 'AdmissionRequirement',
-
-        },
-        {
-          'img': 'assets/techersinformation/administrative/unknown.png',
-          'name': 'Dulal Roy',
-          'designation': 'AdmissionRequirement',
-          'phone': 'AdmissionRequirement',
-          'email': 'AdmissionRequirement',
-
-        },
-
+        }
       ]
     },
     {
       "buttonitem": "Electrical",
       "items": [
         {
-          'img': 'assets/techersinformation/administrative/nurul huq.jpeg',
-          'name': 'Hemail',
-          'designation': 'AdmissionRequirement',
-          'phone': 'AdmissionRequirement',
-          'email': 'AdmissionRequirement',
+          'img': 'assets/techersinformation/teachers/electrical/BAPPY MOLLAH.jpg',
+          'name': 'Bappy Mollah',
+          'designation': 'Instructor',
+          'phone': '01859-507747',
+          'email': 'bappymollah1@gmail.com',
 
         },
         {
-          'img': 'assets/techersinformation/administrative/saroni.png',
-          'name': 'Dr. Sharany HaquePrincipal (Pubergaon Polytechnic Institute)',
-          'designation': 'AdmissionRequirement',
-          'phone': 'AdmissionRequirement',
-          'email': 'AdmissionRequirement',
+          'img': 'assets/techersinformation/teachers/electrical/MD. RUBEL MIA.jpg',
+          'name': 'Md. Rubel Mia',
+          'designation': 'Jr. Instructor',
+          'phone': '01793-812236',
+          'email': 'rubelahmed3969@gmail.com',
 
         },
         {
-          'img': 'assets/techersinformation/administrative/unknown.png',
-          'name': 'Md. AtiqullahPrincipal (Acting),Pubergaon Polytechnic Institute.',
-          'designation': 'AdmissionRequirement',
-          'phone': 'AdmissionRequirement',
-          'email': 'AdmissionRequirement',
+          'img': 'assets/techersinformation/teachers/electrical/MD SAIFUL ISLAM.jpg',
+          'name': 'Md Saiful Islam',
+          'designation': 'Jr. Instructor',
+          'phone': '01571-400151',
+          'email': 'islamsaiful.et@gmail.com',
 
         },
         {
-          'img': 'assets/techersinformation/administrative/unknown.png',
-          'name': 'Dulal Roy',
-          'designation': 'AdmissionRequirement',
-          'phone': 'AdmissionRequirement',
-          'email': 'AdmissionRequirement',
+          'img': 'assets/techersinformation/teachers/electrical/MEHEDI HASAN.jpg',
+          'name': 'Mehedi Hasan',
+          'designation': 'Jr. Instructor',
+          'phone': '01810-806774',
+          'email': 'mehedi.genex@gmail.com',
 
+        },
+        {
+          'img': 'assets/techersinformation/teachers/electrical/ZAHIDUL ISLAM.jpg',
+          'name': 'Zahidul Islam',
+          'designation': 'Jr. Instructor',
+          'phone': '01828-497695',
+          'email': 'zahidulislamnr98@gmail.com',
+
+        },
+        {
+          'img': 'assets/techersinformation/teachers/electrical/AZADUL SHEIKH.jpg',
+          'name': 'Azadul Sheikh',
+          'designation': 'Jr. Instructor',
+          'phone': '01781-506722',
+          'email': 'azadulseikh22@gmail.com',
         },
       ]
     },
@@ -275,11 +273,27 @@ class HomeContrller extends GetxController {
       "buttonitem": "Mechanical",
       "items": [
         {
-          'img': 'assets/techersinformation/administrative/nurul huq.jpeg',
-          'name': 'Monir',
-          'designation': 'AdmissionRequirement',
-          'phone': 'AdmissionRequirement',
-          'email': 'AdmissionRequirement',
+          'img': 'assets/techersinformation/teachers/machanical/MD. ARIFUL ISLAM.jpg',
+          'name': 'Md. Ariful Islam',
+          'designation': 'Jr. Instructor',
+          'phone': '01518-667250',
+          'email': 'arifulislam707514@gmail.com',
+
+        },
+        {
+          'img': 'assets/techersinformation/teachers/machanical/NAHID SULTAN.jpg',
+          'name': 'Nahid Sultan',
+          'designation': 'Jr. Instructor',
+          'phone': '01968-515778',
+          'email': 'nahidjonny541@gmail.com',
+
+        },
+        {
+          'img': 'assets/techersinformation/teachers/machanical/azizur.jpg',
+          'name': 'Md. Azizur Rahman',
+          'designation': 'Jr. Instructor',
+          'phone': '01567-831501',
+          'email': 'azizurrahmanjibon1@gmail.com',
 
         },
       ]
@@ -288,36 +302,34 @@ class HomeContrller extends GetxController {
       "buttonitem": "Civil",
       "items": [
         {
-          'img': 'assets/techersinformation/administrative/nurul huq.jpeg',
-          'name': 'Monir',
-          'designation': 'AdmissionRequirement',
-          'phone': 'AdmissionRequirement',
-          'email': 'AdmissionRequirement',
+          'img': 'assets/techersinformation/teachers/civil/FIROZ AHMED.jpg',
+          'name': 'Firoz Ahmed',
+          'designation': 'Instructor',
+          'phone': '01881-915777',
+          'email': 'firozahmed082@gmail.com',
 
         },
         {
-          'img': 'assets/techersinformation/administrative/saroni.png',
-          'name': 'Dr. Sharany Haqu',
-          'designation': 'AdmissionRequirement',
-          'phone': 'AdmissionRequirement',
-          'email': 'AdmissionRequirement',
+          'img': 'assets/techersinformation/teachers/civil/MD FARUK MIAH.jpg',
+          'name': 'Md. Faruk Miah',
+          'designation': 'Instructor',
+          'phone': '01571-295890',
+          'email': 'farukmiahcivil@gmail.com',
 
         },
         {
-          'img': 'assets/techersinformation/administrative/unknown.png',
-          'name': 'Md. Atiqullah',
-          'designation': 'AdmissionRequirement',
-          'phone': 'AdmissionRequirement',
-          'email': 'AdmissionRequirement',
-
+          'img': 'assets/techersinformation/teachers/civil/HM ARSHAD.jpg',
+          'name': 'HM Arshad',
+          'designation': 'Jr. Instructor',
+          'phone': '01644-372305',
+          'email': 'hmarshad1997@gmail.com',
         },
         {
-          'img': 'assets/techersinformation/administrative/unknown.png',
-          'name': 'Dulal Roy',
-          'designation': 'AdmissionRequirement',
-          'phone': 'AdmissionRequirement',
-          'email': 'AdmissionRequirement',
-
+          'img': 'assets/techersinformation/teachers/civil/MD SUMAN MIA.jpg',
+          'name': 'Md. Suman Miah',
+          'designation': 'Jr. Instructor',
+          'phone': '01743-022370',
+          'email': 'mdsumanmia336@gmail.com',
         },
       ]
     },
@@ -325,72 +337,41 @@ class HomeContrller extends GetxController {
       "buttonitem": "Textile",
       "items": [
         {
-          'img': 'assets/techersinformation/administrative/nurul huq.jpeg',
-          'name': 'Monir',
-          'designation': 'AdmissionRequirement',
-          'phone': 'AdmissionRequirement',
-          'email': 'AdmissionRequirement',
-
-        },
-        {
-          'img': 'assets/techersinformation/administrative/saroni.png',
-          'name': 'Dr. Sharany Haque',
-          'designation': 'AdmissionRequirement',
-          'phone': 'AdmissionRequirement',
-          'email': 'AdmissionRequirement',
-
-        },
-        {
-          'img': 'assets/techersinformation/administrative/unknown.png',
-          'name': 'Md. Atiqullah\nPrincipal (Acting),\nPubergaon Polytechnic Institute.',
-          'designation': 'AdmissionRequirement',
-          'phone': 'AdmissionRequirement',
-          'email': 'AdmissionRequirement',
-
-        },
-        {
-          'img': 'assets/techersinformation/administrative/unknown.png',
-          'name': 'Dulal Roy',
-          'designation': 'AdmissionRequirement',
-          'phone': 'AdmissionRequirement',
-          'email': 'AdmissionRequirement',
+          'img': 'assets/techersinformation/teachers/textile/AZIZUL ASHARAF.jpg',
+          'name': 'Azizul Asharaf',
+          'designation': 'Instructor',
+          'phone': '01918-345767',
+          'email': 'nahiyansarker79@gmail.com',
 
         },
       ]
     },
     {
-      'buttonitem': 'Medical',
+      'buttonitem': 'Non-Tech',
       "items": [
         {
-          'img': 'assets/techersinformation/administrative/nurul huq.jpeg',
-          'name': 'Monir',
-          'designation': 'AdmissionRequirement',
-          'phone': 'AdmissionRequirement',
-          'email': 'AdmissionRequirement',
+          'img': 'assets/techersinformation/teachers/Non Tech Department/RAJU AHMED.jpg',
+          'name': 'Raju Ahmed',
+          'designation': 'Instructor',
+          'phone': '01822-410186',
+          //'email': 'AdmissionRequirement',
 
         },
         {
-          'img': 'assets/techersinformation/administrative/saroni.png',
-          'name': 'Dr. Sharany Haque\nPrincipal (Pubergaon Polytechnic Institute)',
-          'designation': 'AdmissionRequirement',
-          'phone': 'AdmissionRequirement',
-          'email': 'AdmissionRequirement',
+          'img': 'assets/techersinformation/teachers/Non Tech Department/ABDUR RASHID.jpg',
+          'name': 'Abdur Rashid',
+          'designation': 'Accountant',
+          'phone': '01753-130682',
+          //'email': 'AdmissionRequirement',
 
         },
         {
-          'img': 'assets/techersinformation/administrative/unknown.png',
-          'name': 'Md. Atiqullah\nPrincipal (Acting),\nPubergaon Polytechnic Institute.',
-          'designation': 'AdmissionRequirement',
-          'phone': 'AdmissionRequirement',
-          'email': 'AdmissionRequirement',
+          'img': 'assets/techersinformation/teachers/Non Tech Department/ABUL KASHEM.jpg',
+          'name': 'Abul Kashem',
+          'designation': 'Office Assistant',
+          'phone': '01764988847',
+          //'email': 'AdmissionRequirement',
 
-        },
-        {
-          'img': 'assets/techersinformation/administrative/unknown.png',
-          'name': 'Dulal Roy',
-          'designation': 'AdmissionRequirement',
-          'phone': 'AdmissionRequirement',
-          'email': 'AdmissionRequirement',
         },
       ]
     },
