@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:get/get.dart';
+import 'package:get/get_core/src/get_main.dart';
 import 'package:ppi/constants/color.dart';
 import 'package:ppi/main.dart';
+import 'package:ppi/views/Drawer/profile/profile.dart';
 import 'package:ppi/views/homescreen/home_all_itemgriview.dart';
 
 import '../Drawer/drawer.dart';
@@ -20,7 +23,9 @@ class _HomescreenState extends State<Homescreen> {
       appBar: AppBar(
         backgroundColor: AppColor.homepageappbarcolor,
         actions: [
-          IconButton(onPressed: (){}, icon: Container(
+          IconButton(onPressed: (){
+            Get.to(()=> Profilescreen());
+          }, icon: Container(
             // width: 45, // ছবির প্রস্থ
             // height: 45, // ছবির উচ্চতা
             // decoration: BoxDecoration(

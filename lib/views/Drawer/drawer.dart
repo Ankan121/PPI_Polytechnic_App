@@ -1,3 +1,5 @@
+import 'dart:io';
+
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:get/get_core/src/get_main.dart';
@@ -5,6 +7,7 @@ import 'package:ppi/constants/color.dart';
 import 'package:ppi/views/Drawer/profile/profile.dart';
 
 import '../../constants/customtext.dart';
+import '../db_service/db_herper.dart';
 import 'about.dart';
 
 
@@ -16,6 +19,28 @@ class CustomDrawer extends StatefulWidget {  // Renamed to CustomDrawer
 }
 
 class _CustomDrawerState extends State<CustomDrawer> {
+
+  List items = [];
+  // List searchitems = [];
+
+
+  void initState(){
+    readItemsDatabase();
+    super.initState();
+  }
+
+  Future<void> readItemsDatabase()async{
+
+    setState(() {
+      items = [];
+    });
+
+    final allnotes = await DbHelper().readItems();
+    print(allnotes);
+    setState(() {
+      items.addAll(allnotes);
+    });
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -52,17 +77,34 @@ class _CustomDrawerState extends State<CustomDrawer> {
                     ),
                     child: CircleAvatar(
                       radius: 40,
-                      backgroundImage: AssetImage('assets/ppicareer/bpsc.png'), // Profile image
+                      backgroundImage: items.isNotEmpty && items[0]['img'] != null && File(items[0]['img']).existsSync()
+                          ? FileImage(File(items[0]['img'])) // ফাইল পাওয়া গেলে সেটি দেখাবে
+                          : null, // না পেলে child ব্যবহার করবে
+                      child: items.isEmpty || items[0]['img'] == null || !File(items[0]['img']).existsSync()
+                          ? Icon(
+                        Icons.account_circle, // ডিফল্ট আইকন
+                        size: 50, // আইকনের আকার
+                        color: Colors.grey, // আইকনের রঙ
+                      )
+                          : null,
                     ),
                   ),
                   SizedBox(height: 10),
                   Text(
-                    'User Name',
+                    items.isNotEmpty && items.last['name'] != null
+                        ? items.last['name'] // লিস্টের শেষ আইটেমের 'name'
+                        : 'Your Name',  // যদি নাম না থাকে, 'Your Name' দেখাবে
                     style: largewhite,
+                    overflow: TextOverflow.ellipsis, // টেক্সটের শেষের অংশে '...' দেখাবে যদি এটি বড় হয়ে যায়
+                    maxLines: 2, // এক লাইনে সীমাবদ্ধ রাখবে
                   ),
                   Text(
-                    'user@example.com',
+                    items.isNotEmpty && items.last['email'] != null
+                        ? items.last['email'] // লিস্টের শেষ আইটেমের 'name'
+                        : 'Your Email',  // যদি নাম না থাকে, 'Your Name' দেখাবে
                     style: mediumwhite,
+                    //overflow: TextOverflow.ellipsis, // টেক্সটের শেষের অংশে '...' দেখাবে যদি এটি বড় হয়ে যায়
+                    //maxLines: 1, // এক লাইনে সীমাবদ্ধ রাখবে
                   ),
                 ],
               ),
