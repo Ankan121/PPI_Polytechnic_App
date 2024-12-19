@@ -4,6 +4,7 @@ import 'package:get/get.dart';
 import 'package:ppi/constants/color.dart';
 import 'package:ppi/constants/custombutton.dart';
 import 'package:ppi/main.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 import '../../../../../constants/customtext.dart';
 import '../../../../../controller/homeController.dart';
@@ -27,8 +28,8 @@ class _AdministrativeState extends State<Administrative> {
 
     final TextStyle? largeblack = TextFormate(colors: Colors.black.withOpacity(0.7)).textLargeFormate(context);
     final TextStyle? largewhite = TextFormate(colors: Colors.white).textLargeFormate(context);
-    final TextStyle? mediumblack = TextFormate(colors: Colors.black).textMediumFormate(context);
-    final TextStyle? smallblack = TextFormate(colors: Colors.black).textSmallFormate(context);
+    final TextStyle? mediumblack = TextFormate(colors: Colors.black.withOpacity(0.7)).textMediumFormate(context);
+    final TextStyle? smallblack = TextFormate(colors: Colors.black.withOpacity(0.7)).textSmallFormate(context);
 
 
     return GetBuilder<HomeContrller>(builder: (HomeContrller homcon) {
@@ -94,15 +95,15 @@ class _AdministrativeState extends State<Administrative> {
                             crossAxisSpacing: 10,  // Column এর মধ্যে spacing
                             //mainAxisSpacing: 10,  // Row এর মধ্যে spacing
                             //childAspectRatio: 1,  // Aspect ratio ঠিক রাখতে হবে (height:width = 1:1)
-                            childAspectRatio: 3 / 3, // প্রতিটি কন্টেইনারের অনুপাত (width : height)
+                            childAspectRatio: 3 / 3.1, // প্রতিটি কন্টেইনারের অনুপাত (width : height)
                           ),
                           itemBuilder: (context, index) {
 
-                             String img = homcon.administrative[index]['img'];
-                             String name = homcon.administrative[index]['name'];
-                             String designation = homcon.administrative[index]['designation'];
-                             String phone = homcon.administrative[index]['phone'];
-                             String email = homcon.administrative[index]['email'];
+                             String img = homcon.administrative[index]['img'].toString();
+                             String name = homcon.administrative[index]['name'].toString();
+                             String designation = homcon.administrative[index]['designation'].toString();
+                             String phone = homcon.administrative[index]['phone'].toString();
+                             String email = homcon.administrative[index]['email'].toString();
 
                             return Padding(
                               padding: const EdgeInsets.all(20.0),
@@ -124,7 +125,55 @@ class _AdministrativeState extends State<Administrative> {
                                     ),
                                   ),
                                   SizedBox(height: 10,),
-                                  Text(name,style: mediumblack,)
+                                  // Text(name,style: mediumblack,),
+                                  // Text(name,style: mediumblack,),
+                                  Column(
+                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                    mainAxisAlignment: MainAxisAlignment.start,
+                                    children: [
+                                      Text(name,style: largeblack,),
+                                      Text(designation,style: mediumblack,),
+                                      // InkWell(
+                                      //     onTap: (){
+                                      //       launch("tel:${phone}");
+                                      //     },
+                                      //     child: Text(phone,style: mediumblack,)),
+                                      InkWell(
+                                        onTap: () async {
+                                          final Phone = phone;
+                                          if (Phone != null && Phone.isNotEmpty) {
+                                            launch("tel:${phone}");
+                                          } else {
+                                            print('Phone is empty.');
+                                          }
+                                        },
+                                        child: Text(
+                                          homcon.administrative[index]['phone'] ?? '',
+                                          style: mediumblack,
+                                        ),
+                                      ),
+                                      // InkWell(
+                                      //     onTap: () {
+                                      //       launch("mailto:${widget.items[index]['email']}?subject=Hello&body=I would like to contact you.");
+                                      //     },
+                                      //     child: Text("${widget.items[index]['email']}",style: mediumblack,)),
+                                      InkWell(
+                                        onTap: () async {
+                                          final emailadd = email;
+                                          if (emailadd != null && emailadd.isNotEmpty) {
+                                            launch("mailto:${emailadd}?subject=Hello&body=I would like to contact you.");
+                                          } else {
+                                            print('Email address is empty.');
+                                          }
+                                        },
+                                        child: Text(
+                                          homcon.administrative[index]['email'] ?? '',
+                                          style: mediumblack,
+                                        ),
+                                      ),
+                                      SizedBox(height: 10,),
+                                    ],
+                                  ),
                                 ],
                               ),
                             );

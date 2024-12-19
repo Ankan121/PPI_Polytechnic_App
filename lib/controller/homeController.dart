@@ -150,18 +150,18 @@ class HomeContrller extends GetxController {
   List administrative = [
     {
       'img': 'assets/techersinformation/administrative/nurul huq.jpeg',
-      'name': 'Engr. Nurul Hoque Prothan\nChairman (Kanchan Foundation)',
-      'designation': 'AdmissionRequirement',
-      'phone': 'AdmissionRequirement',
-      'email': 'AdmissionRequirement',
+      'name': 'Engr. Nurul Hoque Prothan',
+      'designation': 'Chairman (Kanchan Foundation)',
+      //'phone': '01711-661514',
+      //'email': ' ',
 
     },
     {
       'img': 'assets/techersinformation/administrative/unknown.png',
-      'name': 'Md. Atiqullah\nPrincipal (Acting),\nPubergaon Polytechnic Institute.',
-      'designation': 'Principal (Act.)',
+      'name': 'Md. Atiqullah',
+      'designation': 'Principal (Act.) PPI',
       'phone': '01711-661514',
-      'email': 'AdmissionRequirement',
+      //'email': ' ',
 
     },
     {
@@ -169,7 +169,7 @@ class HomeContrller extends GetxController {
       'name': 'Jamir Uddin Bhuiyan',
       'designation': 'Vice Principle',
       'phone': '01738-618923',
-      'email': 'AdmissionRequirement',
+      //'email': ' ',
 
     },
     {
@@ -177,7 +177,7 @@ class HomeContrller extends GetxController {
       'name': 'Md. Mazharul Alam',
       'designation': 'Chief Instructor',
       'phone': '01735-364353',
-      'email': 'AdmissionRequirement',
+      'email': 'mazharul51052@gmail.com',
 
     },
   ];
@@ -502,9 +502,14 @@ class HomeContrller extends GetxController {
         "buttonitem": "Electrical",
         "items": [
           {
-            'img': 'assets/webview/electrical/Autocad.jpg',
-            'name': 'AutoCad',
-            'link': 'https://www.youtube.com/watch?v=VW_AT1fPhd8&list=PLfZ-5ZqoS0xEnbiir5VoeE3MV6NpBv7Tk&index=1'
+            'img': 'assets/webview/electrical/ecd.jpg',
+            'name': 'ECD',
+            'link': 'https://www.youtube.com/playlist?list=PLcAjsf-YhhWZ-8ODORzV2YSloAHcpvVq9'
+          },
+          {
+            'img': 'assets/webview/electrical/ed.jpg',
+            'name': 'ED',
+            'link': 'https://youtube.com/playlist?list=PLcAjsf-YhhWaOQn5Q7QTAO7hYVb_VHfhk&si=w4BYS-7NXER97ltu'
           },
         ]
       },
@@ -525,6 +530,37 @@ class HomeContrller extends GetxController {
             'img': 'assets/webview/civil/autocad.jpeg',
             'name': 'AutoCad',
             'link': 'https://www.youtube.com/watch?v=tNATCAHSgzY&list=PLfZ-5ZqoS0xGCBGQxGemqIbufUmtJyxMx&index=1'
+          },
+          {
+            'img': 'assets/webview/civil/autocad.jpeg',
+            'name': 'Hfd-1',
+            'link': 'https://www.youtube.com/watch?v=Y_JP2JQ-E7s'
+          },
+          {
+            'img': 'assets/webview/civil/autocad.jpeg',
+            'name': 'Hfd-2',
+            'link': 'https://www.youtube.com/watch?v=CC_7BumiYyk'
+          },
+          {
+            'img': 'assets/webview/civil/autocad.jpeg',
+            'name': 'Hfd-3',
+            'link': 'https://www.youtube.com/watch?v=an0BsW26OIo'
+          },
+          {
+            'img': 'assets/webview/civil/autocad.jpeg',
+            'name': 'Pile Cap & Pile Cap',
+            'link': 'https://www.youtube.com/watch?v=Zx27pNtKP6k'
+          },
+          {
+            'img': 'assets/webview/civil/autocad.jpeg',
+            'name': 'Pile cap-1',
+            'link': 'https://www.youtube.com/watch?v=lDHxgqDMCl0'
+          },
+          {
+            'img': 'assets/webview/civil/autocad.jpeg',
+            'name': 'Pile cap-2',
+            'link': 'https://www.youtube.com/watch?v=PbTwlzEcTtg'
+            // 'link': 'https://youtu.be/PbTwlzEcTtg?si=HeffibOLDz2ZkChc'
           },
         ]
       },

@@ -4,6 +4,7 @@ import 'package:get/get.dart';
 import 'package:ppi/constants/color.dart';
 import 'package:ppi/constants/custombutton.dart';
 import 'package:ppi/main.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 import '../../../../../constants/customtext.dart';
 import '../../../../../controller/homeController.dart';
@@ -128,8 +129,31 @@ class _TeachersState extends State<Teachers> {
                                     children: [
                                       Text("${widget.items[index]['name']}",style: largeblack,),
                                       Text("${widget.items[index]['designation']}",style: mediumblack,),
-                                      Text("${widget.items[index]['phone']}",style: mediumblack,),
-                                      Text("${widget.items[index]['email']}",style: mediumblack,),
+                                      InkWell(
+                                          onTap: (){
+                                            launch("tel:${widget.items[index]['phone']}");
+                                          },
+                                          child: Text("${widget.items[index]['phone']}",style: mediumblack,)),
+                                      // InkWell(
+                                      //     onTap: () {
+                                      //       launch("mailto:${widget.items[index]['email']}?subject=Hello&body=I would like to contact you.");
+                                      //     },
+                                      //     child: Text("${widget.items[index]['email']}",style: mediumblack,)),
+                                      InkWell(
+                                        onTap: () async {
+                                          final email = widget.items[index]['email'];
+                                          if (email != null && email.isNotEmpty) {
+                                            launch("mailto:${widget.items[index]['email']}?subject=Hello&body=I would like to contact you.");
+                                          } else {
+                                            print('Email address is empty.');
+                                          }
+                                        },
+                                        child: Text(
+                                          widget.items[index]['email'] ?? '',
+                                          style: mediumblack,
+                                        ),
+                                      )
+
                                     ],
                                   ),
                                   SizedBox(height: 10.h,),
